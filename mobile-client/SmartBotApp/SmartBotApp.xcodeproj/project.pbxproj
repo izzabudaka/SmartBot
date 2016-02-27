@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3E099501C81EC6D0003657C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E0994F1C81EC6D0003657C /* AppDelegate.swift */; };
+		B3E099521C81EC6D0003657C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E099511C81EC6D0003657C /* ViewController.swift */; };
+		B3E099551C81EC6D0003657C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E099531C81EC6D0003657C /* Main.storyboard */; };
+		B3E099571C81EC6D0003657C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E099561C81EC6D0003657C /* Assets.xcassets */; };
+		B3E0995A1C81EC6D0003657C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E099581C81EC6D0003657C /* LaunchScreen.storyboard */; };
+		B3E099651C81EC6D0003657C /* SmartBotAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E099641C81EC6D0003657C /* SmartBotAppTests.swift */; };
+		B3E099701C81EC6D0003657C /* SmartBotAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E0996F1C81EC6D0003657C /* SmartBotAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3E099611C81EC6D0003657C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3E099441C81EC6C0003657C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3E0994B1C81EC6C0003657C;
+			remoteInfo = SmartBotApp;
+		};
+		B3E0996C1C81EC6D0003657C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3E099441C81EC6C0003657C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3E0994B1C81EC6C0003657C;
+			remoteInfo = SmartBotApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B3E0994C1C81EC6D0003657C /* SmartBotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E0994F1C81EC6D0003657C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3E099511C81EC6D0003657C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3E099541C81EC6D0003657C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3E099561C81EC6D0003657C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3E099591C81EC6D0003657C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3E0995B1C81EC6D0003657C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E099601C81EC6D0003657C /* SmartBotAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartBotAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E099641C81EC6D0003657C /* SmartBotAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBotAppTests.swift; sourceTree = "<group>"; };
+		B3E099661C81EC6D0003657C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E0996B1C81EC6D0003657C /* SmartBotAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartBotAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E0996F1C81EC6D0003657C /* SmartBotAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBotAppUITests.swift; sourceTree = "<group>"; };
+		B3E099711C81EC6D0003657C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3E099491C81EC6C0003657C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E0995D1C81EC6D0003657C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E099681C81EC6D0003657C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3E099431C81EC6C0003657C = {
+			isa = PBXGroup;
+			children = (
+				B3E0994E1C81EC6D0003657C /* SmartBotApp */,
+				B3E099631C81EC6D0003657C /* SmartBotAppTests */,
+				B3E0996E1C81EC6D0003657C /* SmartBotAppUITests */,
+				B3E0994D1C81EC6D0003657C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3E0994D1C81EC6D0003657C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3E0994C1C81EC6D0003657C /* SmartBotApp.app */,
+				B3E099601C81EC6D0003657C /* SmartBotAppTests.xctest */,
+				B3E0996B1C81EC6D0003657C /* SmartBotAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3E0994E1C81EC6D0003657C /* SmartBotApp */ = {
+			isa = PBXGroup;
+			children = (
+				B3E0994F1C81EC6D0003657C /* AppDelegate.swift */,
+				B3E099511C81EC6D0003657C /* ViewController.swift */,
+				B3E099531C81EC6D0003657C /* Main.storyboard */,
+				B3E099561C81EC6D0003657C /* Assets.xcassets */,
+				B3E099581C81EC6D0003657C /* LaunchScreen.storyboard */,
+				B3E0995B1C81EC6D0003657C /* Info.plist */,
+			);
+			path = SmartBotApp;
+			sourceTree = "<group>";
+		};
+		B3E099631C81EC6D0003657C /* SmartBotAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3E099641C81EC6D0003657C /* SmartBotAppTests.swift */,
+				B3E099661C81EC6D0003657C /* Info.plist */,
+			);
+			path = SmartBotAppTests;
+			sourceTree = "<group>";
+		};
+		B3E0996E1C81EC6D0003657C /* SmartBotAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B3E0996F1C81EC6D0003657C /* SmartBotAppUITests.swift */,
+				B3E099711C81EC6D0003657C /* Info.plist */,
+			);
+			path = SmartBotAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3E0994B1C81EC6C0003657C /* SmartBotApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3E099741C81EC6D0003657C /* Build configuration list for PBXNativeTarget "SmartBotApp" */;
+			buildPhases = (
+				B3E099481C81EC6C0003657C /* Sources */,
+				B3E099491C81EC6C0003657C /* Frameworks */,
+				B3E0994A1C81EC6C0003657C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartBotApp;
+			productName = SmartBotApp;
+			productReference = B3E0994C1C81EC6D0003657C /* SmartBotApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3E0995F1C81EC6D0003657C /* SmartBotAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3E099771C81EC6D0003657C /* Build configuration list for PBXNativeTarget "SmartBotAppTests" */;
+			buildPhases = (
+				B3E0995C1C81EC6D0003657C /* Sources */,
+				B3E0995D1C81EC6D0003657C /* Frameworks */,
+				B3E0995E1C81EC6D0003657C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3E099621C81EC6D0003657C /* PBXTargetDependency */,
+			);
+			name = SmartBotAppTests;
+			productName = SmartBotAppTests;
+			productReference = B3E099601C81EC6D0003657C /* SmartBotAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B3E0996A1C81EC6D0003657C /* SmartBotAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3E0997A1C81EC6D0003657C /* Build configuration list for PBXNativeTarget "SmartBotAppUITests" */;
+			buildPhases = (
+				B3E099671C81EC6D0003657C /* Sources */,
+				B3E099681C81EC6D0003657C /* Frameworks */,
+				B3E099691C81EC6D0003657C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3E0996D1C81EC6D0003657C /* PBXTargetDependency */,
+			);
+			name = SmartBotAppUITests;
+			productName = SmartBotAppUITests;
+			productReference = B3E0996B1C81EC6D0003657C /* SmartBotAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3E099441C81EC6C0003657C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = LC;
+				TargetAttributes = {
+					B3E0994B1C81EC6C0003657C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4FLSWMW6LR;
+					};
+					B3E0995F1C81EC6D0003657C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4FLSWMW6LR;
+						TestTargetID = B3E0994B1C81EC6C0003657C;
+					};
+					B3E0996A1C81EC6D0003657C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4FLSWMW6LR;
+						TestTargetID = B3E0994B1C81EC6C0003657C;
+					};
+				};
+			};
+			buildConfigurationList = B3E099471C81EC6C0003657C /* Build configuration list for PBXProject "SmartBotApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3E099431C81EC6C0003657C;
+			productRefGroup = B3E0994D1C81EC6D0003657C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3E0994B1C81EC6C0003657C /* SmartBotApp */,
+				B3E0995F1C81EC6D0003657C /* SmartBotAppTests */,
+				B3E0996A1C81EC6D0003657C /* SmartBotAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3E0994A1C81EC6C0003657C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E0995A1C81EC6D0003657C /* LaunchScreen.storyboard in Resources */,
+				B3E099571C81EC6D0003657C /* Assets.xcassets in Resources */,
+				B3E099551C81EC6D0003657C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E0995E1C81EC6D0003657C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E099691C81EC6D0003657C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3E099481C81EC6C0003657C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E099521C81EC6D0003657C /* ViewController.swift in Sources */,
+				B3E099501C81EC6D0003657C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E0995C1C81EC6D0003657C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E099651C81EC6D0003657C /* SmartBotAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E099671C81EC6D0003657C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E099701C81EC6D0003657C /* SmartBotAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3E099621C81EC6D0003657C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3E0994B1C81EC6C0003657C /* SmartBotApp */;
+			targetProxy = B3E099611C81EC6D0003657C /* PBXContainerItemProxy */;
+		};
+		B3E0996D1C81EC6D0003657C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3E0994B1C81EC6C0003657C /* SmartBotApp */;
+			targetProxy = B3E0996C1C81EC6D0003657C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3E099531C81EC6D0003657C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3E099541C81EC6D0003657C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3E099581C81EC6D0003657C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3E099591C81EC6D0003657C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3E099721C81EC6D0003657C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3E099731C81EC6D0003657C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3E099751C81EC6D0003657C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartBotApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LC.SmartBotApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B3E099761C81EC6D0003657C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartBotApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LC.SmartBotApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B3E099781C81EC6D0003657C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartBotAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LC.SmartBotAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartBotApp.app/SmartBotApp";
+			};
+			name = Debug;
+		};
+		B3E099791C81EC6D0003657C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartBotAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LC.SmartBotAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartBotApp.app/SmartBotApp";
+			};
+			name = Release;
+		};
+		B3E0997B1C81EC6D0003657C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SmartBotAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LC.SmartBotAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmartBotApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B3E0997C1C81EC6D0003657C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SmartBotAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LC.SmartBotAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmartBotApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3E099471C81EC6C0003657C /* Build configuration list for PBXProject "SmartBotApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E099721C81EC6D0003657C /* Debug */,
+				B3E099731C81EC6D0003657C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3E099741C81EC6D0003657C /* Build configuration list for PBXNativeTarget "SmartBotApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E099751C81EC6D0003657C /* Debug */,
+				B3E099761C81EC6D0003657C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B3E099771C81EC6D0003657C /* Build configuration list for PBXNativeTarget "SmartBotAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E099781C81EC6D0003657C /* Debug */,
+				B3E099791C81EC6D0003657C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B3E0997A1C81EC6D0003657C /* Build configuration list for PBXNativeTarget "SmartBotAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E0997B1C81EC6D0003657C /* Debug */,
+				B3E0997C1C81EC6D0003657C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3E099441C81EC6C0003657C /* Project object */;
+}
