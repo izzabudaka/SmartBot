@@ -15,18 +15,18 @@ class ServiceCell: UITableViewCell {
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var img2: UIImageView!
 
+    @IBOutlet weak var leftConstant: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        img.layer.borderColor = UIColor.whiteColor().CGColor
-        img.layer.borderWidth = 2.5
+        img.layer.borderWidth = 1
         img.layer.cornerRadius = img.frame.width/2
-        img.layer.backgroundColor = getRandomColor().CGColor
 
-        img2.layer.borderColor = UIColor.whiteColor().CGColor
-        img2.layer.borderWidth = 2.5
+        img2.layer.borderWidth = 1
         img2.layer.cornerRadius = img.frame.width/2
-        img2.layer.backgroundColor = getRandomColor().CGColor
+        
+        img.layer.masksToBounds = true
+        img2.layer.masksToBounds = true
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

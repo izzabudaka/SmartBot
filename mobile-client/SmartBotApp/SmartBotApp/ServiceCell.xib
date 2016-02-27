@@ -36,13 +36,14 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last message here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gM6-1b-xan">
-                        <rect key="frame" x="88" y="31" width="129.5" height="18"/>
+                        <rect key="frame" x="88" y="31" width="224" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="gM6-1b-xan" secondAttribute="trailing" id="1YI-IL-pCX"/>
                     <constraint firstAttribute="trailingMargin" secondItem="GSk-Ul-FZX" secondAttribute="trailing" id="8o8-HS-aid"/>
                     <constraint firstAttribute="topMargin" secondItem="GSk-Ul-FZX" secondAttribute="top" id="ADh-cV-RBG"/>
                     <constraint firstItem="ijh-bl-dCk" firstAttribute="top" secondItem="F12-gZ-iqx" secondAttribute="bottom" constant="-48" id="Dkk-ww-dF2"/>
@@ -57,6 +58,7 @@
             <connections>
                 <outlet property="img" destination="F12-gZ-iqx" id="Hia-Bh-s4X"/>
                 <outlet property="img2" destination="ijh-bl-dCk" id="55U-cV-4MC"/>
+                <outlet property="leftConstant" destination="kpL-vc-cy0" id="vK9-eo-0en"/>
                 <outlet property="txtSubtitle" destination="gM6-1b-xan" id="cL6-Zv-Caa"/>
                 <outlet property="txtTitle" destination="GSk-Ul-FZX" id="4DS-nZ-g9T"/>
             </connections>

@@ -25,7 +25,6 @@ class MessagesView : SLKTextViewController  {
         return UITableViewStyle.Plain;
     }
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.registerNib(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "MessageCell")
@@ -40,6 +39,7 @@ class MessagesView : SLKTextViewController  {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MessageCell") as! MessageCell
         cell.setData(messages[indexPath.row])
+        cell.selectionStyle = .None
         return cell
     }
 

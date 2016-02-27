@@ -16,7 +16,6 @@
 		B3E099501C81EC6D0003657C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E0994F1C81EC6D0003657C /* AppDelegate.swift */; };
 		B3E099521C81EC6D0003657C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E099511C81EC6D0003657C /* ViewController.swift */; };
 		B3E099551C81EC6D0003657C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E099531C81EC6D0003657C /* Main.storyboard */; };
-		B3E099571C81EC6D0003657C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E099561C81EC6D0003657C /* Assets.xcassets */; };
 		B3E0995A1C81EC6D0003657C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E099581C81EC6D0003657C /* LaunchScreen.storyboard */; };
 		B3E099651C81EC6D0003657C /* SmartBotAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E099641C81EC6D0003657C /* SmartBotAppTests.swift */; };
 		B3E099701C81EC6D0003657C /* SmartBotAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E0996F1C81EC6D0003657C /* SmartBotAppUITests.swift */; };
@@ -25,6 +24,7 @@
 		B3E099861C81F17A0003657C /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E099841C81F17A0003657C /* MessageCell.xib */; };
 		B3E099891C820D750003657C /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E099871C820D750003657C /* ServiceCell.swift */; };
 		B3E0998A1C820D750003657C /* ServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E099881C820D750003657C /* ServiceCell.xib */; };
+		B3E0998C1C822B230003657C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E0998B1C822B230003657C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,6 @@
 		B3E0994F1C81EC6D0003657C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E099511C81EC6D0003657C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3E099541C81EC6D0003657C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B3E099561C81EC6D0003657C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3E099591C81EC6D0003657C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3E0995B1C81EC6D0003657C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3E099601C81EC6D0003657C /* SmartBotAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartBotAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +69,7 @@
 		B3E099841C81F17A0003657C /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		B3E099871C820D750003657C /* ServiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
 		B3E099881C820D750003657C /* ServiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceCell.xib; sourceTree = "<group>"; };
+		B3E0998B1C822B230003657C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D46966F721DC2D249BE02E7C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,7 +145,6 @@
 				B3E0994F1C81EC6D0003657C /* AppDelegate.swift */,
 				B3E099511C81EC6D0003657C /* ViewController.swift */,
 				B3E099531C81EC6D0003657C /* Main.storyboard */,
-				B3E099561C81EC6D0003657C /* Assets.xcassets */,
 				B3E099581C81EC6D0003657C /* LaunchScreen.storyboard */,
 				B3E0995B1C81EC6D0003657C /* Info.plist */,
 				1A2161F10C27A31271FCAD23 /* MessagesView.swift */,
@@ -157,6 +156,7 @@
 				B3E099871C820D750003657C /* ServiceCell.swift */,
 				B3E099881C820D750003657C /* ServiceCell.xib */,
 				1A2160A4096E11127A683822 /* Core.swift */,
+				B3E0998B1C822B230003657C /* Assets.xcassets */,
 			);
 			path = SmartBotApp;
 			sourceTree = "<group>";
@@ -291,9 +291,9 @@
 			files = (
 				B3E099861C81F17A0003657C /* MessageCell.xib in Resources */,
 				B3E0995A1C81EC6D0003657C /* LaunchScreen.storyboard in Resources */,
-				B3E099571C81EC6D0003657C /* Assets.xcassets in Resources */,
 				B3E0997E1C81ED830003657C /* Podfile in Resources */,
 				B3E099551C81EC6D0003657C /* Main.storyboard in Resources */,
+				B3E0998C1C822B230003657C /* Assets.xcassets in Resources */,
 				B3E0998A1C820D750003657C /* ServiceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

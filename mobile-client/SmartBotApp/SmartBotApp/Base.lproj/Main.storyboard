@@ -32,11 +32,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Services" id="WXj-7H-02p">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="e6d-aO-Woy">
-                            <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="MQy-Fn-YyX"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="7Xu-yT-dTE"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bID-KM-All"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -86,7 +83,4 @@
             <point key="canvasLocation" x="-200.5" y="349.5"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="K16-eT-Bs3"/>
-    </inferredMetricsTieBreakers>
 </document>
