@@ -26,10 +26,24 @@ class Core {
     static var currentService : String = ""
     
     static var colors : [String : UIColor] = [
-        "Facebook" : UIColor(hue: 0.5778, saturation: 1, brightness: 0.99, alpha: 1.0) ,
+        "Facebook" : UIColor(red:0.231 , green:0.349 , blue:0.596  , alpha:1),
         "Blackrock" : UIColor.blackColor(),
         "Amazon" : UIColor.orangeColor(),
         "Spotify" : UIColor.greenColor(),
         "Skyscanner" : UIColor.blueColor()
     ]
+    
+    
+    static var hashtags : [ String : [String]] = [
+        "Blackrock" : ["AAPL" , "GOOG" , "MSFT" , "BLK","GS"],
+        "Facebook" : ["timeline" , "hacklondon2016" , "notes"],
+        "Amazon" : ["christmas" , "basket" , "techstuff" ],
+        "Skyscanner" : ["Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra", "Angola", "Anguilla", "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegowina", "Botswana", "Bouvet Island", "Brazil", "British Indian Ocean Territory", "Brunei Darussalam", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada"]
+    ]
+
+    
+    static var mentions : [String : [String]] = [
+        "Facebook" : ["Bill Gates" , "Jesus M. Christ" , "Rick Astley"]
+    ]
+    
 }

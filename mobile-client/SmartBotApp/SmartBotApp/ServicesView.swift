@@ -10,11 +10,16 @@ class ServicesView : UIViewController , UITableViewDelegate , UITableViewDataSou
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 //        (sender.destinationViewController! as! MessagesView).showData();
         
-        (segue.destinationViewController).navigationController?.title = Core.currentService
-
+        (segue.destinationViewController).navigationItem.title = Core.currentService
 
         if(Core.colors[Core.currentService] != nil) {
             UIApplication.sharedApplication().delegate?.window!!.tintColor = Core.colors[Core.currentService]
+
+            self.navigationController?.navigationBar.tintColor = UIColor.whiteColor() //Core.colors[Core.currentService]
+            self.navigationController?.navigationBar.barTintColor = Core.colors[Core.currentService]
+            self.navigationController?.navigationBar.translucent = false
+                self.navigationController?.navigationBar.barStyle = .Black
+
         }
         
         print(Core.messageStore)
@@ -29,7 +34,18 @@ class ServicesView : UIViewController , UITableViewDelegate , UITableViewDataSou
     }
 
     override func viewDidAppear(animated: Bool) {
+        self.tableView.reloadData()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+         self.tableView.reloadData()
         UIApplication.sharedApplication().delegate?.window!!.tintColor = UIColor.grayColor()
+
+        self.navigationController?.navigationBar.tintColor = UIColor.grayColor()//Core.colors[Core.currentService]
+        self.navigationController?.navigationBar.barTintColor = nil
+        self.navigationController?.navigationBar.translucent = false
+        self.navigationController?.navigationBar.barStyle = .Default
+
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -52,7 +68,7 @@ class ServicesView : UIViewController , UITableViewDelegate , UITableViewDataSou
         self.tableView.registerNib(UINib(nibName: "ServiceCell", bundle: nil), forCellReuseIdentifier: "ServiceCell")
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        self.tableView.contentInset = UIEdgeInsets(top:10,left:10,bottom:0,right:0)
+        self.tableView.contentInset = UIEdgeInsets(top:15,left:10,bottom:0,right:0)
 //        self.tableView.selectionStyle = .None
         self.tableView.tableFooterView = UIView()
     }
@@ -61,6 +77,8 @@ class ServicesView : UIViewController , UITableViewDelegate , UITableViewDataSou
         return services.count
     }
 
+    
+    
      func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ServiceCell", forIndexPath: indexPath) as! ServiceCell
         cell.selectionStyle = .None
@@ -73,7 +91,7 @@ class ServicesView : UIViewController , UITableViewDelegate , UITableViewDataSou
         
         if(Core.colors[services[indexPath.row]] != nil) {
 //            cell.img.layer.backgroundColor = Core.colors[services[indexPath.row]]?.CGColor
-            cell.img.layer.borderColor = UIColor.blackColor().CGColor
+            //cell.img.layer.borderColor = UIColor.blackColor().CGColor
         }
         
         if(services[indexPath.row].containsString("&")){

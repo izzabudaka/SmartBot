@@ -38,7 +38,7 @@ class MessagesView : SLKTextViewController  {
         
         self.autoCompletionView.dataSource = self
         self.autoCompletionView.delegate = self
-        self.registerPrefixesForAutoCompletion(["#"])
+        self.registerPrefixesForAutoCompletion(["#","@"])
         
         self.textView.placeholder = "Write a message"
         self.textView.placeholderColor = UIColor.lightGrayColor()
@@ -47,17 +47,35 @@ class MessagesView : SLKTextViewController  {
         
         
 
+        self.searchResult = self.suggestions
 
     }
-    var suggestions : [String] = ["AAPL" , "GOOG" , "MSFT"]
-    var searchResult : [String] = ["AAPL" , "GOOG" , "MSFT"]
+    
+    
+    var suggestions : [String] {
+        get {
+            return Core.hashtags[Core.currentService]!
+        }
+    }
+    
+    var suggestionsAt : [String] {
+        get {
+            return Core.mentions[Core.currentService]!
+        }
+    }
+    
+    var searchResult : [String] = []
 
     override func didChangeAutoCompletionPrefix(prefix: String!, andWord word: String!) {
+        print(self.searchResult)
         var array: NSArray = []
         var show = false
         
         if prefix == "#" {
             array = self.suggestions as [AnyObject]
+        }
+        else if prefix == "@" {
+            array = self.suggestionsAt as [AnyObject]
         }
         
         if array.count > 0 {
@@ -94,7 +112,13 @@ class MessagesView : SLKTextViewController  {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return messages.count
+        print(String(section) + " >>> ")
+        if self.tableView.isEqual(tableView) {
+            return messages.count
+        }
+        else{
+            return self.searchResult.count
+        }
     }
 
     override func didPressRightButton(sender: AnyObject!) {
