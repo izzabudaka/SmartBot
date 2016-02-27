@@ -7,7 +7,24 @@ import Foundation
 import UIKit
 
 class ServicesView : UIViewController , UITableViewDelegate , UITableViewDataSource {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        (sender.destinationViewController! as! MessagesView).showData();
+        
+        (segue.destinationViewController).navigationController?.title = Core.currentService
+        print(Core.messageStore)
+//
+//        if let store = Core.messageStore[Core.currentService]{
+//            (segue.destinationViewController as! MessagesView).messages = Core.messageStore[Core.currentService]!
+//        }
+//        else{
+//            print(Core.currentService + " not working");
+//        }
+        super.prepareForSegue(segue, sender: sender)
+    }
+
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        Core.currentService = services[indexPath.row]
+        performSegueWithIdentifier("toConvo" , sender:self)
     }
 
 
@@ -26,6 +43,8 @@ class ServicesView : UIViewController , UITableViewDelegate , UITableViewDataSou
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.contentInset = UIEdgeInsets(top:10,left:0,bottom:0,right:0)
+//        self.tableView.selectionStyle = .None
+        self.tableView.tableFooterView = UIView()
     }
 
      func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,6 +57,8 @@ class ServicesView : UIViewController , UITableViewDelegate , UITableViewDataSou
          cell.img2.alpha = services[indexPath.row].rangeOfString("&") != nil ? 1:0;
         return cell
     }
+
+
 
 
 

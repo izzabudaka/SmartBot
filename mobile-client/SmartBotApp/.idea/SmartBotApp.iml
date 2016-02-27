@@ -22,18 +22,18 @@
       <sourceFolder url="file://$MODULE_DIR$/SmartBotAppUITests/SmartBotAppUITests.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SmartBotAppUITests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKTypingIndicatorView.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKTextView+SLKAdditions.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKTextInputbar.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKTextView.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/UIView+SLKAdditions.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKTypingIndicatorProtocol.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKTypingIndicatorView.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKTextInputbar.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKInputAccessoryView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKInputAccessoryView.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKInputAccessoryView.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKTextInputbar.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKTypingIndicatorView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKTextView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/UIScrollView+SLKAdditions.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKTypingIndicatorView.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/UIView+SLKAdditions.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKUIConstants.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/UIResponder+SLKAdditions.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/UIScrollView+SLKAdditions.h" isTestSource="false" />
@@ -42,6 +42,12 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/UIResponder+SLKAdditions.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKTextView+SLKAdditions.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SlackTextViewController/Source/SLKTextViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SlackTextViewController/SlackTextViewController.modulemap" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SlackTextViewController/SlackTextViewController-prefix.pch" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SlackTextViewController/SlackTextViewController.xcconfig" isTestSource="false" />
@@ -49,20 +55,38 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SlackTextViewController/SlackTextViewController-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SlackTextViewController/SlackTextViewController-umbrella.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-acknowledgements.markdown" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.modulemap" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-resources.sh" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.release.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.modulemap" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.release.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-umbrella.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-frameworks.sh" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.debug.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-acknowledgements.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Validation.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Timeline.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Error.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Stream.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/MultipartFormData.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ServerTrustPolicy.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ParameterEncoding.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Result.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Upload.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Manager.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Download.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/NetworkReachabilityManager.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ResponseSerialization.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Request.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Notifications.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Response.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Alamofire.swift" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="Header Search Paths">
         <CLASSES>
+          <root url="file://$MODULE_DIR$/Pods/Headers/Private" />
           <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/InterfaceBuilderKit.framework/Headers" />
           <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/DTPerformanceSession.framework/Headers" />
           <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework/Headers" />
@@ -153,6 +177,7 @@
           <root url="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1" />
         </CLASSES>
         <SOURCES>
+          <root url="file://$MODULE_DIR$/Pods/Headers/Private" />
           <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/InterfaceBuilderKit.framework/Headers" />
           <root url="file:///Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/DTPerformanceSession.framework/Headers" />
           <root url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework/Headers" />

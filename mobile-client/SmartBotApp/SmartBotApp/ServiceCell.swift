@@ -19,12 +19,12 @@ class ServiceCell: UITableViewCell {
         super.awakeFromNib()
 
         img.layer.borderColor = UIColor.whiteColor().CGColor
-        img.layer.borderWidth = 1
+        img.layer.borderWidth = 2.5
         img.layer.cornerRadius = img.frame.width/2
         img.layer.backgroundColor = getRandomColor().CGColor
 
         img2.layer.borderColor = UIColor.whiteColor().CGColor
-        img2.layer.borderWidth = 1
+        img2.layer.borderWidth = 2.5
         img2.layer.cornerRadius = img.frame.width/2
         img2.layer.backgroundColor = getRandomColor().CGColor
     }

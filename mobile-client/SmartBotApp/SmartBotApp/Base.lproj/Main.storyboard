@@ -41,6 +41,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="9Si-gM-TVZ" id="To2-OE-hO5"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toConvo" id="K16-eT-Bs3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G7W-6J-y8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -85,4 +86,7 @@
             <point key="canvasLocation" x="-200.5" y="349.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="K16-eT-Bs3"/>
+    </inferredMetricsTieBreakers>
 </document>

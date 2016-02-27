@@ -5,17 +5,21 @@
 
 import Foundation
 import SlackTextViewController
+import Alamofire
 
 class MessagesView : SLKTextViewController  {
 
-    let url = "http://3c9be5e7.ngrok.io/command"
+    let blackrock_url = "http://3c9be5e7.ngrok.io/command"
 
-    var messages : [Message] = [
-            Message(body: "Hello world" , belongsToUser: true),
-            Message(body: "Second message" , belongsToUser: true),
-            Message(body: "Reply from service" , belongsToUser: false),
-            Message(body: "Final reply" , belongsToUser: true)
-    ]
+    var messages : [Message] {
+        get {
+            return Core.messageStore[Core.currentService]!
+        }
+        
+        set(newVal){
+            Core.messageStore[Core.currentService] = newVal
+        }
+    }
 
     override class func tableViewStyleForCoder(decoder: NSCoder) -> UITableViewStyle {
         return UITableViewStyle.Plain;
@@ -45,9 +49,28 @@ class MessagesView : SLKTextViewController  {
 
     override func didPressRightButton(sender: AnyObject!) {
         self.textView.refreshFirstResponder()
-        messages.append(Message(body:self.textView.text,belongsToUser: true))
+        self.messages.append(Message(body:self.textView.text,belongsToUser: true))
         self.textView.text = ""
         self.tableView.reloadData()
+        
+        
+        if Core.currentService == "Blackrock"{
+            print("blackrock")
+            Alamofire.request(.POST, self.blackrock_url , parameters: ["to": "blackrock" , "message":"get country for ticker GS"] , encoding: .JSON)
+                .responseString { response in
+                    self.messages.append(Message(body: response.result.value!, belongsToUser: false))
+                    self.tableView.reloadData()
+                    print(response.result.value!)
+            }
+//                .response{
+//                    request, response, data, error in
+//                    messages.append(Message(body: response.result.value, belongsToUser: false))
+            
+        }
     }
 
+
+    func showData(){
+        self.title = Core.currentService;
+    }
 }
