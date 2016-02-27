@@ -34,9 +34,59 @@ class MessagesView : SLKTextViewController  {
         self.tableView.estimatedRowHeight = 64.0
 //        self.tableView.separatorStyle = .
         self.tableView.tableFooterView = UIView()
+        
+        
+        self.autoCompletionView.dataSource = self
+        self.autoCompletionView.delegate = self
+        self.registerPrefixesForAutoCompletion(["#"])
+        
+        self.textView.placeholder = "Write a message"
+        self.textView.placeholderColor = UIColor.lightGrayColor()
+        
+        self.autoCompletionView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "HashCell")
+        
+        
+
+
+    }
+    var suggestions : [String] = ["AAPL" , "GOOG" , "MSFT"]
+    var searchResult : [String] = ["AAPL" , "GOOG" , "MSFT"]
+
+    override func didChangeAutoCompletionPrefix(prefix: String!, andWord word: String!) {
+        var array: NSArray = []
+        var show = false
+        
+        if prefix == "#" {
+            array = self.suggestions as [AnyObject]
+        }
+        
+        if array.count > 0 {
+            if word.characters.count > 0 {
+                array = array.filteredArrayUsingPredicate(NSPredicate(format: "self BEGINSWITH[c] %@", word))
+            }
+            
+            array = array.sort() { $0.localizedCaseInsensitiveCompare($1 as! String) == NSComparisonResult.OrderedAscending }
+            
+            self.searchResult = array as! [String]
+            show = (self.searchResult.count > 0)
+        }
+        
+        self.showAutoCompletionView(show)
+    }
+    
+    override func heightForAutoCompletionView() -> CGFloat {
+        return 44 * CGFloat(self.searchResult.count)
     }
 
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        if let cell = tableView.dequeueReusableCellWithIdentifier("HashCell") {
+            cell.textLabel!.text = self.searchResult[indexPath.row]
+            
+            return cell
+        }
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("MessageCell") as! MessageCell
         cell.setData(messages[indexPath.row])
         cell.selectionStyle = .None
@@ -66,6 +116,15 @@ class MessagesView : SLKTextViewController  {
 //                    request, response, data, error in
 //                    messages.append(Message(body: response.result.value, belongsToUser: false))
             
+        }
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if tableView.isEqual(tableView) {
+            var item = self.searchResult[indexPath.row]
+            item += " "
+            
+            self.acceptAutoCompletionWithString(item)
         }
     }
 

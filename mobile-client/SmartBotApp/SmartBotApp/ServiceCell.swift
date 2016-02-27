@@ -18,7 +18,17 @@ class ServiceCell: UITableViewCell {
     @IBOutlet weak var leftConstant: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
-
+//        
+//        let layerx = CALayer()
+//        
+//        layerx.borderWidth = 1
+//        layerx.borderColor = UIColor.blackColor()
+//        layerx.shadowRadius = 2
+//        layerx.shadowOpacity = 0.1
+//        layerx.shadowColor = UIColor.blackColor().CGColor
+//        layerx.shadowOffset = CGSize(width: 0, height: 0)
+//        img.layer.sublayers?.append(layerx)
+        
         img.layer.borderWidth = 1
         img.layer.cornerRadius = img.frame.width/2
 
