@@ -5,7 +5,27 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Messages View-->
+        <!--Services-->
+        <scene sceneID="eqg-XK-krq">
+            <objects>
+                <viewController id="RBb-FA-2NQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4wS-D0-tC9"/>
+                        <viewControllerLayoutGuide type="bottom" id="xs9-Zo-TqL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DPt-fd-vKF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Services" id="WXj-7H-02p"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7W-6J-y8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269.5" y="349.5"/>
+        </scene>
+        <!--Facebook-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MessagesView" customModule="SmartBotApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,11 +38,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oPm-ht-rdq"/>
+                    <navigationItem key="navigationItem" title="Facebook" id="oPm-ht-rdq"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="679.5" y="349.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="amK-Eg-M8r">
@@ -34,7 +55,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BMZ-Gv-CoD"/>
+                        <segue destination="RBb-FA-2NQ" kind="relationship" relationship="rootViewController" id="GaH-zc-0Sd"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wxd-2i-RV7" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -9,9 +9,10 @@
       <sourceFolder url="file://$MODULE_DIR$/SmartBotApp/ViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SmartBotApp/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SmartBotApp/Assets.xcassets" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SmartBotApp/Bubble.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SmartBotApp/Message.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SmartBotApp/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SmartBotApp/Base.lproj/Main.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SmartBotApp/Bubble.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SmartBotAppTests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SmartBotAppTests/SmartBotAppTests.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />

@@ -11,33 +11,53 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MessageCell" customModule="SmartBotApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AaH-Rb-URj" customClass="Bubble" customModule="SmartBotApp" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.5" width="320" height="43.5"/>
+                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AaH-Rb-URj" customClass="Bubble" customModule="SmartBotApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.5" width="320" height="0.0"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeE-1A-olF">
-                        <rect key="frame" x="18" y="11" width="284" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeE-1A-olF">
+                        <rect key="frame" x="23" y="23" width="279" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="AaH-Rb-URj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="1zm-oW-Pje"/>
                     <constraint firstItem="AaH-Rb-URj" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="41F-Oz-Vze"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="FeE-1A-olF" secondAttribute="trailing" constant="10" id="7iO-0U-oeb"/>
+                    <constraint firstItem="FeE-1A-olF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="5po-9f-QJT"/>
+                    <constraint firstItem="AaH-Rb-URj" firstAttribute="bottom" secondItem="FeE-1A-olF" secondAttribute="bottom" constant="15" id="74M-h2-AfU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FeE-1A-olF" secondAttribute="trailing" constant="15" id="7iO-0U-oeb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="FeE-1A-olF" secondAttribute="bottom" constant="15" id="94B-Nz-BW6"/>
                     <constraint firstItem="AaH-Rb-URj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="BpF-7x-zUo"/>
                     <constraint firstItem="AaH-Rb-URj" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="GrW-PC-p27"/>
-                    <constraint firstAttribute="leadingMargin" secondItem="FeE-1A-olF" secondAttribute="leading" constant="-10" id="N4I-WH-Ddv"/>
-                    <constraint firstItem="FeE-1A-olF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="wh9-lP-TNs"/>
+                    <constraint firstItem="AaH-Rb-URj" firstAttribute="trailing" secondItem="FeE-1A-olF" secondAttribute="trailing" constant="15" id="Lsn-UQ-Cse"/>
+                    <constraint firstItem="AaH-Rb-URj" firstAttribute="width" secondItem="FeE-1A-olF" secondAttribute="width" id="OPG-t3-pju"/>
+                    <constraint firstItem="AaH-Rb-URj" firstAttribute="leading" secondItem="FeE-1A-olF" secondAttribute="leading" constant="15" id="a96-Tm-F5O"/>
+                    <constraint firstItem="AaH-Rb-URj" firstAttribute="height" secondItem="FeE-1A-olF" secondAttribute="height" id="rp2-Ps-1ie"/>
+                    <constraint firstItem="FeE-1A-olF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="wh9-lP-TNs"/>
+                    <constraint firstItem="AaH-Rb-URj" firstAttribute="top" secondItem="FeE-1A-olF" secondAttribute="top" constant="15" id="xjf-DB-n9a"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="41F-Oz-Vze"/>
+                        <exclude reference="74M-h2-AfU"/>
+                        <exclude reference="BpF-7x-zUo"/>
+                        <exclude reference="GrW-PC-p27"/>
+                        <exclude reference="Lsn-UQ-Cse"/>
+                        <exclude reference="OPG-t3-pju"/>
+                        <exclude reference="a96-Tm-F5O"/>
+                        <exclude reference="rp2-Ps-1ie"/>
+                        <exclude reference="xjf-DB-n9a"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
+                <outlet property="bubble" destination="AaH-Rb-URj" id="Ylj-KU-NEt"/>
                 <outlet property="txtBody" destination="FeE-1A-olF" id="woM-l2-pvj"/>
             </connections>
         </tableViewCell>
