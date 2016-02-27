@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		089C03BC3D5A47F28729FB8D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80905055AF4D2022740CB3D6 /* Pods.framework */; };
 		1A2160F3A69C2BB82DEF4984 /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A216AAA684CF3759A557511 /* Bubble.swift */; };
+		1A21615E2904AAAD7BE6A489 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2160A4096E11127A683822 /* Core.swift */; };
 		1A216AEF7E56216504BF5E5B /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2161F10C27A31271FCAD23 /* MessagesView.swift */; };
 		1A216C6FE84CAD2AA7D1DF46 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A216CE8D54F37A5140BE631 /* Message.swift */; };
+		1A216DBAE89CD3D50427B293 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A21683FFC7A101861788D42 /* ServicesView.swift */; };
 		B3E099501C81EC6D0003657C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E0994F1C81EC6D0003657C /* AppDelegate.swift */; };
 		B3E099521C81EC6D0003657C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E099511C81EC6D0003657C /* ViewController.swift */; };
 		B3E099551C81EC6D0003657C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E099531C81EC6D0003657C /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 		B3E0997E1C81ED830003657C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B3E0997D1C81ED830003657C /* Podfile */; };
 		B3E099851C81F17A0003657C /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E099831C81F17A0003657C /* MessageCell.swift */; };
 		B3E099861C81F17A0003657C /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E099841C81F17A0003657C /* MessageCell.xib */; };
+		B3E099891C820D750003657C /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E099871C820D750003657C /* ServiceCell.swift */; };
+		B3E0998A1C820D750003657C /* ServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E099881C820D750003657C /* ServiceCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +46,9 @@
 
 /* Begin PBXFileReference section */
 		0118241964BA046CF473AC1B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		1A2160A4096E11127A683822 /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		1A2161F10C27A31271FCAD23 /* MessagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		1A21683FFC7A101861788D42 /* ServicesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
 		1A216AAA684CF3759A557511 /* Bubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
 		1A216CE8D54F37A5140BE631 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		80905055AF4D2022740CB3D6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +68,8 @@
 		B3E0997D1C81ED830003657C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		B3E099831C81F17A0003657C /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		B3E099841C81F17A0003657C /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		B3E099871C820D750003657C /* ServiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
+		B3E099881C820D750003657C /* ServiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceCell.xib; sourceTree = "<group>"; };
 		D46966F721DC2D249BE02E7C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +153,10 @@
 				B3E099841C81F17A0003657C /* MessageCell.xib */,
 				1A216AAA684CF3759A557511 /* Bubble.swift */,
 				1A216CE8D54F37A5140BE631 /* Message.swift */,
+				1A21683FFC7A101861788D42 /* ServicesView.swift */,
+				B3E099871C820D750003657C /* ServiceCell.swift */,
+				B3E099881C820D750003657C /* ServiceCell.xib */,
+				1A2160A4096E11127A683822 /* Core.swift */,
 			);
 			path = SmartBotApp;
 			sourceTree = "<group>";
@@ -282,6 +294,7 @@
 				B3E099571C81EC6D0003657C /* Assets.xcassets in Resources */,
 				B3E0997E1C81ED830003657C /* Podfile in Resources */,
 				B3E099551C81EC6D0003657C /* Main.storyboard in Resources */,
+				B3E0998A1C820D750003657C /* ServiceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +372,10 @@
 				B3E099501C81EC6D0003657C /* AppDelegate.swift in Sources */,
 				1A216AEF7E56216504BF5E5B /* MessagesView.swift in Sources */,
 				1A2160F3A69C2BB82DEF4984 /* Bubble.swift in Sources */,
+				B3E099891C820D750003657C /* ServiceCell.swift in Sources */,
 				1A216C6FE84CAD2AA7D1DF46 /* Message.swift in Sources */,
+				1A216DBAE89CD3D50427B293 /* ServicesView.swift in Sources */,
+				1A21615E2904AAAD7BE6A489 /* Core.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

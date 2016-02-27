@@ -1,10 +1,13 @@
 PODS:
+  - Alamofire (3.2.0)
   - SlackTextViewController (1.9.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 3.0)
   - SlackTextViewController
 
 SPEC CHECKSUMS:
+  Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
   SlackTextViewController: 6b0d1030c53937226fc5358f217af2a34fc211cf
 
 COCOAPODS: 0.39.0

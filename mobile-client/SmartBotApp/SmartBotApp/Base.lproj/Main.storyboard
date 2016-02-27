@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Services-->
         <scene sceneID="eqg-XK-krq">
             <objects>
-                <viewController id="RBb-FA-2NQ" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="RBb-FA-2NQ" customClass="ServicesView" customModule="SmartBotApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4wS-D0-tC9"/>
                         <viewControllerLayoutGuide type="bottom" id="xs9-Zo-TqL"/>
@@ -16,14 +17,35 @@
                     <view key="view" contentMode="scaleToFill" id="DPt-fd-vKF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Si-gM-TVZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Si-gM-TVZ" firstAttribute="top" secondItem="4wS-D0-tC9" secondAttribute="bottom" id="8pc-E7-dTE"/>
+                            <constraint firstItem="9Si-gM-TVZ" firstAttribute="leading" secondItem="DPt-fd-vKF" secondAttribute="leadingMargin" constant="-20" id="Iaj-fM-eWO"/>
+                            <constraint firstItem="xs9-Zo-TqL" firstAttribute="top" secondItem="9Si-gM-TVZ" secondAttribute="bottom" id="JB3-Nf-k8I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Si-gM-TVZ" secondAttribute="trailing" constant="-20" id="LSP-77-kKa"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Services" id="WXj-7H-02p"/>
+                    <navigationItem key="navigationItem" title="Services" id="WXj-7H-02p">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="e6d-aO-Woy">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="MQy-Fn-YyX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="9Si-gM-TVZ" id="To2-OE-hO5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G7W-6J-y8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="269.5" y="349.5"/>
+            <point key="canvasLocation" x="288.5" y="349.5"/>
         </scene>
         <!--Facebook-->
         <scene sceneID="tne-QT-ifu">
@@ -43,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679.5" y="349.5"/>
+            <point key="canvasLocation" x="739.5" y="349.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="amK-Eg-M8r">

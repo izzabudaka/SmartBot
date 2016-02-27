@@ -8,6 +8,8 @@ import SlackTextViewController
 
 class MessagesView : SLKTextViewController  {
 
+    let url = "http://3c9be5e7.ngrok.io/command"
+
     var messages : [Message] = [
             Message(body: "Hello world" , belongsToUser: true),
             Message(body: "Second message" , belongsToUser: true),
