@@ -32,7 +32,8 @@ class Core {
             Message(body: "Restart needed for updates. Postpone this?", belongsToUser: false, sender: "Macbook"),
             Message(body: "Yes", belongsToUser: true, sender: "Macbook"),
             Message(body: "I'm afriad I can't do that , Leonardo", belongsToUser: false, sender: "Macbook")
-        ]
+        ],
+        "Blackrock & Skyscanner" :[]
     ]
 
     static var currentService : String = ""

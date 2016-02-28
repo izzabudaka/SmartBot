@@ -49,6 +49,6 @@ class MapCell: UITableViewCell {
 
         let chartData = BarChartData(xVals: months, dataSet: chartDataSet)
         barChart.data = chartData
-        barChart.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .EaseInBounce)
+        barChart.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .EaseInExpo)
     }
 }

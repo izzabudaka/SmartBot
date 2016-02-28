@@ -87,13 +87,6 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
         
         
         imagePicker.delegate = self
-        
-        self.client = PTPusher(key: "061d40c84c49b423dd49" , delegate: self, encrypted: false)
-        self.client?.connect()
-        
-        
-        
-        
     }
     
     var searchResult : [String] = []
@@ -186,7 +179,7 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
             print("blackrock")
             
             
-            Alamofire.request(.POST, self.blackrock_url , parameters: ["to": "blackrock" , "message":"get country for ticker GS"] , encoding: .JSON)
+            Alamofire.request(.POST, self.blackrock_url , parameters: ["to": "blackrock" , "message":self.textView.text] , encoding: .JSON)
                 .responseString { response in
                     self.messages.append(Message(body: response.result.value!, belongsToUser: false,sender: Core.currentService))
                     self.tableView.reloadData()
@@ -197,8 +190,15 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
 //                    messages.append(Message(body: response.result.value, belongsToUser: false))
             
         }
-        else if Core.currentService == "Blackrock & Clarifai"{
-            
+        else if Core.currentService == "Blackrock & Skyscanner"{
+            Alamofire.request(.POST, self.blackrock_url , parameters: ["to": "blackrock,skyscanner" , "message":self.textView.text] , encoding: .JSON)
+                .responseString { response in
+                    let parts = response.result.value?.componentsSeparatedByString("\n")
+                    self.messages.append(Message(body: parts![0], belongsToUser: false,sender: "Skyscanner"))
+                    self.messages.append(Message(body: parts![1], belongsToUser: false,sender: "Blackrock"))
+                    self.tableView.reloadData()
+                    print(response.result.value!)
+            }
         }
         else if Core.currentService == "Skyscanner"{
             Alamofire.request(.POST, self.blackrock_url , parameters: ["to": "skyscanner" , "message":self.textView.text] , encoding: .JSON)

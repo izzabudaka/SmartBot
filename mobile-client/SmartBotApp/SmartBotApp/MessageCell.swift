@@ -32,8 +32,8 @@ class MessageCell: UITableViewCell {
         self.txtSender.textAlignment = message.belongsToUser ? .Right : .Left;
         self.txtSender.textColor = Core.colors[message.sender]
         
-        self.txtBody.mentionColor = Core.colors[message.sender]!
-        self.txtBody.hashtagColor = Core.colors[message.sender]!
+        self.txtBody.mentionColor = Core.colors[message.sender] ?? UIColor.darkGrayColor()
+        self.txtBody.hashtagColor = Core.colors[message.sender] ?? UIColor.darkGrayColor()
         
         setNeedsDisplay()
         layoutSubviews()
