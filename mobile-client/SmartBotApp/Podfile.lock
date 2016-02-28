@@ -1,6 +1,7 @@
 PODS:
   - ActiveLabel (0.4.1)
   - Alamofire (3.2.0)
+  - FSInteractiveMap (0.1.0)
   - libPusher (1.6.1):
     - libPusher/Core (= 1.6.1)
   - libPusher/Core (1.6.1):
@@ -12,6 +13,7 @@ PODS:
 DEPENDENCIES:
   - ActiveLabel
   - Alamofire (~> 3.0)
+  - FSInteractiveMap
   - libPusher (~> 1.6.1)
   - SlackTextViewController
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
@@ -28,6 +30,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   ActiveLabel: 087705276e6e83c98deb3c22e6fef22b10317b16
   Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
+  FSInteractiveMap: 43a8d1388056b21da95194528fc37e222c7dad50
   libPusher: 5ea58aeb83fa4ac1f5d8ef8543b1def6ace997b8
   SlackTextViewController: 6b0d1030c53937226fc5358f217af2a34fc211cf
   SocketRocket: ee0b5c34182d37bb4f1f8d628bbe737718126daa

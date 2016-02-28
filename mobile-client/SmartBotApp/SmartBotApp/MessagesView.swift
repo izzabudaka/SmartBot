@@ -171,9 +171,7 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
     override func didPressRightButton(sender: AnyObject!) {
         self.textView.refreshFirstResponder()
         self.messages.append(Message(body:self.textView.text,belongsToUser: true,sender: Core.currentService))
-        self.textView.text = ""
-        self.tableView.reloadData()
-        self.tableView.reloadData()
+
         
         
         if Core.currentService == "Blackrock"{
@@ -188,6 +186,14 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
 //                    request, response, data, error in
 //                    messages.append(Message(body: response.result.value, belongsToUser: false))
             
+        }
+        else if Core.currentService == "Skyscanner"{
+            Alamofire.request(.POST, self.blackrock_url , parameters: ["to": "skyscanner" , "message":self.textView.text] , encoding: .JSON)
+                .responseString { response in
+                    self.messages.append(Message(body: response.result.value!, belongsToUser: false,sender: Core.currentService))
+                    self.tableView.reloadData()
+                    print(response.result.value!)
+            }
         }
         else if Core.currentService  == "Clarifai"{
             if ((self.messages.last?.body.rangeOfString(">") ) != nil){
@@ -219,7 +225,7 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
                         
                         Core.messageStore["Clarifai & Facebook"] = [
                             Message(body: "Hello", belongsToUser: false,sender: Core.currentService),
-                            Message(body: "Please tweet this:", belongsToUser: false,sender: Core.currentService),
+                            Message(body: "Please post this to your timeline:", belongsToUser: false,sender: Core.currentService),
                             Message(image:image!, belongsToUser: false),
                             Message(body: parts.joinWithSeparator(" "), belongsToUser: false,sender: Core.currentService),
                             Message(body: "Okay , posted!", belongsToUser: false,sender: "Facebook")
@@ -240,16 +246,18 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
             }
         }
         else if Core.currentService == "Macbook"{
-            if(self.textView.text.lowercaseString == "play" || self.textView.text.lowercaseString == "pause" ){
-                Alamofire.request(.POST, "http://127.0.0.1:3000/music" , parameters:["command" : self.textView.text.lowercaseString] , encoding: .JSON)
-                    .response{
-                        response in
-                        print(response)
+                Alamofire.request(.POST, self.blackrock_url , parameters: ["to": "pusher" , "message":self.textView.text] , encoding: .JSON)
+                    .responseString { response in
+                        self.messages.append(Message(body: response.result.value!, belongsToUser: false,sender: Core.currentService))
+                        self.tableView.reloadData()
+                        print(response.result.value!)
                 }
-            }
-            else if(self.textView.text
+            
             
         }
+        
+        self.textView.text = ""
+        self.tableView.reloadData()
     }
     
     override func didPressLeftButton(sender: AnyObject!) {

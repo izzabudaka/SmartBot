@@ -7,134 +7,138 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00EC94C1E6A33F1B54A39A2E3977CA1F /* SLKInputAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6973E5A5CE96B60B06878D849B8082F5 /* SLKInputAccessoryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042912C142F94C8B2AF44151B968C3B2 /* PTPusherEventDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 017746CD00AB7DA6E863C6BAD9747FFC /* PTPusherEventDispatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		06543EBA4ED41C46EC8A867C51EC8CEC /* libPusher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F14060DB79F7BC10F26A34DF3A5E75 /* libPusher-dummy.m */; };
-		0760542E64F4C476D7F92495156728EF /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
-		08A515D8B5616AD432387A08C5296C3F /* ActiveLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220BB0A96B2C7A071AEC2D41A9862FF /* ActiveLabel-dummy.m */; };
-		08E0338C8CE7D7FA77A0216F45886E5A /* UIResponder+SLKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C087D54C10AB9025DFA86ED5604B470 /* UIResponder+SLKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		095406039B4D371E48D08B38A2975AC8 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648CAE9146B43815705086F7779807F3 /* Error.swift */; };
-		0D82B520F8705ADC68E14F11E468D431 /* RegexParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72EFFD543E6AFC8EC1417CDD0382B8 /* RegexParser.swift */; };
-		0EC63B6BCC1F0CAE2AE54A8E2F9C72ED /* SLKTextView+SLKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E160940F6C664A8FBB0AD4C1178AADB8 /* SLKTextView+SLKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0FEEFE8A16C3EA1B65549A119722923F /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16102E4E35FAA0FC4161282FECE56469 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48B387914A625C09BA77783FADBE664 /* Timeline.swift */; };
+		0311337C9FE72AC035EFA3DE83120A98 /* SLKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6517515392AC298217620FBA4D03EB72 /* SLKTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042912C142F94C8B2AF44151B968C3B2 /* PTPusherEventDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D171CB29BFE6AC31F7EC23072AB025B4 /* PTPusherEventDispatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06543EBA4ED41C46EC8A867C51EC8CEC /* libPusher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA255F68BA0D095602443D69C780C4 /* libPusher-dummy.m */; };
+		08A515D8B5616AD432387A08C5296C3F /* ActiveLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2BE959180B6E3A8215AEC430113A6B /* ActiveLabel-dummy.m */; };
+		095406039B4D371E48D08B38A2975AC8 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B093D3E8C36EC06FA2A69A73DA851C4 /* Error.swift */; };
+		0D82B520F8705ADC68E14F11E468D431 /* RegexParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567FFF7C3499589ED55B2478156306E /* RegexParser.swift */; };
+		10A9B44867D2D3F2705E613E5706273F /* SLKTypingIndicatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 726C42CC65BBB9783EB0CCD88C8130DE /* SLKTypingIndicatorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		153F537F90BE6D196F0400958AF0AD17 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
+		16102E4E35FAA0FC4161282FECE56469 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED8F1722F4BD6717C514FF6857CF84A /* Timeline.swift */; };
 		16544A75237DD1B872A85B8DBB5DB0A4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84956FECA444571216F52008CD518936 /* Security.framework */; };
-		1B898134BE88F2BB4C21EC24E46D8482 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC11ADDE4BC458AA10E0439FCCD11171 /* Foundation.framework */; };
-		1CA949486399758BB7DF41B3DC34E522 /* PTEventListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 4865DD78CEBC913778D1E4E821951286 /* PTEventListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20664924B77B9B12A8C7EEAA75917CA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC11ADDE4BC458AA10E0439FCCD11171 /* Foundation.framework */; };
-		23D8C40AD947319B01E66D7D864F5F11 /* libPusher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD91545D3B3F4E71C976FA1D70B8EAAE /* libPusher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2AB9A76C87C8FF81EBF11B30CD764303 /* Pusher.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EBF3B83BFA99F00F410A96B297E2247 /* Pusher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D3405986FC586FA6C0A5E0B6BA7E64E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98CE404C55D6B22CDDA1A254C893C7D /* Validation.swift */; };
-		2D65B4164461DFE8F1354CD2ECA4F884 /* PTJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = DB206685D23AE050F678C9C58D1508B5 /* PTJSON.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		2F69AAB81BB0DB97FDFD4B7ED9594B94 /* PTPusherMockConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A07C129611FD8D425972F5206DD4EF /* PTPusherMockConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F77CE407157B63EE811E426E56B6BE3 /* SLKTypingIndicatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A08AAECF157A69442F0F5897C3F5B923 /* SLKTypingIndicatorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		34310237C584ED63C2F2E44704535ECD /* PTBlockEventListener.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B2758F2258264500CAEBDC679B8BA5 /* PTBlockEventListener.m */; };
-		34CCDCA848A701466256BC2927DA8856 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBAF705D559774EC06EF474CDFCC314 /* NetworkReachabilityManager.swift */; };
-		398B9ABD0DA7590B7AA18CD65784885B /* PTBlockEventListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 92A48A520D36BD4B1046D16193C73580 /* PTBlockEventListener.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3AF905B9FCC25B4AC72D8A2EE7004EB8 /* PTURLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2614ECF37FCF1331EDC7C5CFE2CEFCC0 /* PTURLRequestOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3B3AF32F4A3BC13F2C3A558122C3E92F /* UIResponder+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8AF78940E48529E7946AA196323CBF /* UIResponder+SLKAdditions.m */; };
-		3EA8F215C9C1432D74E5CCA4834AA8C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9147CCFD334E8B100780191BA76084B4 /* ResponseSerialization.swift */; };
-		401DFF40FC985608EAAB16E049BFE001 /* SLKTextInputbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9567F5DBCFE6BB3802C5AA5E843EA84B /* SLKTextInputbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4081EA628AF0B73AC51FFB9D7AB3B89E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5957736ECBA89E79B3C7ABB3AB1B1F71 /* Manager.swift */; };
-		4132BE03104AEAF338DDF1FEA81FF339 /* NSDictionary+QueryString.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE775F8FB611FEBBFBC3089595D9991 /* NSDictionary+QueryString.m */; };
-		434CE56187FD4B3806C8D97996F8B0A0 /* PTPusherConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 316500C5D1B8D77C14D55AA77A134F1E /* PTPusherConnection.m */; };
-		460D33562AF2D8DC7B4791666A98C6C5 /* NSDictionary+QueryString.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E8C6B6724DB17D1F6E38C1F7BC7EB39 /* NSDictionary+QueryString.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		53EF71954AF04663570210C8E7264B1E /* SLKTextView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2166143C69709F3D7302D3C82487DC60 /* SLKTextView+SLKAdditions.m */; };
-		54734A8B149EA19343AF62B4C5C4EFB2 /* PTPusherEventDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A66DEF17F9F028F64EE5A3F06F77A2D0 /* PTPusherEventDispatcher.m */; };
-		56A84AE14F22050D4FFA6497751A1CC1 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791594B05FB15F08355AD22BE57FC97 /* SRWebSocket.m */; };
-		58D24335D91DFF4F2EC9354841D6B292 /* PTTargetActionEventListener.h in Headers */ = {isa = PBXBuildFile; fileRef = D37E645998DD3A702741BC3F87D58E4D /* PTTargetActionEventListener.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		598EA58E93F798CCAC83198FDAABB569 /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 71BA3AA338B4A4AD0AD2A894AB6124B9 /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5BC19E6E0F199276003F0AF96838BCE5 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CCA43DC892070D9D1FCD35FD93C489 /* Upload.swift */; };
-		5CB05FBCB32D21E194B5ECF680CB6AE0 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7A140DAC8378606540B794FFDE189 /* Download.swift */; };
-		6192AAEC57E325AE89D3FBA021DAA10F /* PTPusherEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 845E7413E1DD3AD548824A7261056405 /* PTPusherEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62E8346F03C03E7F4D631361F325689E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77A6FD317FCC741E3FD7E0ACB1FF1F /* Response.swift */; };
-		65A9F3B12BB38166FAADCC1A6587DEDA /* ActiveType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F86BBDA7B7A1C9FF0F023024092A24 /* ActiveType.swift */; };
-		6945BA338A87CF554F68DDAF0DDDB4DB /* PTPusherChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4086700BDE47CE576FC6B4AE5A1494 /* PTPusherChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A5B90261782950A2A9279B23ADEE335 /* PTURLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F679B403F52A181C71B4B7D93DD6E5AE /* PTURLRequestOperation.m */; };
-		6C6B9AC77315D1B22FBB6F2763D7BBB5 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90288B26063131B24654BC8CC3FBD125 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D4D567F0302DCE02EE0C80B28B1C27F /* PTPusher+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D316E51ECF81B45D6C8927F1EA62CC /* PTPusher+Testing.m */; };
-		6FF1B14244BD1FA7B02E2704F2D94F94 /* PTPusherConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = B8700E1F96C99C3FB2BC1A35AD9DF7E7 /* PTPusherConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74C582BFBAED8F16A9DA69B2087360AD /* PTPusherMockConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C439FFFA68A6E537C7C7AD17FBD5D /* PTPusherMockConnection.m */; };
-		757EDF1241F770445CBBD243D2FA1CB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC11ADDE4BC458AA10E0439FCCD11171 /* Foundation.framework */; };
+		1CA949486399758BB7DF41B3DC34E522 /* PTEventListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D99A37A143361A547C69F5C414309A /* PTEventListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23D8C40AD947319B01E66D7D864F5F11 /* libPusher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B001D6DA862BEAFF7B7745105F97505 /* libPusher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27F13CB98BB01F6F67FC3AF1CC62F157 /* FSSVGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FC08A6FDB636F98E7DDB1D1DE31C7D /* FSSVGUtils.m */; };
+		294E5A37348460EB1F9649AE86458225 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E225BC47A33C63A78AEE046EF2B289A /* SwiftyJSON-dummy.m */; };
+		2AB9A76C87C8FF81EBF11B30CD764303 /* Pusher.h in Headers */ = {isa = PBXBuildFile; fileRef = 5533770895450A93CC980875A008782E /* Pusher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D3405986FC586FA6C0A5E0B6BA7E64E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4293A4D687ED944506FAE18B5BF8E2DF /* Validation.swift */; };
+		2D65B4164461DFE8F1354CD2ECA4F884 /* PTJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 72365E08D73F1E144DC829A3BBA729B0 /* PTJSON.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2E95F8208CB07FE39F654F3600D2AFE9 /* UIView+SLKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D7D89ED6F8BD2BE3DA055C2FD26DD04D /* UIView+SLKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F69AAB81BB0DB97FDFD4B7ED9594B94 /* PTPusherMockConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A27319FDBF0AD1454D83DE23167820 /* PTPusherMockConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		327AEF5CFD19AC22586CC0A7FA362622 /* SLKTextView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 489A890775FE5511BC9DC28CFC6290C3 /* SLKTextView+SLKAdditions.m */; };
+		34310237C584ED63C2F2E44704535ECD /* PTBlockEventListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D301705C92CB3B209BD5EC7AB8941B8 /* PTBlockEventListener.m */; };
+		34CCDCA848A701466256BC2927DA8856 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990A755FA842B6E65AFFD5D5D2A274BB /* NetworkReachabilityManager.swift */; };
+		352C708BF1F9F29B399FB158BDA1A2E5 /* SLKUIConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FC702978232343DA4B1A0EE2DE4BD6B /* SLKUIConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37CDD7CB582D9080AE10E4D5730475E9 /* SLKTypingIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4A4CDEAE1C12DB58C33D9B4895BA4E /* SLKTypingIndicatorView.m */; };
+		3909BEA6AFD00CC16201D239EDD2B65D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DF30DB0A63243BD66DBCAC1ACFE4AF /* SwiftyJSON.swift */; };
+		398B9ABD0DA7590B7AA18CD65784885B /* PTBlockEventListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5F63827D48FC81B0EB007AD261AADC /* PTBlockEventListener.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3AF905B9FCC25B4AC72D8A2EE7004EB8 /* PTURLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D50972465AB072103AA4CAD48EA147CA /* PTURLRequestOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3C022F7861B5D97FBA5154EF3B806A81 /* SLKTextInputbar.h in Headers */ = {isa = PBXBuildFile; fileRef = A85C9EFC8AFE9D4A72F4C703D3C21F4A /* SLKTextInputbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EA8F215C9C1432D74E5CCA4834AA8C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1C445DCF6B625234C711FE46B52021 /* ResponseSerialization.swift */; };
+		4081EA628AF0B73AC51FFB9D7AB3B89E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970DB2C5782C264E55AC8E8509EE4F61 /* Manager.swift */; };
+		4132BE03104AEAF338DDF1FEA81FF339 /* NSDictionary+QueryString.m in Sources */ = {isa = PBXBuildFile; fileRef = C92B903AA22939E5BE546EC5A6011DBD /* NSDictionary+QueryString.m */; };
+		4133827D397D9F6FDDF24F27C9E59B10 /* UIScrollView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C140E5D6A0D26CE10BDE903952509EFE /* UIScrollView+SLKAdditions.m */; };
+		434CE56187FD4B3806C8D97996F8B0A0 /* PTPusherConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC088E5F9F5E7AAE0DD324B82F65A6A /* PTPusherConnection.m */; };
+		44B5C9FB44423638C34AA4AB9EAD4F26 /* SLKTextInputbar.m in Sources */ = {isa = PBXBuildFile; fileRef = A260451D1A17AF0F7CE32730E4196BE5 /* SLKTextInputbar.m */; };
+		460D33562AF2D8DC7B4791666A98C6C5 /* NSDictionary+QueryString.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AA05278D035B18D1F407BD6A7543DBC /* NSDictionary+QueryString.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4AA0C00073496AB33FD31D52DD564F1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC11ADDE4BC458AA10E0439FCCD11171 /* Foundation.framework */; };
+		54734A8B149EA19343AF62B4C5C4EFB2 /* PTPusherEventDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CD3DC5772CE332D18494B46876D33D /* PTPusherEventDispatcher.m */; };
+		56A84AE14F22050D4FFA6497751A1CC1 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E96AF0EBE4BC1A578F901B3110BEC /* SRWebSocket.m */; };
+		5894FC85908D53EE9F62097E9C0DC5A7 /* SLKTextView+SLKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7190AB01BFB6F3E6AE981230E99410D8 /* SLKTextView+SLKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58D24335D91DFF4F2EC9354841D6B292 /* PTTargetActionEventListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 22EEC9DEEFFC18F3EADA9F1812F0414B /* PTTargetActionEventListener.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		598EA58E93F798CCAC83198FDAABB569 /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 677E17C4F599F14293B009E88D942E66 /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59FA92A2C1FCE04DEB8F85358547C0EC /* UIResponder+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A3B3AFD947CE088EAA4266090CEAD /* UIResponder+SLKAdditions.m */; };
+		5BC19E6E0F199276003F0AF96838BCE5 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA72885DC6D24CD55C19C4182B62CB /* Upload.swift */; };
+		5CB05FBCB32D21E194B5ECF680CB6AE0 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F00391E0468AE8B7CBBAB333EC0C9F /* Download.swift */; };
+		6192AAEC57E325AE89D3FBA021DAA10F /* PTPusherEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B71A32F52458CE4A8DF883B061937F /* PTPusherEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62E8346F03C03E7F4D631361F325689E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A972F2225508C860F5F21D20493E92 /* Response.swift */; };
+		65A9F3B12BB38166FAADCC1A6587DEDA /* ActiveType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C4DEEDE9630D332A01FA4A2B467EC /* ActiveType.swift */; };
+		6846B9D4BA877EDC7F89AE50B77DF031 /* SlackTextViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE9C820DF85237ECAF2240ACBEC208A /* SlackTextViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6945BA338A87CF554F68DDAF0DDDB4DB /* PTPusherChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6401E06527C3246B4E16EE21148DFD /* PTPusherChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A148EA2FBFE67A399FF11799D2302C1 /* UIResponder+SLKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B269D29AAC01797C2B055B7DED6111 /* UIResponder+SLKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A5B90261782950A2A9279B23ADEE335 /* PTURLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2BFA5A26299EACEC1BCD0E8C19289B /* PTURLRequestOperation.m */; };
+		6D4D567F0302DCE02EE0C80B28B1C27F /* PTPusher+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = D13BCCFF2A8342A88563F230A4871C00 /* PTPusher+Testing.m */; };
+		6FF1B14244BD1FA7B02E2704F2D94F94 /* PTPusherConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D140E2A2C0904493704C6EFD9DCEF18 /* PTPusherConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		715A7D8B12369F478DB2209505369812 /* FSSVG.h in Headers */ = {isa = PBXBuildFile; fileRef = 75378E6B8E51E58DCA01CA3D1B438CED /* FSSVG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74C582BFBAED8F16A9DA69B2087360AD /* PTPusherMockConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4645A850E4ECB6F20D70C7CA4ACC565E /* PTPusherMockConnection.m */; };
 		7616BE0BE1C48586D82FD1131BF48FC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC11ADDE4BC458AA10E0439FCCD11171 /* Foundation.framework */; };
-		7A2652842923F01965B0EC35535AB475 /* SLKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A512F338A344B89F7F2823DCE49E2BE3 /* SLKTextView.m */; };
-		7B48852C4D848FA2DA416A98F6425869 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1CBF965FFEB3E13E2D1B3DFE84D5B6 /* ServerTrustPolicy.swift */; };
-		7C5C7930DD5C453F3ACC54EC7235FBE9 /* PTPusherChannel_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C94EE3E4CB62946E469979CF58D16D6B /* PTPusherChannel_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		7CD11CDD437891B0F97706D909336A3F /* PTPusherChannelAuthorizationOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = ADBBA335A7E42992A7288D73B70E8691 /* PTPusherChannelAuthorizationOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		7DD82214919C6A316A8669DEE2AAB8F8 /* SLKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BA3F18A3DC86C7E819CBFFDDDED2AB /* SLKTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		803C9BA03B30EBF7E6435F6B530B4E32 /* UIScrollView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AF2692671C60D69E03ED2FA0E9617 /* UIScrollView+SLKAdditions.m */; };
-		82DEF9C131B4976E1B4F98A1DF514B50 /* PTPusherDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1367E33F6826B03FF39FB8979EFBCA07 /* PTPusherDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B48852C4D848FA2DA416A98F6425869 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF274B487D68233AB7BE9098FEDA3A2 /* ServerTrustPolicy.swift */; };
+		7C5C7930DD5C453F3ACC54EC7235FBE9 /* PTPusherChannel_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 670D9ACB5A690847B7DD87EFE54774FC /* PTPusherChannel_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7CCD37D04EA796EF34D557A4C9604FC3 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CD11CDD437891B0F97706D909336A3F /* PTPusherChannelAuthorizationOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 230EB59955E4A78418A54EA845D462A4 /* PTPusherChannelAuthorizationOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		80EFA9BEB1E3F11F1CCC85D6DF68F7E0 /* FSSVG.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EC5E138025E11A6399132067A8C976 /* FSSVG.m */; };
+		81614E0414B3700953A383C96AD3FB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC11ADDE4BC458AA10E0439FCCD11171 /* Foundation.framework */; };
+		82DEF9C131B4976E1B4F98A1DF514B50 /* PTPusherDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 34E0BDE5039578EFE3B1B46C8D479A6A /* PTPusherDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83C7E8521ACA9AC80E8036077417A5DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC11ADDE4BC458AA10E0439FCCD11171 /* Foundation.framework */; };
-		8517DF0332566C0A0F911D459E551B3E /* PTPusherErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 91779C23D9739C5A994AE2EF76A32F70 /* PTPusherErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EB11202167FCDDF1257AAAB1D1FB244 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2B0ED63537CD4AA10858B4186671C2 /* Alamofire.swift */; };
-		8EF725CF46B9AF138DC9BFFE669EFCE3 /* PTPusherChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7975512AF10BF970C8FE4D7534B36C2C /* PTPusherChannel.m */; };
-		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0569E6D181C91B8D819B83941BB9FB2 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94F9059EF991BC07948282A8F09BDC25 /* PTPusherEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7951B6F9F552E776D67A138F42425478 /* PTPusherEvent.m */; };
-		96EC0BFCC9A02AD337153756E55E866C /* SLKTextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 410481780A2BB4F2E4362495CCF2DCDC /* SLKTextViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97443D5E43799FA58A09108F68242FC2 /* NSString+Hashing.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8524C200E22298238128323394CBA9 /* NSString+Hashing.m */; };
-		9BD4C6404CE856AE84D7107FBC1D8E72 /* PTPusherAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 201E2C4B4C7171705EDAA27E71317E24 /* PTPusherAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA314156AC500125F4078EE968DB14C6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6EF9B437BD9DDABB285D30D624154 /* Result.swift */; };
-		AD7A535D09B3052164318F228CF6BEA1 /* SLKTextInputbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E9724555BE03C19021EAC022C4F6D4 /* SLKTextInputbar.m */; };
-		ADF19C953CE2A7D0B72EC93A81FCCC26 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 715A6871660C7DDAA4E92B7E2FED0E52 /* Alamofire-dummy.m */; };
-		AE4CF87C02C042DF13ED5B21C4FDC1E0 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1FE5F0E31469A04360256A9D596F6B /* Stream.swift */; };
-		AEC7BB2EF3F7888DD9D4BFDD33DA62A2 /* PTPusherAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = E82D97A9389D9AEF57E11DFC7E51CDD7 /* PTPusherAPI.m */; };
-		B14AB5F5CEFAF0631C42564C09CA5A42 /* PTTargetActionEventListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA2734041B54577EC780760B6B309EF /* PTTargetActionEventListener.m */; };
-		B3425CEAEE325BA12EBB7319F265BDC3 /* NSString+Hashing.h in Headers */ = {isa = PBXBuildFile; fileRef = 530B7AC2D1B24FAE6BBDC6DA53124720 /* NSString+Hashing.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B47815C7DB65C98CF58D279AADD8A41C /* PTPusher+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = BF626FC333C2781D8250D8EB5AB1A9FC /* PTPusher+Testing.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE41196F6A3903E59C3306FE3F8B43FE /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820F929562A117495DBE9F94E9A911F6 /* Notifications.swift */; };
-		C04E32868F71B7C82C24BA31ABF90AE9 /* PTPusher.h in Headers */ = {isa = PBXBuildFile; fileRef = A55B0522F852F458116B80EF9823C8CE /* PTPusher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0DB70AB368765DC64BFB5FEA75E0696 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B36F9C07D11366613B84C796DB2BD /* ParameterEncoding.swift */; };
-		C113BA7D3DCA185298B6D712D1479497 /* SlackTextViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEE52DA12E69493ECED0E1179A24DEF /* SlackTextViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C184AB4E966013B27F9B9B3F48EC1A05 /* PTPusherEventPublisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 575C32EFE78E78E881F2478912CCA328 /* PTPusherEventPublisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3E263F2503EBB505CB80AE3FF2EF3E2 /* UIView+SLKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 56A32245A3F40FAD7756E228517303F7 /* UIView+SLKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8517DF0332566C0A0F911D459E551B3E /* PTPusherErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = AF6C708ED29F250C5ED6C46B879D6719 /* PTPusherErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89BED817D6281BD99E2F370C6552832E /* SLKTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD57F2A73691215B020401B5670166BB /* SLKTextViewController.m */; };
+		8AD320B20582E0445056A82738E89963 /* SLKTypingIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0C3337B743814E9E09240721DB78E7 /* SLKTypingIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D7A04832C55A0991E8BDA6B685E67B2 /* FSSVGPathElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F621028951C516609CF241F59E107BE /* FSSVGPathElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EB11202167FCDDF1257AAAB1D1FB244 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E306DBA0929ED1378AE6BA1F050CDBB2 /* Alamofire.swift */; };
+		8EF725CF46B9AF138DC9BFFE669EFCE3 /* PTPusherChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CACCC7B33214EE56AD4F69B8A86045 /* PTPusherChannel.m */; };
+		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FAD848E4D674269EA05353B3565066B /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94F9059EF991BC07948282A8F09BDC25 /* PTPusherEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BA809FFA3A99A553A25AA9E08B682DFC /* PTPusherEvent.m */; };
+		97443D5E43799FA58A09108F68242FC2 /* NSString+Hashing.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E4A4D8F25FB317909AE8BF894E1F46 /* NSString+Hashing.m */; };
+		9BD4C6404CE856AE84D7107FBC1D8E72 /* PTPusherAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 0629181AF8F00F2830E016911A86E32B /* PTPusherAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA314156AC500125F4078EE968DB14C6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9DB893AB91EBEA8D430B0ECC10E79 /* Result.swift */; };
+		ADF19C953CE2A7D0B72EC93A81FCCC26 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE7A90FB9E9A3A917CA5C44A9ABCE12 /* Alamofire-dummy.m */; };
+		AE4CF87C02C042DF13ED5B21C4FDC1E0 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288314CF30CB215B612241B0FADE28A5 /* Stream.swift */; };
+		AEC7BB2EF3F7888DD9D4BFDD33DA62A2 /* PTPusherAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B43D0FA240D6C4ABDC9CBD26C4CF8F7E /* PTPusherAPI.m */; };
+		B0279DEBAFF219CE2A5432592861E041 /* FSInteractiveMapView.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D38DCCE63BD4435FE618392030A31F /* FSInteractiveMapView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B14AB5F5CEFAF0631C42564C09CA5A42 /* PTTargetActionEventListener.m in Sources */ = {isa = PBXBuildFile; fileRef = C52EDAE7CD47827B5AC36BE34D3DDE17 /* PTTargetActionEventListener.m */; };
+		B245E535B88D65D8EA2FD618200211B7 /* SLKInputAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E69F89884B0F19AAF5F872148AA6FD4 /* SLKInputAccessoryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B28674D0E8A29D2E20BEB11F122D0770 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC11ADDE4BC458AA10E0439FCCD11171 /* Foundation.framework */; };
+		B3425CEAEE325BA12EBB7319F265BDC3 /* NSString+Hashing.h in Headers */ = {isa = PBXBuildFile; fileRef = AC52D69A3DC5D7CB1FEA7BA69165AB4E /* NSString+Hashing.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B47815C7DB65C98CF58D279AADD8A41C /* PTPusher+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = E871DF19EC523CE13997A91B9CB0393C /* PTPusher+Testing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B478FE427500D6E892135C8D274F39F2 /* FSInteractiveMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 095DCB0411DC92D6022F31043333DBAF /* FSInteractiveMapView.m */; };
+		B766702F2FBCF48A404D44F494F70063 /* FSInteractiveMap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7722FF3A0275B5B199EBC575534EC130 /* FSInteractiveMap-dummy.m */; };
+		B828EAF4CEFB5B291E4076F0187292E0 /* SLKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429827C76B942B9018B358087F9C621F /* SLKTextView.m */; };
+		BE41196F6A3903E59C3306FE3F8B43FE /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10827BE379062B5A6A1260F3D93F8E52 /* Notifications.swift */; };
+		C01AE40A4DA22D38AFAC2FCB136E832A /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B1D9FE0BA96A58DF7B9F2DB69493F4 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C04E32868F71B7C82C24BA31ABF90AE9 /* PTPusher.h in Headers */ = {isa = PBXBuildFile; fileRef = DDD30608B59CD34993B04657CBDD9C40 /* PTPusher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0DB70AB368765DC64BFB5FEA75E0696 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8708DA17941A45C00AAD11CC5E3A26EF /* ParameterEncoding.swift */; };
+		C184AB4E966013B27F9B9B3F48EC1A05 /* PTPusherEventPublisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F7C6263F04FC10E62AB88A02ABEFF52 /* PTPusherEventPublisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C34271C9BE220AA7B9850D7CA73562B3 /* FSInteractiveMap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5E0765A3D896467BF6F90E750351564 /* FSInteractiveMap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C49759AD95799A1E460FE2252FD7612C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D51E1F1818CDA28CC2610A2EE45D18 /* CFNetwork.framework */; };
-		C7B6DD7C0456C50289A2C381DFE9FA3F /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9160DC0E8E35954F59D34EE6AEA921 /* MultipartFormData.swift */; };
-		CD2EA100A55A41E2C41A0A7D034058DC /* PTJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 459BBBF4637F282D5D813ED1D0976F8D /* PTJSON.m */; };
-		CE200A2A65DFAA189EE416147D626573 /* PTPusherPresenceChannelDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DBBB21DB7441D1176CD97AD40AAF73B /* PTPusherPresenceChannelDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1DD8A2FA22388BB7035CA6B322831F4 /* ActiveLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A6AB5C478E321052D536477FA02036 /* ActiveLabel.swift */; };
-		D394B1F6E66D2EA67810465EA49C106B /* UIScrollView+SLKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 345E8BD8FB821B3C1F8B3ED517E85FF4 /* UIScrollView+SLKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5A4F6FC3850ABAABCCF6316F918655E /* UIView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4E0FD48AACFAF2BD6CA75A6E604170 /* UIView+SLKAdditions.m */; };
-		D669AB5F3C237380E9945EAB47D59B81 /* SlackTextViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E083CCBE284E4160E28BA967A8C5E6F /* SlackTextViewController-dummy.m */; };
+		C7B6DD7C0456C50289A2C381DFE9FA3F /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2354B73A54D260D35035AFEEE33E4 /* MultipartFormData.swift */; };
+		CD2EA100A55A41E2C41A0A7D034058DC /* PTJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = E25449B8F4F39F84C619A71368BF5632 /* PTJSON.m */; };
+		CE200A2A65DFAA189EE416147D626573 /* PTPusherPresenceChannelDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 126853C97B4E1994E50D1EA584E5C3C8 /* PTPusherPresenceChannelDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1DD8A2FA22388BB7035CA6B322831F4 /* ActiveLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5103A1048936B6E35F98283054BC4486 /* ActiveLabel.swift */; };
 		D7C2B5FFFF631D76D124ABCFBAAFFE23 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA45DB3EC5BD8343FDFBC53831394EE /* SocketRocket.framework */; };
-		DACCEFEDCC080AD7EB5EBBF66664BDEB /* SLKTypingIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 882BF8F1B08459B5D676E7049238519D /* SLKTypingIndicatorView.m */; };
-		DAFFD5AE455F2DA049E99F7445B117C5 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA9FFFEE696085D59C3E8F767841AC6 /* SwiftyJSON.swift */; };
-		DC462162483F946A546A4E3332B4FEC8 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AE1B5DD39C053AEED493779E651840 /* SwiftyJSON-dummy.m */; };
-		EAAA1F635051C378657FDB17D1846E32 /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5DFCDEE4B651A6CDD53B791A411D4F /* SocketRocket-dummy.m */; };
-		EBCA7390F49B763759A620DCC90994D5 /* PTPusherMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = F57742BF490AEBEDBBE2FD94D2143043 /* PTPusherMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC8F69896DC1549D42D021A5E8E16779 /* SLKTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB755E0F1BF2DDBE526719ABA353034 /* SLKTextViewController.m */; };
-		EF4350C63ED16A61E42FB9BC11A12C90 /* PTPusher.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE0F7B3E14DDC28092AF48BBFA3CD6C /* PTPusher.m */; };
-		EFC032279282F760BEFAF603836C06F0 /* SLKUIConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D6C945411AE69827B94DF3B729C3CC9 /* SLKUIConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFE92E8D3813DD26E78E93EEAF6D7E7E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32811C8860B4D75AF3AB8A8C20DD940 /* Request.swift */; };
-		F04B45A93513CBDEFEF6387E9B511F89 /* SLKInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DFB4BCF4158C7C225FF9FCA5D4EB57 /* SLKInputAccessoryView.m */; };
-		F33A0BA3F20F8992A42BECEA21EB1C6B /* SLKTypingIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9EF3B7C9653B5FDEDB671E46227D4C /* SLKTypingIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F600B3B5DF7A8FF1183784DE6EC11DDE /* PTPusherChannelAuthorizationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDEB6AFC868868AC8464D9F6E7C027C /* PTPusherChannelAuthorizationOperation.m */; };
+		D82F75AFDC83442BF710D9E1C5ED6A63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC11ADDE4BC458AA10E0439FCCD11171 /* Foundation.framework */; };
+		DA44C717C1CF2FCAF4B2C8EBDD618F33 /* UIView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6E27351BD6A7012A728F360C4A2A18 /* UIView+SLKAdditions.m */; };
+		E1EC505E7575E240F4989F1E931A4568 /* SlackTextViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D83E7AD09D205FACE01F5C1A6AF1347A /* SlackTextViewController-dummy.m */; };
+		E4D82B9C00AF12E06F12485B2C65E999 /* FSSVGPathElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5126D6C0B9BD4438C8A768B8F3F44E /* FSSVGPathElement.m */; };
+		E6CFF5D5133DE31E6EDEC6ED98A1F417 /* SLKInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB75AE896B222E1813333EC2424ED2B /* SLKInputAccessoryView.m */; };
+		E7E7A3696983DE33339719BB1636B552 /* FSSVGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA1811A26E84019112AE5BBCFD5AA31 /* FSSVGUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAAA1F635051C378657FDB17D1846E32 /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2A228A99494040168B0B7299C1AC1 /* SocketRocket-dummy.m */; };
+		EBCA7390F49B763759A620DCC90994D5 /* PTPusherMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 72CBE12DF0922F22D46B2E7A832BBED6 /* PTPusherMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF4350C63ED16A61E42FB9BC11A12C90 /* PTPusher.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1CF7AD04AD6B0CF6166FFEA1BF24F3 /* PTPusher.m */; };
+		EFE92E8D3813DD26E78E93EEAF6D7E7E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEF18446F19E15F48B1A3E113D91AC0 /* Request.swift */; };
+		F600B3B5DF7A8FF1183784DE6EC11DDE /* PTPusherChannelAuthorizationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 283083DB87CEF56A571B7077AE945810 /* PTPusherChannelAuthorizationOperation.m */; };
 		F82198F34DD14753A42F4328CD5E7A6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC11ADDE4BC458AA10E0439FCCD11171 /* Foundation.framework */; };
-		FE820EA6122745088C111191382F35E5 /* ActiveLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38EE7D77D94802C9DD725FEBB3E60E4A /* ActiveLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFB5D772036205CAF8BA1F0D77C10A61 /* SocketRocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0699F13D85EFAA7A8A2B755EF6519FC /* SocketRocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC117093D602E448B262BB72FABF3B38 /* UIScrollView+SLKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B2C2C480480B39EB4A0CEDA9CCE35DF /* UIScrollView+SLKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE820EA6122745088C111191382F35E5 /* ActiveLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A15BFBAC7B8BEFA9B903AFAAC1C11315 /* ActiveLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEE7C202CAC7A9C2014F5DE578197684 /* SLKTextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC67B3735AE4509177F6E999A2C6E37 /* SLKTextViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFB5D772036205CAF8BA1F0D77C10A61 /* SocketRocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7C35B7C560F0C4ED6D95C71A8B44F8B /* SocketRocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FFD8CEFCC37527A3C54A06335A0F97EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC11ADDE4BC458AA10E0439FCCD11171 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		04062948CCDB308B83ED65A02DFF50E3 /* PBXContainerItemProxy */ = {
+		067057BB82BA95B4785A0CCD06F966DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 96C4C0EDEAD003340953DF9256BD80A7;
 			remoteInfo = SocketRocket;
 		};
-		15ACB2DDF148A12667A014F59DDB7E17 /* PBXContainerItemProxy */ = {
+		2EC1ABBEB932980E6D1D19FF83A6A535 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 31C84A3832DB4AEB429573AACE8E3E73;
-			remoteInfo = ActiveLabel;
-		};
-		16B59A1FAC8754CF1EB3AC14312BB2E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79C040AFDDCE1BCBF6D8B5EB0B85887F;
-			remoteInfo = Alamofire;
+			remoteGlobalIDString = 1C790DBA7785D50D967D4CD216CC691A;
+			remoteInfo = SlackTextViewController;
 		};
 		3713390BF19DBEACD663DE1C5A0F155D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -143,185 +147,214 @@
 			remoteGlobalIDString = 96C4C0EDEAD003340953DF9256BD80A7;
 			remoteInfo = SocketRocket;
 		};
-		87503457BDA87302A9838174D51AD351 /* PBXContainerItemProxy */ = {
+		4E6EED31453EFEE35281EBE9C4C408A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B16CB663434BA26049C18D61F330C08A;
+			remoteInfo = SwiftyJSON;
+		};
+		614761D4F79B4CE2614718225EB00371 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 68C2CC34B364F239C5FA621E4B017473;
 			remoteInfo = libPusher;
 		};
-		913237131934C82922A8ABE7524C53DD /* PBXContainerItemProxy */ = {
+		745AFC6D7309B115A166461C71E756F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1158496B978950D9E0D98DAB57CED61F;
-			remoteInfo = SwiftyJSON;
+			remoteGlobalIDString = 9B35E3887980AEBD5C96BE6BBA10E1BD;
+			remoteInfo = FSInteractiveMap;
 		};
-		95F1529D994D5BF05FC69A7AF1CE80B9 /* PBXContainerItemProxy */ = {
+		B4C79ABA16934BDCBAFFB2DB3878F9F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0A23A955999F6284552CF5831A0A7F98;
-			remoteInfo = SlackTextViewController;
+			remoteGlobalIDString = 31C84A3832DB4AEB429573AACE8E3E73;
+			remoteInfo = ActiveLabel;
+		};
+		EB44FD5BC4252745888D6002BD8DDF52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79C040AFDDCE1BCBF6D8B5EB0B85887F;
+			remoteInfo = Alamofire;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		017746CD00AB7DA6E863C6BAD9747FFC /* PTPusherEventDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherEventDispatcher.h; path = Library/PTPusherEventDispatcher.h; sourceTree = "<group>"; };
-		026087BDF0442D8224B5872EE14EFCA8 /* SocketRocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-prefix.pch"; sourceTree = "<group>"; };
-		091BC469B158B9D54E322FBAB019BE27 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DCD0ED4FB4D5D34C9A027EA37A41B36 /* ActiveLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ActiveLabel.xcconfig; sourceTree = "<group>"; };
-		11994BF93A053F3469CFABC6061A5EED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12CCA43DC892070D9D1FCD35FD93C489 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
-		12D9D663364AF48BB14A3EFCF94719F7 /* SlackTextViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlackTextViewController-prefix.pch"; sourceTree = "<group>"; };
-		1367E33F6826B03FF39FB8979EFBCA07 /* PTPusherDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherDelegate.h; path = Library/PTPusherDelegate.h; sourceTree = "<group>"; };
-		1822386E23DF58135440587F9E24F129 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		1B8B36F9C07D11366613B84C796DB2BD /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		1CA26CC514B23299DEFF10D9AD6E910F /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		1CBAF705D559774EC06EF474CDFCC314 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		1EDEB6AFC868868AC8464D9F6E7C027C /* PTPusherChannelAuthorizationOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusherChannelAuthorizationOperation.m; path = Library/PTPusherChannelAuthorizationOperation.m; sourceTree = "<group>"; };
-		1F632B23437FC1A06BFD10104DB9212A /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		201E2C4B4C7171705EDAA27E71317E24 /* PTPusherAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherAPI.h; path = Library/PTPusherAPI.h; sourceTree = "<group>"; };
-		2166143C69709F3D7302D3C82487DC60 /* SLKTextView+SLKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SLKTextView+SLKAdditions.m"; path = "Source/SLKTextView+SLKAdditions.m"; sourceTree = "<group>"; };
-		24157F1165FE3430E83AB556BB06DE74 /* libPusher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libPusher-prefix.pch"; sourceTree = "<group>"; };
-		2614ECF37FCF1331EDC7C5CFE2CEFCC0 /* PTURLRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTURLRequestOperation.h; path = "Library/Private Headers/PTURLRequestOperation.h"; sourceTree = "<group>"; };
-		2AB755E0F1BF2DDBE526719ABA353034 /* SLKTextViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLKTextViewController.m; path = Source/SLKTextViewController.m; sourceTree = "<group>"; };
+		0629181AF8F00F2830E016911A86E32B /* PTPusherAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherAPI.h; path = Library/PTPusherAPI.h; sourceTree = "<group>"; };
+		065752CC4C1A2103615DCFD6582BA0C5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08055472488DBC57B232FBEB32D3D4C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		095DCB0411DC92D6022F31043333DBAF /* FSInteractiveMapView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSInteractiveMapView.m; path = FSInteractiveMap/FSInteractiveMap/FSInteractiveMapView.m; sourceTree = "<group>"; };
+		096A55CA2B500B0D2B301EAB013F8935 /* FSInteractiveMap-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSInteractiveMap-prefix.pch"; sourceTree = "<group>"; };
+		09B9DB893AB91EBEA8D430B0ECC10E79 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		0F7C6263F04FC10E62AB88A02ABEFF52 /* PTPusherEventPublisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherEventPublisher.h; path = Library/PTPusherEventPublisher.h; sourceTree = "<group>"; };
+		10827BE379062B5A6A1260F3D93F8E52 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		126853C97B4E1994E50D1EA584E5C3C8 /* PTPusherPresenceChannelDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherPresenceChannelDelegate.h; path = Library/PTPusherPresenceChannelDelegate.h; sourceTree = "<group>"; };
+		163ECC2ED6FAB4DF489A6401355C4EAF /* libPusher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = libPusher.xcconfig; sourceTree = "<group>"; };
+		18D99A37A143361A547C69F5C414309A /* PTEventListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTEventListener.h; path = Library/PTEventListener.h; sourceTree = "<group>"; };
+		1A07926C4894587BCB4E25941A8E622C /* ActiveLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActiveLabel-prefix.pch"; sourceTree = "<group>"; };
+		1B093D3E8C36EC06FA2A69A73DA851C4 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		1B1C445DCF6B625234C711FE46B52021 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		1B2C2C480480B39EB4A0CEDA9CCE35DF /* UIScrollView+SLKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SLKAdditions.h"; path = "Source/UIScrollView+SLKAdditions.h"; sourceTree = "<group>"; };
+		1CC8EE3E74658FFAFF91363EA8B905B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D1E96AF0EBE4BC1A578F901B3110BEC /* SRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
+		1E69F89884B0F19AAF5F872148AA6FD4 /* SLKInputAccessoryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKInputAccessoryView.h; path = Source/SLKInputAccessoryView.h; sourceTree = "<group>"; };
+		1EE9C820DF85237ECAF2240ACBEC208A /* SlackTextViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlackTextViewController-umbrella.h"; sourceTree = "<group>"; };
+		1F621028951C516609CF241F59E107BE /* FSSVGPathElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSSVGPathElement.h; path = FSInteractiveMap/FSInteractiveMap/FSSVG/FSSVGPathElement.h; sourceTree = "<group>"; };
+		1FA1811A26E84019112AE5BBCFD5AA31 /* FSSVGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSSVGUtils.h; path = FSInteractiveMap/FSInteractiveMap/FSSVG/FSSVGUtils.h; sourceTree = "<group>"; };
+		1FAD848E4D674269EA05353B3565066B /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		22EEC9DEEFFC18F3EADA9F1812F0414B /* PTTargetActionEventListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTTargetActionEventListener.h; path = "Library/Private Headers/PTTargetActionEventListener.h"; sourceTree = "<group>"; };
+		230EB59955E4A78418A54EA845D462A4 /* PTPusherChannelAuthorizationOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherChannelAuthorizationOperation.h; path = "Library/Private Headers/PTPusherChannelAuthorizationOperation.h"; sourceTree = "<group>"; };
+		27601E997BCFB3491828C38B12D2887B /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		283083DB87CEF56A571B7077AE945810 /* PTPusherChannelAuthorizationOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusherChannelAuthorizationOperation.m; path = Library/PTPusherChannelAuthorizationOperation.m; sourceTree = "<group>"; };
+		288314CF30CB215B612241B0FADE28A5 /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
+		29CD3DC5772CE332D18494B46876D33D /* PTPusherEventDispatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusherEventDispatcher.m; path = Library/PTPusherEventDispatcher.m; sourceTree = "<group>"; };
+		2BB75AE896B222E1813333EC2424ED2B /* SLKInputAccessoryView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLKInputAccessoryView.m; path = Source/SLKInputAccessoryView.m; sourceTree = "<group>"; };
 		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		2D6C945411AE69827B94DF3B729C3CC9 /* SLKUIConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKUIConstants.h; path = Source/SLKUIConstants.h; sourceTree = "<group>"; };
-		2FB7A140DAC8378606540B794FFDE189 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
-		316500C5D1B8D77C14D55AA77A134F1E /* PTPusherConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusherConnection.m; path = Library/PTPusherConnection.m; sourceTree = "<group>"; };
-		32A07C129611FD8D425972F5206DD4EF /* PTPusherMockConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherMockConnection.h; path = Library/PTPusherMockConnection.h; sourceTree = "<group>"; };
-		345E8BD8FB821B3C1F8B3ED517E85FF4 /* UIScrollView+SLKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SLKAdditions.h"; path = "Source/UIScrollView+SLKAdditions.h"; sourceTree = "<group>"; };
-		35E9724555BE03C19021EAC022C4F6D4 /* SLKTextInputbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLKTextInputbar.m; path = Source/SLKTextInputbar.m; sourceTree = "<group>"; };
-		38EE7D77D94802C9DD725FEBB3E60E4A /* ActiveLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActiveLabel-umbrella.h"; sourceTree = "<group>"; };
-		3A4E0FD48AACFAF2BD6CA75A6E604170 /* UIView+SLKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+SLKAdditions.m"; path = "Source/UIView+SLKAdditions.m"; sourceTree = "<group>"; };
-		3CCA72A5840CDF64639CE822EAFA1218 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		3E083CCBE284E4160E28BA967A8C5E6F /* SlackTextViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlackTextViewController-dummy.m"; sourceTree = "<group>"; };
-		40878B55AA125305D738034FA44F51BA /* SlackTextViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SlackTextViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		410481780A2BB4F2E4362495CCF2DCDC /* SLKTextViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKTextViewController.h; path = Source/SLKTextViewController.h; sourceTree = "<group>"; };
-		422AF2692671C60D69E03ED2FA0E9617 /* UIScrollView+SLKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SLKAdditions.m"; path = "Source/UIScrollView+SLKAdditions.m"; sourceTree = "<group>"; };
-		459BBBF4637F282D5D813ED1D0976F8D /* PTJSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTJSON.m; path = Library/PTJSON.m; sourceTree = "<group>"; };
-		4865DD78CEBC913778D1E4E821951286 /* PTEventListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTEventListener.h; path = Library/PTEventListener.h; sourceTree = "<group>"; };
-		4AA2734041B54577EC780760B6B309EF /* PTTargetActionEventListener.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTTargetActionEventListener.m; path = Library/PTTargetActionEventListener.m; sourceTree = "<group>"; };
-		4AA9FFFEE696085D59C3E8F767841AC6 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		4D1FE5F0E31469A04360256A9D596F6B /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
-		52F14060DB79F7BC10F26A34DF3A5E75 /* libPusher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "libPusher-dummy.m"; sourceTree = "<group>"; };
-		530B7AC2D1B24FAE6BBDC6DA53124720 /* NSString+Hashing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Hashing.h"; path = "Library/Private Headers/NSString+Hashing.h"; sourceTree = "<group>"; };
-		56A32245A3F40FAD7756E228517303F7 /* UIView+SLKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+SLKAdditions.h"; path = "Source/UIView+SLKAdditions.h"; sourceTree = "<group>"; };
-		575C32EFE78E78E881F2478912CCA328 /* PTPusherEventPublisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherEventPublisher.h; path = Library/PTPusherEventPublisher.h; sourceTree = "<group>"; };
-		5791594B05FB15F08355AD22BE57FC97 /* SRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
-		5957736ECBA89E79B3C7ABB3AB1B1F71 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
-		5E4B8F582DBDB8A6E3DC0B92C3DDA61E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E8C6B6724DB17D1F6E38C1F7BC7EB39 /* NSDictionary+QueryString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+QueryString.h"; path = "Library/Private Headers/NSDictionary+QueryString.h"; sourceTree = "<group>"; };
-		5EBF3B83BFA99F00F410A96B297E2247 /* Pusher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Pusher.h; path = Library/Pusher.h; sourceTree = "<group>"; };
-		5EE08EFB2226B914182E074ABEDF2FC0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F8524C200E22298238128323394CBA9 /* NSString+Hashing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Hashing.m"; path = "Library/NSString+Hashing.m"; sourceTree = "<group>"; };
+		2C0C3337B743814E9E09240721DB78E7 /* SLKTypingIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKTypingIndicatorView.h; path = Source/SLKTypingIndicatorView.h; sourceTree = "<group>"; };
+		2D301705C92CB3B209BD5EC7AB8941B8 /* PTBlockEventListener.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTBlockEventListener.m; path = Library/PTBlockEventListener.m; sourceTree = "<group>"; };
+		30A25B214F3D6A44EA099C4FD3C09519 /* FSInteractiveMap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FSInteractiveMap.modulemap; sourceTree = "<group>"; };
+		327A3B3AFD947CE088EAA4266090CEAD /* UIResponder+SLKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIResponder+SLKAdditions.m"; path = "Source/UIResponder+SLKAdditions.m"; sourceTree = "<group>"; };
+		34E0BDE5039578EFE3B1B46C8D479A6A /* PTPusherDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherDelegate.h; path = Library/PTPusherDelegate.h; sourceTree = "<group>"; };
+		35E4A4D8F25FB317909AE8BF894E1F46 /* NSString+Hashing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Hashing.m"; path = "Library/NSString+Hashing.m"; sourceTree = "<group>"; };
+		36B8950395C9C062506BF89D221C874D /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		37A972F2225508C860F5F21D20493E92 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		3A8EE70494A6C153344A3D9EE8C6FD08 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		4293A4D687ED944506FAE18B5BF8E2DF /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		429827C76B942B9018B358087F9C621F /* SLKTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLKTextView.m; path = Source/SLKTextView.m; sourceTree = "<group>"; };
+		4440FC39EEFDEC204C66100C893079A3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4645A850E4ECB6F20D70C7CA4ACC565E /* PTPusherMockConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusherMockConnection.m; path = Library/PTPusherMockConnection.m; sourceTree = "<group>"; };
+		489A890775FE5511BC9DC28CFC6290C3 /* SLKTextView+SLKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SLKTextView+SLKAdditions.m"; path = "Source/SLKTextView+SLKAdditions.m"; sourceTree = "<group>"; };
+		4B001D6DA862BEAFF7B7745105F97505 /* libPusher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libPusher-umbrella.h"; sourceTree = "<group>"; };
+		4D32F701B7C5BB03AC724556E37CE3BB /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		4DE7A90FB9E9A3A917CA5C44A9ABCE12 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		4DECE85BC24EC9061B652B99F8C3A719 /* SocketRocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.xcconfig; sourceTree = "<group>"; };
+		4E5F63827D48FC81B0EB007AD261AADC /* PTBlockEventListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTBlockEventListener.h; path = "Library/Private Headers/PTBlockEventListener.h"; sourceTree = "<group>"; };
+		4EC67B3735AE4509177F6E999A2C6E37 /* SLKTextViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKTextViewController.h; path = Source/SLKTextViewController.h; sourceTree = "<group>"; };
+		4FC702978232343DA4B1A0EE2DE4BD6B /* SLKUIConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKUIConstants.h; path = Source/SLKUIConstants.h; sourceTree = "<group>"; };
+		5103A1048936B6E35F98283054BC4486 /* ActiveLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActiveLabel.swift; path = ActiveLabel/ActiveLabel.swift; sourceTree = "<group>"; };
+		551DF6C37B87CC8413AF3E27202CC48B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5533770895450A93CC980875A008782E /* Pusher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Pusher.h; path = Library/Pusher.h; sourceTree = "<group>"; };
+		5AF274B487D68233AB7BE9098FEDA3A2 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		5B172F1CD1CCD495B228E205B3396D97 /* ActiveLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActiveLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA45DB3EC5BD8343FDFBC53831394EE /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6220BB0A96B2C7A071AEC2D41A9862FF /* ActiveLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ActiveLabel-dummy.m"; sourceTree = "<group>"; };
-		63D316E51ECF81B45D6C8927F1EA62CC /* PTPusher+Testing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PTPusher+Testing.m"; path = "Library/PTPusher+Testing.m"; sourceTree = "<group>"; };
-		648CAE9146B43815705086F7779807F3 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
-		65188E316C38D95128FEE0CD3DF65AB8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6973E5A5CE96B60B06878D849B8082F5 /* SLKInputAccessoryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKInputAccessoryView.h; path = Source/SLKInputAccessoryView.h; sourceTree = "<group>"; };
-		715A6871660C7DDAA4E92B7E2FED0E52 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		71BA3AA338B4A4AD0AD2A894AB6124B9 /* SRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
-		78145646124D4EFE516A6C3C0E6B057A /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		7951B6F9F552E776D67A138F42425478 /* PTPusherEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusherEvent.m; path = Library/PTPusherEvent.m; sourceTree = "<group>"; };
-		7975512AF10BF970C8FE4D7534B36C2C /* PTPusherChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusherChannel.m; path = Library/PTPusherChannel.m; sourceTree = "<group>"; };
+		6517515392AC298217620FBA4D03EB72 /* SLKTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKTextView.h; path = Source/SLKTextView.h; sourceTree = "<group>"; };
+		6567FFF7C3499589ED55B2478156306E /* RegexParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegexParser.swift; path = ActiveLabel/RegexParser.swift; sourceTree = "<group>"; };
+		670D9ACB5A690847B7DD87EFE54774FC /* PTPusherChannel_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherChannel_Private.h; path = "Library/Private Headers/PTPusherChannel_Private.h"; sourceTree = "<group>"; };
+		677E17C4F599F14293B009E88D942E66 /* SRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
+		6A5126D6C0B9BD4438C8A768B8F3F44E /* FSSVGPathElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSSVGPathElement.m; path = FSInteractiveMap/FSInteractiveMap/FSSVG/FSSVGPathElement.m; sourceTree = "<group>"; };
+		6A6E27351BD6A7012A728F360C4A2A18 /* UIView+SLKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+SLKAdditions.m"; path = "Source/UIView+SLKAdditions.m"; sourceTree = "<group>"; };
+		6AA05278D035B18D1F407BD6A7543DBC /* NSDictionary+QueryString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+QueryString.h"; path = "Library/Private Headers/NSDictionary+QueryString.h"; sourceTree = "<group>"; };
+		6FCCE02ECE23BDD50FDF2B083BA1B133 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7190AB01BFB6F3E6AE981230E99410D8 /* SLKTextView+SLKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SLKTextView+SLKAdditions.h"; path = "Source/SLKTextView+SLKAdditions.h"; sourceTree = "<group>"; };
+		72365E08D73F1E144DC829A3BBA729B0 /* PTJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTJSON.h; path = "Library/Private Headers/PTJSON.h"; sourceTree = "<group>"; };
+		726C42CC65BBB9783EB0CCD88C8130DE /* SLKTypingIndicatorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKTypingIndicatorProtocol.h; path = Source/SLKTypingIndicatorProtocol.h; sourceTree = "<group>"; };
+		72CBE12DF0922F22D46B2E7A832BBED6 /* PTPusherMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherMacros.h; path = Library/PTPusherMacros.h; sourceTree = "<group>"; };
+		739F632B388897F62DE1D611E26E46AA /* libPusher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = libPusher.modulemap; sourceTree = "<group>"; };
+		73A27319FDBF0AD1454D83DE23167820 /* PTPusherMockConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherMockConnection.h; path = Library/PTPusherMockConnection.h; sourceTree = "<group>"; };
+		73DF30DB0A63243BD66DBCAC1ACFE4AF /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		73FD8D7D8F798337A2B88B3D50526A62 /* ActiveLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ActiveLabel.modulemap; sourceTree = "<group>"; };
+		75378E6B8E51E58DCA01CA3D1B438CED /* FSSVG.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSSVG.h; path = FSInteractiveMap/FSInteractiveMap/FSSVG/FSSVG.h; sourceTree = "<group>"; };
+		7722FF3A0275B5B199EBC575534EC130 /* FSInteractiveMap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSInteractiveMap-dummy.m"; sourceTree = "<group>"; };
 		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		7F92090BDD770A39FE3E53CEBC9BABA6 /* SocketRocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SocketRocket.modulemap; sourceTree = "<group>"; };
-		81F86BBDA7B7A1C9FF0F023024092A24 /* ActiveType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActiveType.swift; path = ActiveLabel/ActiveType.swift; sourceTree = "<group>"; };
-		820F929562A117495DBE9F94E9A911F6 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		83C52BFF61488E7FEF8123CEA884A9A5 /* libPusher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = libPusher.xcconfig; sourceTree = "<group>"; };
-		845E7413E1DD3AD548824A7261056405 /* PTPusherEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherEvent.h; path = Library/PTPusherEvent.h; sourceTree = "<group>"; };
+		7AFDFB6FD8969D6B7211E923E02ABA93 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		7CD2A228A99494040168B0B7299C1AC1 /* SocketRocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SocketRocket-dummy.m"; sourceTree = "<group>"; };
+		7E225BC47A33C63A78AEE046EF2B289A /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		7E2BE959180B6E3A8215AEC430113A6B /* ActiveLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ActiveLabel-dummy.m"; sourceTree = "<group>"; };
+		7ED8F1722F4BD6717C514FF6857CF84A /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		80D38DCCE63BD4435FE618392030A31F /* FSInteractiveMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSInteractiveMapView.h; path = FSInteractiveMap/FSInteractiveMap/FSInteractiveMapView.h; sourceTree = "<group>"; };
 		84956FECA444571216F52008CD518936 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		84B71A32F52458CE4A8DF883B061937F /* PTPusherEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherEvent.h; path = Library/PTPusherEvent.h; sourceTree = "<group>"; };
+		8708DA17941A45C00AAD11CC5E3A26EF /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		882BF8F1B08459B5D676E7049238519D /* SLKTypingIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLKTypingIndicatorView.m; path = Source/SLKTypingIndicatorView.m; sourceTree = "<group>"; };
 		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		8A4086700BDE47CE576FC6B4AE5A1494 /* PTPusherChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherChannel.h; path = Library/PTPusherChannel.h; sourceTree = "<group>"; };
-		8C087D54C10AB9025DFA86ED5604B470 /* UIResponder+SLKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIResponder+SLKAdditions.h"; path = "Source/UIResponder+SLKAdditions.h"; sourceTree = "<group>"; };
-		8D9160DC0E8E35954F59D34EE6AEA921 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		8DBBB21DB7441D1176CD97AD40AAF73B /* PTPusherPresenceChannelDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherPresenceChannelDelegate.h; path = Library/PTPusherPresenceChannelDelegate.h; sourceTree = "<group>"; };
-		8ED93AA148A2ACB3CD3B89E36788DF15 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		90288B26063131B24654BC8CC3FBD125 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		9147CCFD334E8B100780191BA76084B4 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		91779C23D9739C5A994AE2EF76A32F70 /* PTPusherErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherErrors.h; path = Library/PTPusherErrors.h; sourceTree = "<group>"; };
-		92A48A520D36BD4B1046D16193C73580 /* PTBlockEventListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTBlockEventListener.h; path = "Library/Private Headers/PTBlockEventListener.h"; sourceTree = "<group>"; };
-		9567F5DBCFE6BB3802C5AA5E843EA84B /* SLKTextInputbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKTextInputbar.h; path = Source/SLKTextInputbar.h; sourceTree = "<group>"; };
-		96CE5978D38F70419F8E31A5FC5F3449 /* libPusher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = libPusher.modulemap; sourceTree = "<group>"; };
+		8ABA255F68BA0D095602443D69C780C4 /* libPusher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "libPusher-dummy.m"; sourceTree = "<group>"; };
+		8FD31D0B0EE5E3C39AE493F00A478C98 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92EBE86957748BDBF0E49EFDE21B3B74 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		96F00391E0468AE8B7CBBAB333EC0C9F /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		970DB2C5782C264E55AC8E8509EE4F61 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
 		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		9B1CBF965FFEB3E13E2D1B3DFE84D5B6 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		9DB99C8EDF591CBEE2ED43E1E25EA17D /* ActiveLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActiveLabel-prefix.pch"; sourceTree = "<group>"; };
-		9FA4BDF126CD0F73B77BF14918CD9436 /* ActiveLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActiveLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A08AAECF157A69442F0F5897C3F5B923 /* SLKTypingIndicatorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKTypingIndicatorProtocol.h; path = Source/SLKTypingIndicatorProtocol.h; sourceTree = "<group>"; };
-		A103D489DCABA14B35FD7F4682F38FC9 /* SlackTextViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SlackTextViewController.modulemap; sourceTree = "<group>"; };
+		990A755FA842B6E65AFFD5D5D2A274BB /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		9D140E2A2C0904493704C6EFD9DCEF18 /* PTPusherConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherConnection.h; path = Library/PTPusherConnection.h; sourceTree = "<group>"; };
+		9DEF18446F19E15F48B1A3E113D91AC0 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		A15BFBAC7B8BEFA9B903AFAAC1C11315 /* ActiveLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActiveLabel-umbrella.h"; sourceTree = "<group>"; };
 		A1D51E1F1818CDA28CC2610A2EE45D18 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		A512F338A344B89F7F2823DCE49E2BE3 /* SLKTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLKTextView.m; path = Source/SLKTextView.m; sourceTree = "<group>"; };
-		A55B0522F852F458116B80EF9823C8CE /* PTPusher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusher.h; path = Library/PTPusher.h; sourceTree = "<group>"; };
-		A66DEF17F9F028F64EE5A3F06F77A2D0 /* PTPusherEventDispatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusherEventDispatcher.m; path = Library/PTPusherEventDispatcher.m; sourceTree = "<group>"; };
-		ADBBA335A7E42992A7288D73B70E8691 /* PTPusherChannelAuthorizationOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherChannelAuthorizationOperation.h; path = "Library/Private Headers/PTPusherChannelAuthorizationOperation.h"; sourceTree = "<group>"; };
-		B0569E6D181C91B8D819B83941BB9FB2 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		B07264F9C0AF9F99686317457AC8EB83 /* ActiveLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ActiveLabel.modulemap; sourceTree = "<group>"; };
-		B1ABE67DBC919FB8880EC5F0C33D783D /* SlackTextViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlackTextViewController.xcconfig; sourceTree = "<group>"; };
-		B3AE1B5DD39C053AEED493779E651840 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		B4CE15043B0427B5A90CCA782A4BE22E /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8700E1F96C99C3FB2BC1A35AD9DF7E7 /* PTPusherConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherConnection.h; path = Library/PTPusherConnection.h; sourceTree = "<group>"; };
-		B98CE404C55D6B22CDDA1A254C893C7D /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		A1EC5E138025E11A6399132067A8C976 /* FSSVG.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSSVG.m; path = FSInteractiveMap/FSInteractiveMap/FSSVG/FSSVG.m; sourceTree = "<group>"; };
+		A260451D1A17AF0F7CE32730E4196BE5 /* SLKTextInputbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLKTextInputbar.m; path = Source/SLKTextInputbar.m; sourceTree = "<group>"; };
+		A7CACCC7B33214EE56AD4F69B8A86045 /* PTPusherChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusherChannel.m; path = Library/PTPusherChannel.m; sourceTree = "<group>"; };
+		A85C9EFC8AFE9D4A72F4C703D3C21F4A /* SLKTextInputbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKTextInputbar.h; path = Source/SLKTextInputbar.h; sourceTree = "<group>"; };
+		AC52D69A3DC5D7CB1FEA7BA69165AB4E /* NSString+Hashing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Hashing.h"; path = "Library/Private Headers/NSString+Hashing.h"; sourceTree = "<group>"; };
+		AD57F2A73691215B020401B5670166BB /* SLKTextViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLKTextViewController.m; path = Source/SLKTextViewController.m; sourceTree = "<group>"; };
+		ADBDCABF549DF607824709E8372C508F /* ActiveLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ActiveLabel.xcconfig; sourceTree = "<group>"; };
+		AE1CF7AD04AD6B0CF6166FFEA1BF24F3 /* PTPusher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusher.m; path = Library/PTPusher.m; sourceTree = "<group>"; };
+		AF6C708ED29F250C5ED6C46B879D6719 /* PTPusherErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherErrors.h; path = Library/PTPusherErrors.h; sourceTree = "<group>"; };
+		B43D0FA240D6C4ABDC9CBD26C4CF8F7E /* PTPusherAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusherAPI.m; path = Library/PTPusherAPI.m; sourceTree = "<group>"; };
+		BA0C4DEEDE9630D332A01FA4A2B467EC /* ActiveType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActiveType.swift; path = ActiveLabel/ActiveType.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BC77A6FD317FCC741E3FD7E0ACB1FF1F /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		BF626FC333C2781D8250D8EB5AB1A9FC /* PTPusher+Testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PTPusher+Testing.h"; path = "Library/PTPusher+Testing.h"; sourceTree = "<group>"; };
-		BF9EF3B7C9653B5FDEDB671E46227D4C /* SLKTypingIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKTypingIndicatorView.h; path = Source/SLKTypingIndicatorView.h; sourceTree = "<group>"; };
-		C86C439FFFA68A6E537C7C7AD17FBD5D /* PTPusherMockConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusherMockConnection.m; path = Library/PTPusherMockConnection.m; sourceTree = "<group>"; };
-		C94EE3E4CB62946E469979CF58D16D6B /* PTPusherChannel_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherChannel_Private.h; path = "Library/Private Headers/PTPusherChannel_Private.h"; sourceTree = "<group>"; };
+		BA809FFA3A99A553A25AA9E08B682DFC /* PTPusherEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusherEvent.m; path = Library/PTPusherEvent.m; sourceTree = "<group>"; };
+		BBC851F17BC8571E50D5D4FE89F07513 /* SocketRocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-prefix.pch"; sourceTree = "<group>"; };
+		BC2AA24E0B5A1368DF4A0ADD0C570993 /* SlackTextViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SlackTextViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA7D833D54F1BC323CA35E1884E929A /* libPusher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libPusher-prefix.pch"; sourceTree = "<group>"; };
+		C051829EC0B72617269F81693A7BD371 /* SlackTextViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlackTextViewController.xcconfig; sourceTree = "<group>"; };
+		C140E5D6A0D26CE10BDE903952509EFE /* UIScrollView+SLKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SLKAdditions.m"; path = "Source/UIScrollView+SLKAdditions.m"; sourceTree = "<group>"; };
+		C52EDAE7CD47827B5AC36BE34D3DDE17 /* PTTargetActionEventListener.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTTargetActionEventListener.m; path = Library/PTTargetActionEventListener.m; sourceTree = "<group>"; };
+		C7C35B7C560F0C4ED6D95C71A8B44F8B /* SocketRocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-umbrella.h"; sourceTree = "<group>"; };
+		C7E17DC2E549E7C128ACAA7E5311ACE8 /* FSInteractiveMap.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSInteractiveMap.xcconfig; sourceTree = "<group>"; };
+		C92B903AA22939E5BE546EC5A6011DBD /* NSDictionary+QueryString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+QueryString.m"; path = "Library/NSDictionary+QueryString.m"; sourceTree = "<group>"; };
 		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		CBEE52DA12E69493ECED0E1179A24DEF /* SlackTextViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlackTextViewController-umbrella.h"; sourceTree = "<group>"; };
-		CF72EFFD543E6AFC8EC1417CDD0382B8 /* RegexParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegexParser.swift; path = ActiveLabel/RegexParser.swift; sourceTree = "<group>"; };
+		CBCA72885DC6D24CD55C19C4182B62CB /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		CD6E4D0759DEB95EDEA4BD82296B618F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D0699F13D85EFAA7A8A2B755EF6519FC /* SocketRocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-umbrella.h"; sourceTree = "<group>"; };
-		D2E9F3BB49ACC9928D3991167709B737 /* Pusher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pusher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D37E645998DD3A702741BC3F87D58E4D /* PTTargetActionEventListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTTargetActionEventListener.h; path = "Library/Private Headers/PTTargetActionEventListener.h"; sourceTree = "<group>"; };
-		D5DFB4BCF4158C7C225FF9FCA5D4EB57 /* SLKInputAccessoryView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLKInputAccessoryView.m; path = Source/SLKInputAccessoryView.m; sourceTree = "<group>"; };
-		D60AEC08A1336FB18CCE0391923A08EA /* SocketRocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.xcconfig; sourceTree = "<group>"; };
-		D7B2758F2258264500CAEBDC679B8BA5 /* PTBlockEventListener.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTBlockEventListener.m; path = Library/PTBlockEventListener.m; sourceTree = "<group>"; };
+		D13BCCFF2A8342A88563F230A4871C00 /* PTPusher+Testing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PTPusher+Testing.m"; path = "Library/PTPusher+Testing.m"; sourceTree = "<group>"; };
+		D171CB29BFE6AC31F7EC23072AB025B4 /* PTPusherEventDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherEventDispatcher.h; path = Library/PTPusherEventDispatcher.h; sourceTree = "<group>"; };
+		D2DE1BF22E4109D4BB69DA215466B922 /* Pusher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pusher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4FC08A6FDB636F98E7DDB1D1DE31C7D /* FSSVGUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSSVGUtils.m; path = FSInteractiveMap/FSInteractiveMap/FSSVG/FSSVGUtils.m; sourceTree = "<group>"; };
+		D50972465AB072103AA4CAD48EA147CA /* PTURLRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTURLRequestOperation.h; path = "Library/Private Headers/PTURLRequestOperation.h"; sourceTree = "<group>"; };
+		D75B498236B64ADB33F3A72A90D381F5 /* SlackTextViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SlackTextViewController.modulemap; sourceTree = "<group>"; };
+		D7D89ED6F8BD2BE3DA055C2FD26DD04D /* UIView+SLKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+SLKAdditions.h"; path = "Source/UIView+SLKAdditions.h"; sourceTree = "<group>"; };
+		D83E7AD09D205FACE01F5C1A6AF1347A /* SlackTextViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlackTextViewController-dummy.m"; sourceTree = "<group>"; };
 		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		DB206685D23AE050F678C9C58D1508B5 /* PTJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTJSON.h; path = "Library/Private Headers/PTJSON.h"; sourceTree = "<group>"; };
+		DB6401E06527C3246B4E16EE21148DFD /* PTPusherChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherChannel.h; path = Library/PTPusherChannel.h; sourceTree = "<group>"; };
 		DC11ADDE4BC458AA10E0439FCCD11171 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DC1A640EBCA6DA407124C09BDAD7ABAF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCCCEEC30BB428216B1D2B0FDD9B3345 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		DD2B0ED63537CD4AA10858B4186671C2 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		DDB6EF9B437BD9DDABB285D30D624154 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		DECEEFD12A9FD81CE356E13911610144 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		DF8AF78940E48529E7946AA196323CBF /* UIResponder+SLKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIResponder+SLKAdditions.m"; path = "Source/UIResponder+SLKAdditions.m"; sourceTree = "<group>"; };
-		E160940F6C664A8FBB0AD4C1178AADB8 /* SLKTextView+SLKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SLKTextView+SLKAdditions.h"; path = "Source/SLKTextView+SLKAdditions.h"; sourceTree = "<group>"; };
-		E48B387914A625C09BA77783FADBE664 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		E6A6AB5C478E321052D536477FA02036 /* ActiveLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActiveLabel.swift; path = ActiveLabel/ActiveLabel.swift; sourceTree = "<group>"; };
+		DCAE97D364089C370C5E5D0DE5D6CE48 /* SlackTextViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlackTextViewController-prefix.pch"; sourceTree = "<group>"; };
+		DDD30608B59CD34993B04657CBDD9C40 /* PTPusher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusher.h; path = Library/PTPusher.h; sourceTree = "<group>"; };
+		DFC2354B73A54D260D35035AFEEE33E4 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		E1B1D9FE0BA96A58DF7B9F2DB69493F4 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		E25449B8F4F39F84C619A71368BF5632 /* PTJSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTJSON.m; path = Library/PTJSON.m; sourceTree = "<group>"; };
+		E306DBA0929ED1378AE6BA1F050CDBB2 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		E3B269D29AAC01797C2B055B7DED6111 /* UIResponder+SLKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIResponder+SLKAdditions.h"; path = "Source/UIResponder+SLKAdditions.h"; sourceTree = "<group>"; };
+		E5E0765A3D896467BF6F90E750351564 /* FSInteractiveMap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSInteractiveMap-umbrella.h"; sourceTree = "<group>"; };
 		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		E82D97A9389D9AEF57E11DFC7E51CDD7 /* PTPusherAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusherAPI.m; path = Library/PTPusherAPI.m; sourceTree = "<group>"; };
 		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECE775F8FB611FEBBFBC3089595D9991 /* NSDictionary+QueryString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+QueryString.m"; path = "Library/NSDictionary+QueryString.m"; sourceTree = "<group>"; };
-		EF81A76C67FBF2A3AE68A07B3A7DAD4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F32811C8860B4D75AF3AB8A8C20DD940 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		F57742BF490AEBEDBBE2FD94D2143043 /* PTPusherMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPusherMacros.h; path = Library/PTPusherMacros.h; sourceTree = "<group>"; };
-		F679B403F52A181C71B4B7D93DD6E5AE /* PTURLRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTURLRequestOperation.m; path = Library/PTURLRequestOperation.m; sourceTree = "<group>"; };
-		F7BA3F18A3DC86C7E819CBFFDDDED2AB /* SLKTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKTextView.h; path = Source/SLKTextView.h; sourceTree = "<group>"; };
-		FD5DFCDEE4B651A6CDD53B791A411D4F /* SocketRocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SocketRocket-dummy.m"; sourceTree = "<group>"; };
-		FD91545D3B3F4E71C976FA1D70B8EAAE /* libPusher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libPusher-umbrella.h"; sourceTree = "<group>"; };
-		FEE0F7B3E14DDC28092AF48BBFA3CD6C /* PTPusher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusher.m; path = Library/PTPusher.m; sourceTree = "<group>"; };
+		E871DF19EC523CE13997A91B9CB0393C /* PTPusher+Testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PTPusher+Testing.h"; path = "Library/PTPusher+Testing.h"; sourceTree = "<group>"; };
+		ECC088E5F9F5E7AAE0DD324B82F65A6A /* PTPusherConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPusherConnection.m; path = Library/PTPusherConnection.m; sourceTree = "<group>"; };
+		EEDE3BD873A1AEBF9888284ED57612CD /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		F4D42D848910D56095BB0A3E3A979510 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5D68E6880C3F91B82E5AD7CD5685429 /* FSInteractiveMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSInteractiveMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4A4CDEAE1C12DB58C33D9B4895BA4E /* SLKTypingIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLKTypingIndicatorView.m; path = Source/SLKTypingIndicatorView.m; sourceTree = "<group>"; };
+		FCB42958C198B11C0CA77619B34BE119 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD2BFA5A26299EACEC1BCD0E8C19289B /* PTURLRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTURLRequestOperation.m; path = Library/PTURLRequestOperation.m; sourceTree = "<group>"; };
+		FDD9D00BF52368D01A6F72E3152F7AD0 /* SocketRocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SocketRocket.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03FC6285A22A71DC744CBC5E4674F753 /* Frameworks */ = {
+		5C176895481558880EB95C2A7039B671 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				757EDF1241F770445CBBD243D2FA1CB3 /* Foundation.framework in Frameworks */,
+				81614E0414B3700953A383C96AD3FB54 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		711F98D4CB9B5F4A875A950BCEDB7287 /* Frameworks */ = {
+		67C1C58132411F5CD689290426B7F1EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20664924B77B9B12A8C7EEAA75917CA2 /* Foundation.framework in Frameworks */,
+				4AA0C00073496AB33FD31D52DD564F1D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +372,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7616BE0BE1C48586D82FD1131BF48FC5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9061D49EC4001DFF91057B55E01FD54B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28674D0E8A29D2E20BEB11F122D0770 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,11 +401,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3CF4FD7FD7BD1B74FA1CC5F8AEEC15A /* Frameworks */ = {
+		F06D4FA3EC7CE029F16DBABC76043BEC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B898134BE88F2BB4C21EC24E46D8482 /* Foundation.framework in Frameworks */,
+				D82F75AFDC83442BF710D9E1C5ED6A63 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,110 +421,121 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0E685468775CB0514A486656381F5837 /* Support Files */ = {
+		122D85CAA557C01BCA1C7337A935AE7B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8ED93AA148A2ACB3CD3B89E36788DF15 /* Info.plist */,
-				DECEEFD12A9FD81CE356E13911610144 /* SwiftyJSON.modulemap */,
-				78145646124D4EFE516A6C3C0E6B057A /* SwiftyJSON.xcconfig */,
-				B3AE1B5DD39C053AEED493779E651840 /* SwiftyJSON-dummy.m */,
-				1822386E23DF58135440587F9E24F129 /* SwiftyJSON-prefix.pch */,
-				90288B26063131B24654BC8CC3FBD125 /* SwiftyJSON-umbrella.h */,
+				FCB42958C198B11C0CA77619B34BE119 /* Info.plist */,
+				739F632B388897F62DE1D611E26E46AA /* libPusher.modulemap */,
+				163ECC2ED6FAB4DF489A6401355C4EAF /* libPusher.xcconfig */,
+				8ABA255F68BA0D095602443D69C780C4 /* libPusher-dummy.m */,
+				BCA7D833D54F1BC323CA35E1884E929A /* libPusher-prefix.pch */,
+				4B001D6DA862BEAFF7B7745105F97505 /* libPusher-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/libPusher";
+			sourceTree = "<group>";
+		};
+		19C3735CDCCC1A7E0F72211C371C6CF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B172F1CD1CCD495B228E205B3396D97 /* ActiveLabel.framework */,
+				4440FC39EEFDEC204C66100C893079A3 /* Alamofire.framework */,
+				F5D68E6880C3F91B82E5AD7CD5685429 /* FSInteractiveMap.framework */,
+				065752CC4C1A2103615DCFD6582BA0C5 /* Pods.framework */,
+				D2DE1BF22E4109D4BB69DA215466B922 /* Pusher.framework */,
+				BC2AA24E0B5A1368DF4A0ADD0C570993 /* SlackTextViewController.framework */,
+				27601E997BCFB3491828C38B12D2887B /* SocketRocket.framework */,
+				8FD31D0B0EE5E3C39AE493F00A478C98 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		375B5EB7889272FA396B4E0961A6F7CD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				08055472488DBC57B232FBEB32D3D4C1 /* Info.plist */,
+				7AFDFB6FD8969D6B7211E923E02ABA93 /* SwiftyJSON.modulemap */,
+				36B8950395C9C062506BF89D221C874D /* SwiftyJSON.xcconfig */,
+				7E225BC47A33C63A78AEE046EF2B289A /* SwiftyJSON-dummy.m */,
+				3A8EE70494A6C153344A3D9EE8C6FD08 /* SwiftyJSON-prefix.pch */,
+				E1B1D9FE0BA96A58DF7B9F2DB69493F4 /* SwiftyJSON-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
-		2CE17BE30456CFA89EC8B863AE0DA613 /* Support Files */ = {
+		50CFF9A85A7DE5A06717DE0E297F6E16 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				5E4B8F582DBDB8A6E3DC0B92C3DDA61E /* Info.plist */,
-				A103D489DCABA14B35FD7F4682F38FC9 /* SlackTextViewController.modulemap */,
-				B1ABE67DBC919FB8880EC5F0C33D783D /* SlackTextViewController.xcconfig */,
-				3E083CCBE284E4160E28BA967A8C5E6F /* SlackTextViewController-dummy.m */,
-				12D9D663364AF48BB14A3EFCF94719F7 /* SlackTextViewController-prefix.pch */,
-				CBEE52DA12E69493ECED0E1179A24DEF /* SlackTextViewController-umbrella.h */,
+				73DF30DB0A63243BD66DBCAC1ACFE4AF /* SwiftyJSON.swift */,
+				375B5EB7889272FA396B4E0961A6F7CD /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		68E676F4032BCD251D2794AA5E5E4D62 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				30A25B214F3D6A44EA099C4FD3C09519 /* FSInteractiveMap.modulemap */,
+				C7E17DC2E549E7C128ACAA7E5311ACE8 /* FSInteractiveMap.xcconfig */,
+				7722FF3A0275B5B199EBC575534EC130 /* FSInteractiveMap-dummy.m */,
+				096A55CA2B500B0D2B301EAB013F8935 /* FSInteractiveMap-prefix.pch */,
+				E5E0765A3D896467BF6F90E750351564 /* FSInteractiveMap-umbrella.h */,
+				6FCCE02ECE23BDD50FDF2B083BA1B133 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SlackTextViewController";
+			path = "../Target Support Files/FSInteractiveMap";
 			sourceTree = "<group>";
 		};
-		40DEE2F234782F3241E83206C57FF4BB /* Products */ = {
+		7022BC9731361D3A914C55882056CD3D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9FA4BDF126CD0F73B77BF14918CD9436 /* ActiveLabel.framework */,
-				65188E316C38D95128FEE0CD3DF65AB8 /* Alamofire.framework */,
-				5EE08EFB2226B914182E074ABEDF2FC0 /* Pods.framework */,
-				D2E9F3BB49ACC9928D3991167709B737 /* Pusher.framework */,
-				40878B55AA125305D738034FA44F51BA /* SlackTextViewController.framework */,
-				B4CE15043B0427B5A90CCA782A4BE22E /* SocketRocket.framework */,
-				1F632B23437FC1A06BFD10104DB9212A /* SwiftyJSON.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		48358B29D347D383956D645331BE4287 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3CCA72A5840CDF64639CE822EAFA1218 /* Alamofire.modulemap */,
-				1CA26CC514B23299DEFF10D9AD6E910F /* Alamofire.xcconfig */,
-				715A6871660C7DDAA4E92B7E2FED0E52 /* Alamofire-dummy.m */,
-				DCCCEEC30BB428216B1D2B0FDD9B3345 /* Alamofire-prefix.pch */,
-				B0569E6D181C91B8D819B83941BB9FB2 /* Alamofire-umbrella.h */,
-				DC1A640EBCA6DA407124C09BDAD7ABAF /* Info.plist */,
+				EEDE3BD873A1AEBF9888284ED57612CD /* Alamofire.modulemap */,
+				92EBE86957748BDBF0E49EFDE21B3B74 /* Alamofire.xcconfig */,
+				4DE7A90FB9E9A3A917CA5C44A9ABCE12 /* Alamofire-dummy.m */,
+				4D32F701B7C5BB03AC724556E37CE3BB /* Alamofire-prefix.pch */,
+				1FAD848E4D674269EA05353B3565066B /* Alamofire-umbrella.h */,
+				551DF6C37B87CC8413AF3E27202CC48B /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
-		4ED9053392AE05EA05AE3ABF14FAA947 /* Alamofire */ = {
+		705C52951771AB7BECA72AADB96583D4 /* SlackTextViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DD2B0ED63537CD4AA10858B4186671C2 /* Alamofire.swift */,
-				2FB7A140DAC8378606540B794FFDE189 /* Download.swift */,
-				648CAE9146B43815705086F7779807F3 /* Error.swift */,
-				5957736ECBA89E79B3C7ABB3AB1B1F71 /* Manager.swift */,
-				8D9160DC0E8E35954F59D34EE6AEA921 /* MultipartFormData.swift */,
-				1CBAF705D559774EC06EF474CDFCC314 /* NetworkReachabilityManager.swift */,
-				820F929562A117495DBE9F94E9A911F6 /* Notifications.swift */,
-				1B8B36F9C07D11366613B84C796DB2BD /* ParameterEncoding.swift */,
-				F32811C8860B4D75AF3AB8A8C20DD940 /* Request.swift */,
-				BC77A6FD317FCC741E3FD7E0ACB1FF1F /* Response.swift */,
-				9147CCFD334E8B100780191BA76084B4 /* ResponseSerialization.swift */,
-				DDB6EF9B437BD9DDABB285D30D624154 /* Result.swift */,
-				9B1CBF965FFEB3E13E2D1B3DFE84D5B6 /* ServerTrustPolicy.swift */,
-				4D1FE5F0E31469A04360256A9D596F6B /* Stream.swift */,
-				E48B387914A625C09BA77783FADBE664 /* Timeline.swift */,
-				12CCA43DC892070D9D1FCD35FD93C489 /* Upload.swift */,
-				B98CE404C55D6B22CDDA1A254C893C7D /* Validation.swift */,
-				48358B29D347D383956D645331BE4287 /* Support Files */,
+				1E69F89884B0F19AAF5F872148AA6FD4 /* SLKInputAccessoryView.h */,
+				2BB75AE896B222E1813333EC2424ED2B /* SLKInputAccessoryView.m */,
+				A85C9EFC8AFE9D4A72F4C703D3C21F4A /* SLKTextInputbar.h */,
+				A260451D1A17AF0F7CE32730E4196BE5 /* SLKTextInputbar.m */,
+				6517515392AC298217620FBA4D03EB72 /* SLKTextView.h */,
+				429827C76B942B9018B358087F9C621F /* SLKTextView.m */,
+				7190AB01BFB6F3E6AE981230E99410D8 /* SLKTextView+SLKAdditions.h */,
+				489A890775FE5511BC9DC28CFC6290C3 /* SLKTextView+SLKAdditions.m */,
+				4EC67B3735AE4509177F6E999A2C6E37 /* SLKTextViewController.h */,
+				AD57F2A73691215B020401B5670166BB /* SLKTextViewController.m */,
+				726C42CC65BBB9783EB0CCD88C8130DE /* SLKTypingIndicatorProtocol.h */,
+				2C0C3337B743814E9E09240721DB78E7 /* SLKTypingIndicatorView.h */,
+				FA4A4CDEAE1C12DB58C33D9B4895BA4E /* SLKTypingIndicatorView.m */,
+				4FC702978232343DA4B1A0EE2DE4BD6B /* SLKUIConstants.h */,
+				E3B269D29AAC01797C2B055B7DED6111 /* UIResponder+SLKAdditions.h */,
+				327A3B3AFD947CE088EAA4266090CEAD /* UIResponder+SLKAdditions.m */,
+				1B2C2C480480B39EB4A0CEDA9CCE35DF /* UIScrollView+SLKAdditions.h */,
+				C140E5D6A0D26CE10BDE903952509EFE /* UIScrollView+SLKAdditions.m */,
+				D7D89ED6F8BD2BE3DA055C2FD26DD04D /* UIView+SLKAdditions.h */,
+				6A6E27351BD6A7012A728F360C4A2A18 /* UIView+SLKAdditions.m */,
+				9AFFB44154F8D5D8F330C626C8F5C01D /* Support Files */,
 			);
-			path = Alamofire;
+			path = SlackTextViewController;
 			sourceTree = "<group>";
 		};
-		6E1CAE96BCE4EA0FF8E490D1E2706C9D /* ActiveLabel */ = {
+		73BD8C4FD7F91BB9AAEEF4C9FACF959D /* libPusher */ = {
 			isa = PBXGroup;
 			children = (
-				E6A6AB5C478E321052D536477FA02036 /* ActiveLabel.swift */,
-				81F86BBDA7B7A1C9FF0F023024092A24 /* ActiveType.swift */,
-				CF72EFFD543E6AFC8EC1417CDD0382B8 /* RegexParser.swift */,
-				EB1D36766990FC78648EADAF879E0013 /* Support Files */,
+				970808E8E5CAECFED02A2C398C854394 /* Core */,
+				122D85CAA557C01BCA1C7337A935AE7B /* Support Files */,
 			);
-			path = ActiveLabel;
-			sourceTree = "<group>";
-		};
-		73B0A7BC4A929C72CAAC649276C4581C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				091BC469B158B9D54E322FBAB019BE27 /* Info.plist */,
-				96CE5978D38F70419F8E31A5FC5F3449 /* libPusher.modulemap */,
-				83C52BFF61488E7FEF8123CEA884A9A5 /* libPusher.xcconfig */,
-				52F14060DB79F7BC10F26A34DF3A5E75 /* libPusher-dummy.m */,
-				24157F1165FE3430E83AB556BB06DE74 /* libPusher-prefix.pch */,
-				FD91545D3B3F4E71C976FA1D70B8EAAE /* libPusher-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/libPusher";
+			path = libPusher;
 			sourceTree = "<group>";
 		};
 		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
@@ -504,24 +556,31 @@
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
+		79A726958F00C52C47969114FF337F3F /* FSInteractiveMap */ = {
+			isa = PBXGroup;
+			children = (
+				80D38DCCE63BD4435FE618392030A31F /* FSInteractiveMapView.h */,
+				095DCB0411DC92D6022F31043333DBAF /* FSInteractiveMapView.m */,
+				75378E6B8E51E58DCA01CA3D1B438CED /* FSSVG.h */,
+				A1EC5E138025E11A6399132067A8C976 /* FSSVG.m */,
+				1F621028951C516609CF241F59E107BE /* FSSVGPathElement.h */,
+				6A5126D6C0B9BD4438C8A768B8F3F44E /* FSSVGPathElement.m */,
+				1FA1811A26E84019112AE5BBCFD5AA31 /* FSSVGUtils.h */,
+				D4FC08A6FDB636F98E7DDB1D1DE31C7D /* FSSVGUtils.m */,
+				68E676F4032BCD251D2794AA5E5E4D62 /* Support Files */,
+			);
+			path = FSInteractiveMap;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				0BCEBE9D38D6453FC1223B72B412E5B2 /* Frameworks */,
-				E6B9E98566FBA41E929FFB33EC9C33B2 /* Pods */,
-				40DEE2F234782F3241E83206C57FF4BB /* Products */,
+				FAC811B5FEA6A16A373C7D69AEAB6BD9 /* Pods */,
+				19C3735CDCCC1A7E0F72211C371C6CF8 /* Products */,
 				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		85EFBC864C00EA710764161C7364A483 /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				4AA9FFFEE696085D59C3E8F767841AC6 /* SwiftyJSON.swift */,
-				0E685468775CB0514A486656381F5837 /* Support Files */,
-			);
-			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		8C46FB873A6AE51AADAF0C8047BBEE70 /* iOS */ = {
@@ -534,23 +593,126 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		A09C84187C7C5631D6CFC4CD0FD925E5 /* SocketRocket */ = {
+		8F9A11DC4A30969920B569920BE1AAA9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				71BA3AA338B4A4AD0AD2A894AB6124B9 /* SRWebSocket.h */,
-				5791594B05FB15F08355AD22BE57FC97 /* SRWebSocket.m */,
-				B85A46295AC2137F6420DE04243B2146 /* Support Files */,
+				73FD8D7D8F798337A2B88B3D50526A62 /* ActiveLabel.modulemap */,
+				ADBDCABF549DF607824709E8372C508F /* ActiveLabel.xcconfig */,
+				7E2BE959180B6E3A8215AEC430113A6B /* ActiveLabel-dummy.m */,
+				1A07926C4894587BCB4E25941A8E622C /* ActiveLabel-prefix.pch */,
+				A15BFBAC7B8BEFA9B903AFAAC1C11315 /* ActiveLabel-umbrella.h */,
+				F4D42D848910D56095BB0A3E3A979510 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ActiveLabel";
+			sourceTree = "<group>";
+		};
+		970808E8E5CAECFED02A2C398C854394 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6AA05278D035B18D1F407BD6A7543DBC /* NSDictionary+QueryString.h */,
+				C92B903AA22939E5BE546EC5A6011DBD /* NSDictionary+QueryString.m */,
+				AC52D69A3DC5D7CB1FEA7BA69165AB4E /* NSString+Hashing.h */,
+				35E4A4D8F25FB317909AE8BF894E1F46 /* NSString+Hashing.m */,
+				4E5F63827D48FC81B0EB007AD261AADC /* PTBlockEventListener.h */,
+				2D301705C92CB3B209BD5EC7AB8941B8 /* PTBlockEventListener.m */,
+				18D99A37A143361A547C69F5C414309A /* PTEventListener.h */,
+				72365E08D73F1E144DC829A3BBA729B0 /* PTJSON.h */,
+				E25449B8F4F39F84C619A71368BF5632 /* PTJSON.m */,
+				DDD30608B59CD34993B04657CBDD9C40 /* PTPusher.h */,
+				AE1CF7AD04AD6B0CF6166FFEA1BF24F3 /* PTPusher.m */,
+				E871DF19EC523CE13997A91B9CB0393C /* PTPusher+Testing.h */,
+				D13BCCFF2A8342A88563F230A4871C00 /* PTPusher+Testing.m */,
+				0629181AF8F00F2830E016911A86E32B /* PTPusherAPI.h */,
+				B43D0FA240D6C4ABDC9CBD26C4CF8F7E /* PTPusherAPI.m */,
+				DB6401E06527C3246B4E16EE21148DFD /* PTPusherChannel.h */,
+				A7CACCC7B33214EE56AD4F69B8A86045 /* PTPusherChannel.m */,
+				670D9ACB5A690847B7DD87EFE54774FC /* PTPusherChannel_Private.h */,
+				230EB59955E4A78418A54EA845D462A4 /* PTPusherChannelAuthorizationOperation.h */,
+				283083DB87CEF56A571B7077AE945810 /* PTPusherChannelAuthorizationOperation.m */,
+				9D140E2A2C0904493704C6EFD9DCEF18 /* PTPusherConnection.h */,
+				ECC088E5F9F5E7AAE0DD324B82F65A6A /* PTPusherConnection.m */,
+				34E0BDE5039578EFE3B1B46C8D479A6A /* PTPusherDelegate.h */,
+				AF6C708ED29F250C5ED6C46B879D6719 /* PTPusherErrors.h */,
+				84B71A32F52458CE4A8DF883B061937F /* PTPusherEvent.h */,
+				BA809FFA3A99A553A25AA9E08B682DFC /* PTPusherEvent.m */,
+				D171CB29BFE6AC31F7EC23072AB025B4 /* PTPusherEventDispatcher.h */,
+				29CD3DC5772CE332D18494B46876D33D /* PTPusherEventDispatcher.m */,
+				0F7C6263F04FC10E62AB88A02ABEFF52 /* PTPusherEventPublisher.h */,
+				72CBE12DF0922F22D46B2E7A832BBED6 /* PTPusherMacros.h */,
+				73A27319FDBF0AD1454D83DE23167820 /* PTPusherMockConnection.h */,
+				4645A850E4ECB6F20D70C7CA4ACC565E /* PTPusherMockConnection.m */,
+				126853C97B4E1994E50D1EA584E5C3C8 /* PTPusherPresenceChannelDelegate.h */,
+				22EEC9DEEFFC18F3EADA9F1812F0414B /* PTTargetActionEventListener.h */,
+				C52EDAE7CD47827B5AC36BE34D3DDE17 /* PTTargetActionEventListener.m */,
+				D50972465AB072103AA4CAD48EA147CA /* PTURLRequestOperation.h */,
+				FD2BFA5A26299EACEC1BCD0E8C19289B /* PTURLRequestOperation.m */,
+				5533770895450A93CC980875A008782E /* Pusher.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		9AFFB44154F8D5D8F330C626C8F5C01D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD6E4D0759DEB95EDEA4BD82296B618F /* Info.plist */,
+				D75B498236B64ADB33F3A72A90D381F5 /* SlackTextViewController.modulemap */,
+				C051829EC0B72617269F81693A7BD371 /* SlackTextViewController.xcconfig */,
+				D83E7AD09D205FACE01F5C1A6AF1347A /* SlackTextViewController-dummy.m */,
+				DCAE97D364089C370C5E5D0DE5D6CE48 /* SlackTextViewController-prefix.pch */,
+				1EE9C820DF85237ECAF2240ACBEC208A /* SlackTextViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SlackTextViewController";
+			sourceTree = "<group>";
+		};
+		A2F6CDEDF2EE51EAEE64F2805E4034F6 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				E306DBA0929ED1378AE6BA1F050CDBB2 /* Alamofire.swift */,
+				96F00391E0468AE8B7CBBAB333EC0C9F /* Download.swift */,
+				1B093D3E8C36EC06FA2A69A73DA851C4 /* Error.swift */,
+				970DB2C5782C264E55AC8E8509EE4F61 /* Manager.swift */,
+				DFC2354B73A54D260D35035AFEEE33E4 /* MultipartFormData.swift */,
+				990A755FA842B6E65AFFD5D5D2A274BB /* NetworkReachabilityManager.swift */,
+				10827BE379062B5A6A1260F3D93F8E52 /* Notifications.swift */,
+				8708DA17941A45C00AAD11CC5E3A26EF /* ParameterEncoding.swift */,
+				9DEF18446F19E15F48B1A3E113D91AC0 /* Request.swift */,
+				37A972F2225508C860F5F21D20493E92 /* Response.swift */,
+				1B1C445DCF6B625234C711FE46B52021 /* ResponseSerialization.swift */,
+				09B9DB893AB91EBEA8D430B0ECC10E79 /* Result.swift */,
+				5AF274B487D68233AB7BE9098FEDA3A2 /* ServerTrustPolicy.swift */,
+				288314CF30CB215B612241B0FADE28A5 /* Stream.swift */,
+				7ED8F1722F4BD6717C514FF6857CF84A /* Timeline.swift */,
+				CBCA72885DC6D24CD55C19C4182B62CB /* Upload.swift */,
+				4293A4D687ED944506FAE18B5BF8E2DF /* Validation.swift */,
+				7022BC9731361D3A914C55882056CD3D /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		B1BE6F0C2AAD08A8FB9444354A474510 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				677E17C4F599F14293B009E88D942E66 /* SRWebSocket.h */,
+				1D1E96AF0EBE4BC1A578F901B3110BEC /* SRWebSocket.m */,
+				B546C1E4E4431B137C3B3916236C31A5 /* Support Files */,
 			);
 			path = SocketRocket;
 			sourceTree = "<group>";
 		};
-		A24F0086078A48E5328D593D60E18462 /* libPusher */ = {
+		B546C1E4E4431B137C3B3916236C31A5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E14E85C83CC85874E0522EC0C8EAFC27 /* Core */,
-				73B0A7BC4A929C72CAAC649276C4581C /* Support Files */,
+				1CC8EE3E74658FFAFF91363EA8B905B7 /* Info.plist */,
+				FDD9D00BF52368D01A6F72E3152F7AD0 /* SocketRocket.modulemap */,
+				4DECE85BC24EC9061B652B99F8C3A719 /* SocketRocket.xcconfig */,
+				7CD2A228A99494040168B0B7299C1AC1 /* SocketRocket-dummy.m */,
+				BBC851F17BC8571E50D5D4FE89F07513 /* SocketRocket-prefix.pch */,
+				C7C35B7C560F0C4ED6D95C71A8B44F8B /* SocketRocket-umbrella.h */,
 			);
-			path = libPusher;
+			name = "Support Files";
+			path = "../Target Support Files/SocketRocket";
 			sourceTree = "<group>";
 		};
 		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
@@ -561,118 +723,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B85A46295AC2137F6420DE04243B2146 /* Support Files */ = {
+		F5B00C498C02BB69A6CB38A6BE477EBB /* ActiveLabel */ = {
 			isa = PBXGroup;
 			children = (
-				EF81A76C67FBF2A3AE68A07B3A7DAD4A /* Info.plist */,
-				7F92090BDD770A39FE3E53CEBC9BABA6 /* SocketRocket.modulemap */,
-				D60AEC08A1336FB18CCE0391923A08EA /* SocketRocket.xcconfig */,
-				FD5DFCDEE4B651A6CDD53B791A411D4F /* SocketRocket-dummy.m */,
-				026087BDF0442D8224B5872EE14EFCA8 /* SocketRocket-prefix.pch */,
-				D0699F13D85EFAA7A8A2B755EF6519FC /* SocketRocket-umbrella.h */,
+				5103A1048936B6E35F98283054BC4486 /* ActiveLabel.swift */,
+				BA0C4DEEDE9630D332A01FA4A2B467EC /* ActiveType.swift */,
+				6567FFF7C3499589ED55B2478156306E /* RegexParser.swift */,
+				8F9A11DC4A30969920B569920BE1AAA9 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SocketRocket";
+			path = ActiveLabel;
 			sourceTree = "<group>";
 		};
-		E046C157CC1BD6477A196E999AE280E7 /* SlackTextViewController */ = {
+		FAC811B5FEA6A16A373C7D69AEAB6BD9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6973E5A5CE96B60B06878D849B8082F5 /* SLKInputAccessoryView.h */,
-				D5DFB4BCF4158C7C225FF9FCA5D4EB57 /* SLKInputAccessoryView.m */,
-				9567F5DBCFE6BB3802C5AA5E843EA84B /* SLKTextInputbar.h */,
-				35E9724555BE03C19021EAC022C4F6D4 /* SLKTextInputbar.m */,
-				F7BA3F18A3DC86C7E819CBFFDDDED2AB /* SLKTextView.h */,
-				A512F338A344B89F7F2823DCE49E2BE3 /* SLKTextView.m */,
-				E160940F6C664A8FBB0AD4C1178AADB8 /* SLKTextView+SLKAdditions.h */,
-				2166143C69709F3D7302D3C82487DC60 /* SLKTextView+SLKAdditions.m */,
-				410481780A2BB4F2E4362495CCF2DCDC /* SLKTextViewController.h */,
-				2AB755E0F1BF2DDBE526719ABA353034 /* SLKTextViewController.m */,
-				A08AAECF157A69442F0F5897C3F5B923 /* SLKTypingIndicatorProtocol.h */,
-				BF9EF3B7C9653B5FDEDB671E46227D4C /* SLKTypingIndicatorView.h */,
-				882BF8F1B08459B5D676E7049238519D /* SLKTypingIndicatorView.m */,
-				2D6C945411AE69827B94DF3B729C3CC9 /* SLKUIConstants.h */,
-				8C087D54C10AB9025DFA86ED5604B470 /* UIResponder+SLKAdditions.h */,
-				DF8AF78940E48529E7946AA196323CBF /* UIResponder+SLKAdditions.m */,
-				345E8BD8FB821B3C1F8B3ED517E85FF4 /* UIScrollView+SLKAdditions.h */,
-				422AF2692671C60D69E03ED2FA0E9617 /* UIScrollView+SLKAdditions.m */,
-				56A32245A3F40FAD7756E228517303F7 /* UIView+SLKAdditions.h */,
-				3A4E0FD48AACFAF2BD6CA75A6E604170 /* UIView+SLKAdditions.m */,
-				2CE17BE30456CFA89EC8B863AE0DA613 /* Support Files */,
-			);
-			path = SlackTextViewController;
-			sourceTree = "<group>";
-		};
-		E14E85C83CC85874E0522EC0C8EAFC27 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				5E8C6B6724DB17D1F6E38C1F7BC7EB39 /* NSDictionary+QueryString.h */,
-				ECE775F8FB611FEBBFBC3089595D9991 /* NSDictionary+QueryString.m */,
-				530B7AC2D1B24FAE6BBDC6DA53124720 /* NSString+Hashing.h */,
-				5F8524C200E22298238128323394CBA9 /* NSString+Hashing.m */,
-				92A48A520D36BD4B1046D16193C73580 /* PTBlockEventListener.h */,
-				D7B2758F2258264500CAEBDC679B8BA5 /* PTBlockEventListener.m */,
-				4865DD78CEBC913778D1E4E821951286 /* PTEventListener.h */,
-				DB206685D23AE050F678C9C58D1508B5 /* PTJSON.h */,
-				459BBBF4637F282D5D813ED1D0976F8D /* PTJSON.m */,
-				A55B0522F852F458116B80EF9823C8CE /* PTPusher.h */,
-				FEE0F7B3E14DDC28092AF48BBFA3CD6C /* PTPusher.m */,
-				BF626FC333C2781D8250D8EB5AB1A9FC /* PTPusher+Testing.h */,
-				63D316E51ECF81B45D6C8927F1EA62CC /* PTPusher+Testing.m */,
-				201E2C4B4C7171705EDAA27E71317E24 /* PTPusherAPI.h */,
-				E82D97A9389D9AEF57E11DFC7E51CDD7 /* PTPusherAPI.m */,
-				8A4086700BDE47CE576FC6B4AE5A1494 /* PTPusherChannel.h */,
-				7975512AF10BF970C8FE4D7534B36C2C /* PTPusherChannel.m */,
-				C94EE3E4CB62946E469979CF58D16D6B /* PTPusherChannel_Private.h */,
-				ADBBA335A7E42992A7288D73B70E8691 /* PTPusherChannelAuthorizationOperation.h */,
-				1EDEB6AFC868868AC8464D9F6E7C027C /* PTPusherChannelAuthorizationOperation.m */,
-				B8700E1F96C99C3FB2BC1A35AD9DF7E7 /* PTPusherConnection.h */,
-				316500C5D1B8D77C14D55AA77A134F1E /* PTPusherConnection.m */,
-				1367E33F6826B03FF39FB8979EFBCA07 /* PTPusherDelegate.h */,
-				91779C23D9739C5A994AE2EF76A32F70 /* PTPusherErrors.h */,
-				845E7413E1DD3AD548824A7261056405 /* PTPusherEvent.h */,
-				7951B6F9F552E776D67A138F42425478 /* PTPusherEvent.m */,
-				017746CD00AB7DA6E863C6BAD9747FFC /* PTPusherEventDispatcher.h */,
-				A66DEF17F9F028F64EE5A3F06F77A2D0 /* PTPusherEventDispatcher.m */,
-				575C32EFE78E78E881F2478912CCA328 /* PTPusherEventPublisher.h */,
-				F57742BF490AEBEDBBE2FD94D2143043 /* PTPusherMacros.h */,
-				32A07C129611FD8D425972F5206DD4EF /* PTPusherMockConnection.h */,
-				C86C439FFFA68A6E537C7C7AD17FBD5D /* PTPusherMockConnection.m */,
-				8DBBB21DB7441D1176CD97AD40AAF73B /* PTPusherPresenceChannelDelegate.h */,
-				D37E645998DD3A702741BC3F87D58E4D /* PTTargetActionEventListener.h */,
-				4AA2734041B54577EC780760B6B309EF /* PTTargetActionEventListener.m */,
-				2614ECF37FCF1331EDC7C5CFE2CEFCC0 /* PTURLRequestOperation.h */,
-				F679B403F52A181C71B4B7D93DD6E5AE /* PTURLRequestOperation.m */,
-				5EBF3B83BFA99F00F410A96B297E2247 /* Pusher.h */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		E6B9E98566FBA41E929FFB33EC9C33B2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6E1CAE96BCE4EA0FF8E490D1E2706C9D /* ActiveLabel */,
-				4ED9053392AE05EA05AE3ABF14FAA947 /* Alamofire */,
-				A24F0086078A48E5328D593D60E18462 /* libPusher */,
-				E046C157CC1BD6477A196E999AE280E7 /* SlackTextViewController */,
-				A09C84187C7C5631D6CFC4CD0FD925E5 /* SocketRocket */,
-				85EFBC864C00EA710764161C7364A483 /* SwiftyJSON */,
+				F5B00C498C02BB69A6CB38A6BE477EBB /* ActiveLabel */,
+				A2F6CDEDF2EE51EAEE64F2805E4034F6 /* Alamofire */,
+				79A726958F00C52C47969114FF337F3F /* FSInteractiveMap */,
+				73BD8C4FD7F91BB9AAEEF4C9FACF959D /* libPusher */,
+				705C52951771AB7BECA72AADB96583D4 /* SlackTextViewController */,
+				B1BE6F0C2AAD08A8FB9444354A474510 /* SocketRocket */,
+				50CFF9A85A7DE5A06717DE0E297F6E16 /* SwiftyJSON */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		EB1D36766990FC78648EADAF879E0013 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B07264F9C0AF9F99686317457AC8EB83 /* ActiveLabel.modulemap */,
-				0DCD0ED4FB4D5D34C9A027EA37A41B36 /* ActiveLabel.xcconfig */,
-				6220BB0A96B2C7A071AEC2D41A9862FF /* ActiveLabel-dummy.m */,
-				9DB99C8EDF591CBEE2ED43E1E25EA17D /* ActiveLabel-prefix.pch */,
-				38EE7D77D94802C9DD725FEBB3E60E4A /* ActiveLabel-umbrella.h */,
-				11994BF93A053F3469CFABC6061A5EED /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ActiveLabel";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -709,30 +782,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		19F795E94F2F5A6AC62E2657B36E831C /* Headers */ = {
+		18C7FC641FB745830BE5F7F2C2752F69 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C113BA7D3DCA185298B6D712D1479497 /* SlackTextViewController-umbrella.h in Headers */,
-				00EC94C1E6A33F1B54A39A2E3977CA1F /* SLKInputAccessoryView.h in Headers */,
-				401DFF40FC985608EAAB16E049BFE001 /* SLKTextInputbar.h in Headers */,
-				0EC63B6BCC1F0CAE2AE54A8E2F9C72ED /* SLKTextView+SLKAdditions.h in Headers */,
-				7DD82214919C6A316A8669DEE2AAB8F8 /* SLKTextView.h in Headers */,
-				96EC0BFCC9A02AD337153756E55E866C /* SLKTextViewController.h in Headers */,
-				2F77CE407157B63EE811E426E56B6BE3 /* SLKTypingIndicatorProtocol.h in Headers */,
-				F33A0BA3F20F8992A42BECEA21EB1C6B /* SLKTypingIndicatorView.h in Headers */,
-				EFC032279282F760BEFAF603836C06F0 /* SLKUIConstants.h in Headers */,
-				08E0338C8CE7D7FA77A0216F45886E5A /* UIResponder+SLKAdditions.h in Headers */,
-				D394B1F6E66D2EA67810465EA49C106B /* UIScrollView+SLKAdditions.h in Headers */,
-				C3E263F2503EBB505CB80AE3FF2EF3E2 /* UIView+SLKAdditions.h in Headers */,
+				C01AE40A4DA22D38AFAC2FCB136E832A /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		50469EC3E28994FC7838C61E16304BD3 /* Headers */ = {
+		3E6DBE565B35EC6D36A9485A91C27431 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C6B9AC77315D1B22FBB6F2763D7BBB5 /* SwiftyJSON-umbrella.h in Headers */,
+				6846B9D4BA877EDC7F89AE50B77DF031 /* SlackTextViewController-umbrella.h in Headers */,
+				B245E535B88D65D8EA2FD618200211B7 /* SLKInputAccessoryView.h in Headers */,
+				3C022F7861B5D97FBA5154EF3B806A81 /* SLKTextInputbar.h in Headers */,
+				5894FC85908D53EE9F62097E9C0DC5A7 /* SLKTextView+SLKAdditions.h in Headers */,
+				0311337C9FE72AC035EFA3DE83120A98 /* SLKTextView.h in Headers */,
+				FEE7C202CAC7A9C2014F5DE578197684 /* SLKTextViewController.h in Headers */,
+				10A9B44867D2D3F2705E613E5706273F /* SLKTypingIndicatorProtocol.h in Headers */,
+				8AD320B20582E0445056A82738E89963 /* SLKTypingIndicatorView.h in Headers */,
+				352C708BF1F9F29B399FB158BDA1A2E5 /* SLKUIConstants.h in Headers */,
+				6A148EA2FBFE67A399FF11799D2302C1 /* UIResponder+SLKAdditions.h in Headers */,
+				FC117093D602E448B262BB72FABF3B38 /* UIScrollView+SLKAdditions.h in Headers */,
+				2E95F8208CB07FE39F654F3600D2AFE9 /* UIView+SLKAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,11 +826,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DECA5DC508E7459BCE145975A90E6AB2 /* Headers */ = {
+		A6B9F3A4F0F98A51431E8734F3B486DF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FEEFE8A16C3EA1B65549A119722923F /* Pods-umbrella.h in Headers */,
+				C34271C9BE220AA7B9850D7CA73562B3 /* FSInteractiveMap-umbrella.h in Headers */,
+				B0279DEBAFF219CE2A5432592861E041 /* FSInteractiveMapView.h in Headers */,
+				715A7D8B12369F478DB2209505369812 /* FSSVG.h in Headers */,
+				8D7A04832C55A0991E8BDA6B685E67B2 /* FSSVGPathElement.h in Headers */,
+				E7E7A3696983DE33339719BB1636B552 /* FSSVGUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,16 +846,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC4F9ADB9D0E79DD24D0547744333E62 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CCD37D04EA796EF34D557A4C9604FC3 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0A23A955999F6284552CF5831A0A7F98 /* SlackTextViewController */ = {
+		1C790DBA7785D50D967D4CD216CC691A /* SlackTextViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E3CD35E4347A4C190B437584731F0C1F /* Build configuration list for PBXNativeTarget "SlackTextViewController" */;
+			buildConfigurationList = 400DCDFFF61A29090D0C6A58B94FDE1C /* Build configuration list for PBXNativeTarget "SlackTextViewController" */;
 			buildPhases = (
-				DEC491DB88A74D0DCA949ECDF9BD9048 /* Sources */,
-				B3CF4FD7FD7BD1B74FA1CC5F8AEEC15A /* Frameworks */,
-				19F795E94F2F5A6AC62E2657B36E831C /* Headers */,
+				E4D044A04380CB1A07EAEEDCE736DB0B /* Sources */,
+				5C176895481558880EB95C2A7039B671 /* Frameworks */,
+				3E6DBE565B35EC6D36A9485A91C27431 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -786,24 +871,31 @@
 			);
 			name = SlackTextViewController;
 			productName = SlackTextViewController;
-			productReference = 40878B55AA125305D738034FA44F51BA /* SlackTextViewController.framework */;
+			productReference = BC2AA24E0B5A1368DF4A0ADD0C570993 /* SlackTextViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1158496B978950D9E0D98DAB57CED61F /* SwiftyJSON */ = {
+		2EF96360CA370B96BD5EFF50E31A3C4A /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D97E38A6867FA8B6CAD33DDEC6FB9B1 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 75FED59330951CA152B86C50DA040667 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				EE56EA9184FB9F3F9800D4A4069E4A6C /* Sources */,
-				03FC6285A22A71DC744CBC5E4674F753 /* Frameworks */,
-				50469EC3E28994FC7838C61E16304BD3 /* Headers */,
+				BC297F69669F5347133A15974E9D620A /* Sources */,
+				F06D4FA3EC7CE029F16DBABC76043BEC /* Frameworks */,
+				FC4F9ADB9D0E79DD24D0547744333E62 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0022FB24B9DF10F5038E13B9BF30BACF /* PBXTargetDependency */,
+				FA430EFD2F1A03A43170FBAEEDC4F7FE /* PBXTargetDependency */,
+				9A718913304473E933C36510D6EF3CE5 /* PBXTargetDependency */,
+				16FC30FD642328C0266F14C96B041504 /* PBXTargetDependency */,
+				EF7D280C3DABA986356506B69ACC11D9 /* PBXTargetDependency */,
+				09BECF360568A6B5B5A023ED091E58C1 /* PBXTargetDependency */,
+				588580C46F9F9949CBD576AB73D9E5B1 /* PBXTargetDependency */,
 			);
-			name = SwiftyJSON;
-			productName = SwiftyJSON;
-			productReference = 1F632B23437FC1A06BFD10104DB9212A /* SwiftyJSON.framework */;
+			name = Pods;
+			productName = Pods;
+			productReference = 065752CC4C1A2103615DCFD6582BA0C5 /* Pods.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		31C84A3832DB4AEB429573AACE8E3E73 /* ActiveLabel */ = {
@@ -820,7 +912,7 @@
 			);
 			name = ActiveLabel;
 			productName = ActiveLabel;
-			productReference = 9FA4BDF126CD0F73B77BF14918CD9436 /* ActiveLabel.framework */;
+			productReference = 5B172F1CD1CCD495B228E205B3396D97 /* ActiveLabel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		68C2CC34B364F239C5FA621E4B017473 /* libPusher */ = {
@@ -838,7 +930,7 @@
 			);
 			name = libPusher;
 			productName = libPusher;
-			productReference = D2E9F3BB49ACC9928D3991167709B737 /* Pusher.framework */;
+			productReference = D2DE1BF22E4109D4BB69DA215466B922 /* Pusher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */ = {
@@ -855,7 +947,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 65188E316C38D95128FEE0CD3DF65AB8 /* Alamofire.framework */;
+			productReference = 4440FC39EEFDEC204C66100C893079A3 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		96C4C0EDEAD003340953DF9256BD80A7 /* SocketRocket */ = {
@@ -872,30 +964,41 @@
 			);
 			name = SocketRocket;
 			productName = SocketRocket;
-			productReference = B4CE15043B0427B5A90CCA782A4BE22E /* SocketRocket.framework */;
+			productReference = 27601E997BCFB3491828C38B12D2887B /* SocketRocket.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E4E92A9BBEB521E262B6EF611B1AB8AA /* Pods */ = {
+		9B35E3887980AEBD5C96BE6BBA10E1BD /* FSInteractiveMap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D70F363F94E625FFA0BD862E20E36B33 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 0A25F16F779EED540F53AA569775F88B /* Build configuration list for PBXNativeTarget "FSInteractiveMap" */;
 			buildPhases = (
-				6218CE4589A9018E8897ECE603DA42B0 /* Sources */,
-				711F98D4CB9B5F4A875A950BCEDB7287 /* Frameworks */,
-				DECA5DC508E7459BCE145975A90E6AB2 /* Headers */,
+				F9180F2B77067048B5639EAC738CBC28 /* Sources */,
+				9061D49EC4001DFF91057B55E01FD54B /* Frameworks */,
+				A6B9F3A4F0F98A51431E8734F3B486DF /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F61FEF2FF385F715F4360540DEBC00AA /* PBXTargetDependency */,
-				49A889E51FE54FBFAF2F84443BE40B98 /* PBXTargetDependency */,
-				941FF5B10472081968F941CB89D47DA4 /* PBXTargetDependency */,
-				73D01FF3C933A1B573C9663FE1985C95 /* PBXTargetDependency */,
-				14BB06FFBBB1CA5F49BBA655442E68B2 /* PBXTargetDependency */,
-				3B929102DBBFE554DC9B3C4182E4569E /* PBXTargetDependency */,
 			);
-			name = Pods;
-			productName = Pods;
-			productReference = 5EE08EFB2226B914182E074ABEDF2FC0 /* Pods.framework */;
+			name = FSInteractiveMap;
+			productName = FSInteractiveMap;
+			productReference = F5D68E6880C3F91B82E5AD7CD5685429 /* FSInteractiveMap.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B16CB663434BA26049C18D61F330C08A /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5520F346679A4FC819099B27A7C8E96 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				DF5DC0744DD59F3223A065328CDF40A4 /* Sources */,
+				67C1C58132411F5CD689290426B7F1EF /* Frameworks */,
+				18C7FC641FB745830BE5F7F2C2752F69 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 8FD31D0B0EE5E3C39AE493F00A478C98 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -915,17 +1018,18 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 40DEE2F234782F3241E83206C57FF4BB /* Products */;
+			productRefGroup = 19C3735CDCCC1A7E0F72211C371C6CF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				31C84A3832DB4AEB429573AACE8E3E73 /* ActiveLabel */,
 				79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */,
+				9B35E3887980AEBD5C96BE6BBA10E1BD /* FSInteractiveMap */,
 				68C2CC34B364F239C5FA621E4B017473 /* libPusher */,
-				E4E92A9BBEB521E262B6EF611B1AB8AA /* Pods */,
-				0A23A955999F6284552CF5831A0A7F98 /* SlackTextViewController */,
+				2EF96360CA370B96BD5EFF50E31A3C4A /* Pods */,
+				1C790DBA7785D50D967D4CD216CC691A /* SlackTextViewController */,
 				96C4C0EDEAD003340953DF9256BD80A7 /* SocketRocket */,
-				1158496B978950D9E0D98DAB57CED61F /* SwiftyJSON */,
+				B16CB663434BA26049C18D61F330C08A /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
@@ -951,14 +1055,6 @@
 				74C582BFBAED8F16A9DA69B2087360AD /* PTPusherMockConnection.m in Sources */,
 				B14AB5F5CEFAF0631C42564C09CA5A42 /* PTTargetActionEventListener.m in Sources */,
 				6A5B90261782950A2A9279B23ADEE335 /* PTURLRequestOperation.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6218CE4589A9018E8897ECE603DA42B0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0760542E64F4C476D7F92495156728EF /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -996,6 +1092,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC297F69669F5347133A15974E9D620A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153F537F90BE6D196F0400958AF0AD17 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEF44BFA25D92E3213845EC673011E1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1007,52 +1111,70 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEC491DB88A74D0DCA949ECDF9BD9048 /* Sources */ = {
+		DF5DC0744DD59F3223A065328CDF40A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D669AB5F3C237380E9945EAB47D59B81 /* SlackTextViewController-dummy.m in Sources */,
-				F04B45A93513CBDEFEF6387E9B511F89 /* SLKInputAccessoryView.m in Sources */,
-				AD7A535D09B3052164318F228CF6BEA1 /* SLKTextInputbar.m in Sources */,
-				53EF71954AF04663570210C8E7264B1E /* SLKTextView+SLKAdditions.m in Sources */,
-				7A2652842923F01965B0EC35535AB475 /* SLKTextView.m in Sources */,
-				EC8F69896DC1549D42D021A5E8E16779 /* SLKTextViewController.m in Sources */,
-				DACCEFEDCC080AD7EB5EBBF66664BDEB /* SLKTypingIndicatorView.m in Sources */,
-				3B3AF32F4A3BC13F2C3A558122C3E92F /* UIResponder+SLKAdditions.m in Sources */,
-				803C9BA03B30EBF7E6435F6B530B4E32 /* UIScrollView+SLKAdditions.m in Sources */,
-				D5A4F6FC3850ABAABCCF6316F918655E /* UIView+SLKAdditions.m in Sources */,
+				294E5A37348460EB1F9649AE86458225 /* SwiftyJSON-dummy.m in Sources */,
+				3909BEA6AFD00CC16201D239EDD2B65D /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE56EA9184FB9F3F9800D4A4069E4A6C /* Sources */ = {
+		E4D044A04380CB1A07EAEEDCE736DB0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC462162483F946A546A4E3332B4FEC8 /* SwiftyJSON-dummy.m in Sources */,
-				DAFFD5AE455F2DA049E99F7445B117C5 /* SwiftyJSON.swift in Sources */,
+				E1EC505E7575E240F4989F1E931A4568 /* SlackTextViewController-dummy.m in Sources */,
+				E6CFF5D5133DE31E6EDEC6ED98A1F417 /* SLKInputAccessoryView.m in Sources */,
+				44B5C9FB44423638C34AA4AB9EAD4F26 /* SLKTextInputbar.m in Sources */,
+				327AEF5CFD19AC22586CC0A7FA362622 /* SLKTextView+SLKAdditions.m in Sources */,
+				B828EAF4CEFB5B291E4076F0187292E0 /* SLKTextView.m in Sources */,
+				89BED817D6281BD99E2F370C6552832E /* SLKTextViewController.m in Sources */,
+				37CDD7CB582D9080AE10E4D5730475E9 /* SLKTypingIndicatorView.m in Sources */,
+				59FA92A2C1FCE04DEB8F85358547C0EC /* UIResponder+SLKAdditions.m in Sources */,
+				4133827D397D9F6FDDF24F27C9E59B10 /* UIScrollView+SLKAdditions.m in Sources */,
+				DA44C717C1CF2FCAF4B2C8EBDD618F33 /* UIView+SLKAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9180F2B77067048B5639EAC738CBC28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B766702F2FBCF48A404D44F494F70063 /* FSInteractiveMap-dummy.m in Sources */,
+				B478FE427500D6E892135C8D274F39F2 /* FSInteractiveMapView.m in Sources */,
+				80EFA9BEB1E3F11F1CCC85D6DF68F7E0 /* FSSVG.m in Sources */,
+				E4D82B9C00AF12E06F12485B2C65E999 /* FSSVGPathElement.m in Sources */,
+				27F13CB98BB01F6F67FC3AF1CC62F157 /* FSSVGUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		14BB06FFBBB1CA5F49BBA655442E68B2 /* PBXTargetDependency */ = {
+		0022FB24B9DF10F5038E13B9BF30BACF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ActiveLabel;
+			target = 31C84A3832DB4AEB429573AACE8E3E73 /* ActiveLabel */;
+			targetProxy = B4C79ABA16934BDCBAFFB2DB3878F9F7 /* PBXContainerItemProxy */;
+		};
+		09BECF360568A6B5B5A023ED091E58C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = 1158496B978950D9E0D98DAB57CED61F /* SwiftyJSON */;
-			targetProxy = 913237131934C82922A8ABE7524C53DD /* PBXContainerItemProxy */;
+			target = B16CB663434BA26049C18D61F330C08A /* SwiftyJSON */;
+			targetProxy = 4E6EED31453EFEE35281EBE9C4C408A0 /* PBXContainerItemProxy */;
 		};
-		3B929102DBBFE554DC9B3C4182E4569E /* PBXTargetDependency */ = {
+		16FC30FD642328C0266F14C96B041504 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlackTextViewController;
+			target = 1C790DBA7785D50D967D4CD216CC691A /* SlackTextViewController */;
+			targetProxy = 2EC1ABBEB932980E6D1D19FF83A6A535 /* PBXContainerItemProxy */;
+		};
+		588580C46F9F9949CBD576AB73D9E5B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = libPusher;
 			target = 68C2CC34B364F239C5FA621E4B017473 /* libPusher */;
-			targetProxy = 87503457BDA87302A9838174D51AD351 /* PBXContainerItemProxy */;
-		};
-		49A889E51FE54FBFAF2F84443BE40B98 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = 79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */;
-			targetProxy = 16B59A1FAC8754CF1EB3AC14312BB2E8 /* PBXContainerItemProxy */;
+			targetProxy = 614761D4F79B4CE2614718225EB00371 /* PBXContainerItemProxy */;
 		};
 		65ABAA23E36EEEB9104F34853722F450 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1060,30 +1182,30 @@
 			target = 96C4C0EDEAD003340953DF9256BD80A7 /* SocketRocket */;
 			targetProxy = 3713390BF19DBEACD663DE1C5A0F155D /* PBXContainerItemProxy */;
 		};
-		73D01FF3C933A1B573C9663FE1985C95 /* PBXTargetDependency */ = {
+		9A718913304473E933C36510D6EF3CE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSInteractiveMap;
+			target = 9B35E3887980AEBD5C96BE6BBA10E1BD /* FSInteractiveMap */;
+			targetProxy = 745AFC6D7309B115A166461C71E756F0 /* PBXContainerItemProxy */;
+		};
+		EF7D280C3DABA986356506B69ACC11D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SocketRocket;
 			target = 96C4C0EDEAD003340953DF9256BD80A7 /* SocketRocket */;
-			targetProxy = 04062948CCDB308B83ED65A02DFF50E3 /* PBXContainerItemProxy */;
+			targetProxy = 067057BB82BA95B4785A0CCD06F966DE /* PBXContainerItemProxy */;
 		};
-		941FF5B10472081968F941CB89D47DA4 /* PBXTargetDependency */ = {
+		FA430EFD2F1A03A43170FBAEEDC4F7FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SlackTextViewController;
-			target = 0A23A955999F6284552CF5831A0A7F98 /* SlackTextViewController */;
-			targetProxy = 95F1529D994D5BF05FC69A7AF1CE80B9 /* PBXContainerItemProxy */;
-		};
-		F61FEF2FF385F715F4360540DEBC00AA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ActiveLabel;
-			target = 31C84A3832DB4AEB429573AACE8E3E73 /* ActiveLabel */;
-			targetProxy = 15ACB2DDF148A12667A014F59DDB7E17 /* PBXContainerItemProxy */;
+			name = Alamofire;
+			target = 79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */;
+			targetProxy = EB44FD5BC4252745888D6002BD8DDF52 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		734F82919269C12337B206BBB8E76F11 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DCD0ED4FB4D5D34C9A027EA37A41B36 /* ActiveLabel.xcconfig */;
+			baseConfigurationReference = ADBDCABF549DF607824709E8372C508F /* ActiveLabel.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1109,9 +1231,9 @@
 			};
 			name = Debug;
 		};
-		8059254D0FC70C12DD9CB695460C1F4E /* Debug */ = {
+		7BD5D9E4F4A3B52D164A7299C655C8A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = C051829EC0B72617269F81693A7BD371 /* SlackTextViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1120,17 +1242,41 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SlackTextViewController/SlackTextViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlackTextViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SlackTextViewController/SlackTextViewController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
+				PRODUCT_NAME = SlackTextViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		81DAF2B187A7E81CC1C165739D78DBE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36B8950395C9C062506BF89D221C874D /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1139,6 +1285,33 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		876BC7B1B48339D0D0B979AE634A8E97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E17DC2E549E7C128ACAA7E5311ACE8 /* FSInteractiveMap.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSInteractiveMap/FSInteractiveMap-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSInteractiveMap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSInteractiveMap/FSInteractiveMap.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FSInteractiveMap;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1181,7 +1354,7 @@
 		};
 		8D9266DC5332C7CBAB37EEAD323274E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DCD0ED4FB4D5D34C9A027EA37A41B36 /* ActiveLabel.xcconfig */;
+			baseConfigurationReference = ADBDCABF549DF607824709E8372C508F /* ActiveLabel.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1208,7 +1381,7 @@
 		};
 		8DF9C6D52120D169F6D27A1F8EA19142 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83C52BFF61488E7FEF8123CEA884A9A5 /* libPusher.xcconfig */;
+			baseConfigurationReference = 163ECC2ED6FAB4DF489A6401355C4EAF /* libPusher.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1233,9 +1406,9 @@
 			};
 			name = Release;
 		};
-		9D7ACAA9853A899ADD80F149B1AC5E12 /* Debug */ = {
+		8E9BE0E268D0A1B598B672D451A5551C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78145646124D4EFE516A6C3C0E6B057A /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1244,17 +1417,46 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9FF80231345986438A1B9C3DAE0C1E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E17DC2E549E7C128ACAA7E5311ACE8 /* FSInteractiveMap.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSInteractiveMap/FSInteractiveMap-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSInteractiveMap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSInteractiveMap/FSInteractiveMap.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FSInteractiveMap;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1263,7 +1465,7 @@
 		};
 		A8372CABBBBC1105D0D96580051DA237 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D60AEC08A1336FB18CCE0391923A08EA /* SocketRocket.xcconfig */;
+			baseConfigurationReference = 4DECE85BC24EC9061B652B99F8C3A719 /* SocketRocket.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1290,7 +1492,7 @@
 		};
 		B6FC16AA8B8F0ECB0D4E9A05E0912511 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CA26CC514B23299DEFF10D9AD6E910F /* Alamofire.xcconfig */;
+			baseConfigurationReference = 92EBE86957748BDBF0E49EFDE21B3B74 /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1349,39 +1551,9 @@
 			};
 			name = Release;
 		};
-		C9B46DD95657252298F66F303F09BD85 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		CB1883950DAA2ED713560E38DF52008D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CA26CC514B23299DEFF10D9AD6E910F /* Alamofire.xcconfig */;
+			baseConfigurationReference = 92EBE86957748BDBF0E49EFDE21B3B74 /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1407,9 +1579,9 @@
 			};
 			name = Debug;
 		};
-		D79B64F8DCDFD4549FB1390BE5A9171D /* Release */ = {
+		E4D0968A80E4C9255C9DA202C9E4C72B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78145646124D4EFE516A6C3C0E6B057A /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 36B8950395C9C062506BF89D221C874D /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1436,7 +1608,7 @@
 		};
 		E4F9BEF10B2310D8921DBA60C488829E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83C52BFF61488E7FEF8123CEA884A9A5 /* libPusher.xcconfig */;
+			baseConfigurationReference = 163ECC2ED6FAB4DF489A6401355C4EAF /* libPusher.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1463,7 +1635,7 @@
 		};
 		E5DB77FFDCA65093FE36677E670CCE75 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D60AEC08A1336FB18CCE0391923A08EA /* SocketRocket.xcconfig */;
+			baseConfigurationReference = 4DECE85BC24EC9061B652B99F8C3A719 /* SocketRocket.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1488,36 +1660,9 @@
 			};
 			name = Debug;
 		};
-		ED7596952B9378CA504D4DBCD54C72B6 /* Debug */ = {
+		F08004DBDEDA74D7B0ADB4C3F8A1E388 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1ABE67DBC919FB8880EC5F0C33D783D /* SlackTextViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SlackTextViewController/SlackTextViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SlackTextViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SlackTextViewController/SlackTextViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SlackTextViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FA7297479A4A549D1AA9CCEBB0E87396 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1ABE67DBC919FB8880EC5F0C33D783D /* SlackTextViewController.xcconfig */;
+			baseConfigurationReference = C051829EC0B72617269F81693A7BD371 /* SlackTextViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1542,14 +1687,45 @@
 			};
 			name = Release;
 		};
+		F207B258715666842D2986704409D97F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0D97E38A6867FA8B6CAD33DDEC6FB9B1 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		0A25F16F779EED540F53AA569775F88B /* Build configuration list for PBXNativeTarget "FSInteractiveMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9D7ACAA9853A899ADD80F149B1AC5E12 /* Debug */,
-				D79B64F8DCDFD4549FB1390BE5A9171D /* Release */,
+				9FF80231345986438A1B9C3DAE0C1E4A /* Debug */,
+				876BC7B1B48339D0D0B979AE634A8E97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1581,6 +1757,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		400DCDFFF61A29090D0C6A58B94FDE1C /* Build configuration list for PBXNativeTarget "SlackTextViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BD5D9E4F4A3B52D164A7299C655C8A8 /* Debug */,
+				F08004DBDEDA74D7B0ADB4C3F8A1E388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		53E268A260A8873B1F743E2DE92A91E7 /* Build configuration list for PBXNativeTarget "SocketRocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1599,20 +1784,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D70F363F94E625FFA0BD862E20E36B33 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		75FED59330951CA152B86C50DA040667 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8059254D0FC70C12DD9CB695460C1F4E /* Debug */,
-				C9B46DD95657252298F66F303F09BD85 /* Release */,
+				F207B258715666842D2986704409D97F /* Debug */,
+				8E9BE0E268D0A1B598B672D451A5551C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E3CD35E4347A4C190B437584731F0C1F /* Build configuration list for PBXNativeTarget "SlackTextViewController" */ = {
+		F5520F346679A4FC819099B27A7C8E96 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED7596952B9378CA504D4DBCD54C72B6 /* Debug */,
-				FA7297479A4A549D1AA9CCEBB0E87396 /* Release */,
+				81DAF2B187A7E81CC1C165739D78DBE4 /* Debug */,
+				E4D0968A80E4C9255C9DA202C9E4C72B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

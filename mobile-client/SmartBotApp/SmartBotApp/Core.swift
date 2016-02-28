@@ -10,9 +10,9 @@ class Core {
     static var messageStore : [String : [Message]] = [
         "Blackrock" : [],
         "Facebook" : [
-            Message(body: "Obama tagged you in a picture", belongsToUser: true,sender: "Facebook"),
-            Message(body: "Post this post", belongsToUser: true,sender: "Facebook"),
-            Message(body: "Done!", belongsToUser: false,sender: "Facebook")
+            Message(body: "Obama tagged you in a picture", belongsToUser: false,sender: "Facebook"),
+            Message(body: "Like that", belongsToUser: true,sender: "Facebook"),
+            Message(body: "Done! 👍", belongsToUser: false,sender: "Facebook")
         ],
         "Spotify" : [
             Message(body: "Barack added a new track to your playlist", belongsToUser: false,sender: "Spotify")
@@ -40,7 +40,7 @@ class Core {
         "Blackrock" : UIColor.blackColor(),
         "Amazon" : UIColor.orangeColor(),
         "Spotify" : UIColor.greenColor(),
-        "Skyscanner" : UIColor.blueColor(),
+        "Skyscanner" : UIColor(hue: 0.55, saturation: 1, brightness: 0.98, alpha: 1.0),
         "Clarifai" : UIColor(hue: 0.5917, saturation: 1, brightness: 0.9, alpha: 1.0),
         "Macbook" : UIColor.grayColor()
     ]
@@ -50,12 +50,14 @@ class Core {
         "Blackrock" : ["AAPL" , "GOOG" , "MSFT" , "BLK","GS"],
         "Facebook" : ["timeline" , "hacklondon2016" , "notes"],
         "Amazon" : ["christmas" , "basket" , "techstuff" ],
-        "Skyscanner" : ["Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra", "Angola", "Anguilla", "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegowina", "Botswana", "Bouvet Island", "Brazil", "British Indian Ocean Territory", "Brunei Darussalam", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada"]
+        "Skyscanner" : ["Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra", "Angola", "Anguilla", "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegowina", "Botswana", "Bouvet Island", "Brazil", "British Indian Ocean Territory", "Brunei Darussalam", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada"],
+        "Macbook" : ["projectImagesFolder" , "imagesFolder" ,"catPicturesRepo"]
     ]
 
     
     static var mentions : [String : [String]] = [
-        "Facebook" : ["Bill Gates" , "Jesus M. Christ" , "Rick Astley"]
+        "Facebook" : ["Bill Gates" , "Jesus M. Christ" , "Rick Astley"],
+        "Macbook" : ["iTunes" , "System" , "Automator"]
     ]
     
     

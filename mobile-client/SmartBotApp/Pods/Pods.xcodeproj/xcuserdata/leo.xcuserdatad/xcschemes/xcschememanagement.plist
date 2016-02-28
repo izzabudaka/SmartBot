@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FSInteractiveMap.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,12 +47,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0A23A955999F6284552CF5831A0A7F98</key>
+		<key>1C790DBA7785D50D967D4CD216CC691A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1158496B978950D9E0D98DAB57CED61F</key>
+		<key>2EF96360CA370B96BD5EFF50E31A3C4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E4E92A9BBEB521E262B6EF611B1AB8AA</key>
+		<key>9B35E3887980AEBD5C96BE6BBA10E1BD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B16CB663434BA26049C18D61F330C08A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
