@@ -24,7 +24,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SocketRocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>libPusher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,7 +42,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1D7C54502ADDAA9071D7D7A020BDDD9C</key>
+		<key>0A23A955999F6284552CF5831A0A7F98</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1158496B978950D9E0D98DAB57CED61F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,17 +57,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>68C2CC34B364F239C5FA621E4B017473</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B192DEB1162BE31F7A1FBA1A69D1E44D</key>
+		<key>96C4C0EDEAD003340953DF9256BD80A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D3EB1D8D8215808EBBF0508CD1CD6AF7</key>
+		<key>E4E92A9BBEB521E262B6EF611B1AB8AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

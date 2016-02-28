@@ -3,3 +3,4 @@ pod "SlackTextViewController"
 pod 'Alamofire', '~> 3.0'
 pod 'ActiveLabel'
 pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+pod 'libPusher', '~> 1.6.1'

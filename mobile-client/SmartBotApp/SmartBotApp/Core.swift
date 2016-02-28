@@ -23,6 +23,13 @@ class Core {
         "Skyscanner":[],
         "Clarifai" : [
             Message(body: "Here they are\n#cake\npineapple\npie", belongsToUser: false,sender: "Clarifai")
+        ],
+        "Macbook" : [
+            Message(body: "Someone tried to acces your protected folder /home/Videos/MathsVideos/Olympics/PDF/2009/PleaseDontReadThis", belongsToUser: false, sender: "Macbook"),
+            Message(body: "Restart needed for updates. Postpone this?", belongsToUser: false, sender: "Macbook"),
+            Message(body: "Yes", belongsToUser: true, sender: "Macbook"),
+            Message(body: "I'm afriad I can't do that , Leonardo", belongsToUser: false, sender: "Macbook"),
+            
         ]
     ]
 
@@ -34,7 +41,8 @@ class Core {
         "Amazon" : UIColor.orangeColor(),
         "Spotify" : UIColor.greenColor(),
         "Skyscanner" : UIColor.blueColor(),
-        "Clarifai" : UIColor(hue: 0.5917, saturation: 1, brightness: 0.9, alpha: 1.0)
+        "Clarifai" : UIColor(hue: 0.5917, saturation: 1, brightness: 0.9, alpha: 1.0),
+        "Macbook" : UIColor.grayColor()
     ]
     
     
@@ -49,5 +57,7 @@ class Core {
     static var mentions : [String : [String]] = [
         "Facebook" : ["Bill Gates" , "Jesus M. Christ" , "Rick Astley"]
     ]
+    
+    
     
 }

@@ -7,7 +7,10 @@ import Foundation
 import SlackTextViewController
 import Alamofire
 import SwiftyJSON
-class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , UINavigationControllerDelegate{
+import Pusher
+import PushKit
+
+class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , UINavigationControllerDelegate , PTPusherDelegate{
 
     let blackrock_url = "http://3c9be5e7.ngrok.io/command"
     let clarifai_url = "https://api.clarifai.com/v1/tag/"
@@ -44,7 +47,9 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
     override class func tableViewStyleForCoder(decoder: NSCoder) -> UITableViewStyle {
         return UITableViewStyle.Plain;
     }
-
+    
+    var client : PTPusher?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.registerNib(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "MessageCell")
@@ -81,6 +86,13 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
         
         
         imagePicker.delegate = self
+        
+        self.client = PTPusher(key: "061d40c84c49b423dd49" , delegate: self, encrypted: false)
+        self.client?.connect()
+        
+                
+        
+        
     }
     
     var searchResult : [String] = []
@@ -200,7 +212,7 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(Double(NSEC_PER_SEC))),dispatch_get_main_queue() , {
                     self.messages.append(Message(body: "Alright", belongsToUser: false,sender: Core.currentService))
                     self.tableView.reloadData()
-                    self.tableView.setContentOffset(CGPoint(x: 0, y: self.tableView.contentSize.height), animated: true)
+                    self.tableView.setContentOffset(CGPoint(x: 0, y: self.tableView.contentSize.height-5), animated: false)
 
                     
                     dispatch_after(dispatchTime, dispatch_get_main_queue(), {
