@@ -8,12 +8,14 @@ var pusher = new Pusher({
 });
 pusher.port = 443;
 
-function trigger() {
+var trigger = function() {
     pusher.trigger('my-channel',
     'my-event', {
         "music": "../Music/wreckingball.m4a"
     });
 }
 
-
-setInterval(trigger, 3000);
+this.start = function( callback ) {
+  setInterval(trigger, 3000);
+  callback("Triggered!")
+}

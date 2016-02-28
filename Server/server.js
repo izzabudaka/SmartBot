@@ -3,6 +3,8 @@ var dispatcher = require('httpdispatcher');
 var request    = require('request');
 var blackrock  = require('./blackrock.js');
 var witai      = require('./witai');
+var pusher     = require('./pusherserver.js');
+var skyscanner = require('./skyscanner.js');
 
 function blackRock(message, callback) {
   switch(message.intent.toLowerCase()) {
@@ -19,7 +21,17 @@ function blackRock(message, callback) {
         callback("The risk of investing in " + country + " is: " + body[country])
       })
     break;
+  }
+}
 
+function pusher(message, callback) {
+  switch(message.intent.toLowerCase()) {
+    case "play": 
+      pusher.start( function(result) {
+        console.log(result)
+        callback(result)
+      })
+    break;
   }
 }
 
@@ -28,6 +40,13 @@ function executeCommand(body, callback) {
     var to = body.to;
     switch(to.toLowerCase()) {
       case "blackrock": blackRock(analysedMessage, function(result) {
+        callback(result)
+      })
+      case "pusher": pusher.start( function(result) {
+        callback(result)
+      })
+      case "skyscanner": skyscanner.getData( analysedMessage, function(result) {
+        console.log(result)
         callback(result)
       })
       break;
