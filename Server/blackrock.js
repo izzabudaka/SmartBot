@@ -1,6 +1,26 @@
 var request    = require('request');
 var fs         = require('fs');
 
+this.getPerformance = function(ticker, callback) {
+  var url = "https://test3.blackrock.com/tools/hackathon/performance?identifiers=" + ticker;
+  var risks = [];
+  request({
+      uri: url,
+      method: "GET"
+    }, function (err, res, body) {
+      var results = JSON.parse(body).resultMap.RETURNS[0].returnsMap
+      var dates   = Object.keys(results)
+      for( var i = 0; i < 12; i++ ) {
+        try{
+          risks.push(results[dates[i]].drawdown)
+        } catch(err) {
+          console.log(results[i].returnsMap)
+        }
+      }
+      console.log(risks)
+      callback(risks)
+    });
+}
 this.getRisks = function( callback ) {
   var means = {}
   var countryCount = {}
@@ -32,13 +52,18 @@ var getCountries = function(identifier, callback) {
       uri: url,
       method: "GET"
     }, function (err, res, body) {
-      var results = JSON.parse(body).resultMap.SECURITY
-      for( var i = 0; i < results.length; i++ ) {
-        if(results[i].country == undefined)
-          results[i].country = "United States"
-        countries.push(results[i].country)
+      try{
+        var results = JSON.parse(body).resultMap.SECURITY
+        for( var i = 0; i < results.length; i++ ) {
+          if(results[i].country == undefined)
+            results[i].country = "United States"
+          countries.push(results[i].country)
+        }
+        callback(countries)
+      } catch(err){
+        console.log(err)
+        callback(err)
       }
-      callback(countries)
     });
 }
 
@@ -52,14 +77,20 @@ this.stockInfo = function(tickers, attribute, callback) {
       uri: uri,
       method: "GET"
     }, function (err, res, body) {
-      var resultList = JSON.parse(body).resultMap.SEARCH_RESULTS[0].resultList;
-      console.log("Retrieved result: " + resultList.toString())
-      var result = attribute + " data for: \n"; 
-      for( var i = 0; i < resultList.length; i++) {
-        result += resultList[i].ticker + " - " + resultList[i][attribute] + "\n"
+      try{
+        var resultList = JSON.parse(body).resultMap.SEARCH_RESULTS[0].resultList;
+        console.log("Retrieved result: " + resultList.toString())
+        var result = attribute + " data for: \n"; 
+        for( var i = 0; i < resultList.length; i++) {
+          result += resultList[i].ticker + " - " + resultList[i][attribute] + "\n"
+        }
+        console.log(result)
+        callback(result)        
+      } catch(err) {
+        console.log(err)
+        callback(err)
       }
-      console.log(result)
-      callback(result)
+
     });
 }
 
@@ -70,17 +101,21 @@ var getRisk = function(identifier, callback) {
       uri: url,
       method: "GET"
     }, function (err, res, body) {
+      try{
       var results = JSON.parse(body).resultMap.RETURNS
       for( var i = 0; i < results.length; i++ ) {
-        try{
-          var dates = Object.keys(results[i].returnsMap)
-          risks.push(results[i].returnsMap[dates[dates.length-1]].oneYearRisk)
-        } catch(err) {
-          console.log(results[i].returnsMap)
+          try{
+            var dates = Object.keys(results[i].returnsMap)
+            risks.push(results[i].returnsMap[dates[dates.length-1]].oneYearRisk)
+          } catch(err) {
+            console.log(results[i].returnsMap)
+          }
         }
-        
+        callback(risks)
+      } catch(err) {
+        console.log(err)
+        callback(err)
       }
-      callback(risks)
     });
 }
 

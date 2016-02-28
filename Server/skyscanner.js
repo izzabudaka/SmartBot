@@ -49,8 +49,12 @@ this.getData = function(message, callback){
           var result = JSON.parse(body) 
           var price  = result.Quotes[0].MinPrice 
           var time   = result.Quotes[0].OutboundLeg.DepartureDate
-          var d = new Date(time);
-          callback("You can leave at " + d + " for £" + price)
+          var today = new Date(time).toLocaleDateString('en-GB', {  
+              day : 'numeric',
+              month : 'short',
+              year : 'numeric'
+          }).split(' ').join('-');
+          callback("You can leave on " + today + " for $" + price)
         });
     })
   })

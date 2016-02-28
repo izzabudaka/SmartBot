@@ -5,6 +5,7 @@ var blackrock  = require('./blackrock.js');
 var witai      = require('./witai');
 var pusher     = require('./pusherserver.js');
 var skyscanner = require('./skyscanner.js');
+var riskMap    = {};
 
 function blackRock(message, callback) {
   switch(message.intent.toLowerCase()) {
@@ -15,11 +16,23 @@ function blackRock(message, callback) {
       })
       break;
     case "risk":
-      blackrock.getRisks( function(body) {
-        var country = JSON.parse(message.entities).country[0].value
-        console.log(body[country])
-        callback("The risk of investing in " + country + " is: " + body[country])
+      var country = JSON.parse(message.entities).country[0].value
+      callback("The risk of investing in " + country + " is: " + riskMap[country])
+    break;
+    case "performance":
+      var ticker = JSON.parse(message.entities).ticker[0].value
+      blackrock.getPerformance(ticker, function(result) {
+        console.log(result)
+        callback(result)
       })
+    break;
+    case "flights":
+      var country       = JSON.parse(message.entities).destination[0].value
+      var riskCountry   = riskMap[country]
+      if( riskCountry == undefined )
+        riskCountry = 0.02651179169388535
+      var risk        = riskCountry < 0.025? "low" : "high"
+      callback("The financial risk associated with travelling to " + country + " is " + riskCountry + " which is " + risk )
     break;
   }
 }
@@ -36,22 +49,47 @@ function pusher(message, callback) {
 }
 
 function executeCommand(body, callback) {
-  witai.getData(body.message, function(analysedMessage) {
-    var to = body.to;
-    switch(to.toLowerCase()) {
-      case "blackrock": blackRock(analysedMessage, function(result) {
-        callback(result)
+  try{
+    witai.getData(body.message, function(analysedMessage) {
+      var to = body.to;
+      var services = to.split(',')
+      fullResponse = ""
+      var serviesNum = services.length
+      services.forEach( function(service) {
+        console.log(service)
+        switch(service) {
+          case "blackrock": blackRock(analysedMessage, function(result) {
+            fullResponse += result + "\n"
+            console.log(result)
+            serviesNum--
+            if(serviesNum == 0)
+              callback(fullResponse)
+          })
+          break;
+          case "pusher": pusher.start( function(result) {
+            fullResponse += result + "\n"
+            console.log(result)
+            serviesNum--
+            if(serviesNum == 0)
+              callback(fullResponse)
+          })
+          break;
+          case "skyscanner": skyscanner.getData( analysedMessage, function(result) {
+            console.log(result)
+            fullResponse += result + "\n"
+            serviesNum--
+            if(serviesNum == 0)
+              callback(fullResponse)
+          })
+          break;
+        }      
       })
-      case "pusher": pusher.start( function(result) {
-        callback(result)
-      })
-      case "skyscanner": skyscanner.getData( analysedMessage, function(result) {
-        console.log(result)
-        callback(result)
-      })
-      break;
-    }
-  })
+    })    
+  }
+  catch(err){
+    console.log(err)
+    callback("Haha! good joke\n")
+  }
 }
 
 function handleRequest(request, response){
@@ -62,9 +100,12 @@ function handleRequest(request, response){
         console.log(err);
     }
 }
-
+blackrock.getRisks( function(body) {
+    riskMap = body
+    console.log(body)
+})
+console.log("Server working!"); 
 http.createServer(function (req, res) {
-  console.log("Server working!");
   handleRequest(req, res)
 }).listen(8007);
 
