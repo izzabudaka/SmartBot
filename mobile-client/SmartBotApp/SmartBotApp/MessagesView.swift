@@ -55,6 +55,7 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
         self.tableView.registerNib(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "MessageCell")
         self.tableView.registerNib(UINib(nibName: "ImageMessageCell", bundle: nil), forCellReuseIdentifier: "ImageCell")
         self.tableView.registerNib(UINib(nibName: "MapCell", bundle: nil), forCellReuseIdentifier: "MapCell")
+        self.tableView.registerNib(UINib(nibName: "AppleMapCell", bundle: nil), forCellReuseIdentifier: "AppleMapCell")
         //self.tableView.registerClass(MessageCell.self, forCellReuseIdentifier: "MessageCell")
         self.inverted=false
         self.tableView.rowHeight = UITableViewAutomaticDimension
@@ -140,7 +141,13 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
                     cell.setCode(messages[indexPath.row])
                     cell.selectionStyle = .None
                     return cell
+            }else if messages[indexPath.row].isMap{
+                
+                let cell = tableView.dequeueReusableCellWithIdentifier("AppleMapCell") as! AppleMapCell
+                cell.selectionStyle = .None
+                return cell
             }
+
             else{
                 let cell = tableView.dequeueReusableCellWithIdentifier("MessageCell") as! MessageCell
                 cell.setData(messages[indexPath.row])
@@ -181,9 +188,15 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
             
             Alamofire.request(.POST, self.blackrock_url , parameters: ["to": "blackrock" , "message":self.textView.text] , encoding: .JSON)
                 .responseString { response in
-                    self.messages.append(Message(body: response.result.value!, belongsToUser: false,sender: Core.currentService))
-                    self.tableView.reloadData()
-                    print(response.result.value!)
+                    if response.result.value!.componentsSeparatedByString(",").count > 4{
+                        self.messages.append(Message(labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], values: response.result.value!.componentsSeparatedByString(",").map{Double(String($0)) ?? 0}))
+                        self.tableView.reloadData()
+                    }else{
+                        self.messages.append(Message(body: response.result.value!, belongsToUser: false,sender: Core.currentService))
+                        self.tableView.reloadData()
+                        print(response.result.value!)
+                    }
+                    
             }
 //                .response{
 //                    request, response, data, error in
@@ -204,6 +217,7 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
             Alamofire.request(.POST, self.blackrock_url , parameters: ["to": "skyscanner" , "message":self.textView.text] , encoding: .JSON)
                 .responseString { response in
                     self.messages.append(Message(body: response.result.value!, belongsToUser: false,sender: Core.currentService))
+                    self.messages.append(Message())
 //                    self.messages.append(Message(map: ["London":1 ,"Spain" : 1]))
                     self.tableView.reloadData()
                     print(response.result.value!)

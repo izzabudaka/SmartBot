@@ -16,9 +16,9 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vsS-IE-eBR">
-                        <rect key="frame" x="0.0" y="8" width="319" height="128"/>
+                        <rect key="frame" x="0.0" y="8" width="319" height="200"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="128" id="id1-p3-y1z"/>
+                            <constraint firstAttribute="height" constant="200" id="id1-p3-y1z"/>
                         </constraints>
                     </mapView>
                 </subviews>
@@ -29,6 +29,9 @@
                     <constraint firstAttribute="trailingMargin" secondItem="vsS-IE-eBR" secondAttribute="trailing" constant="-8" id="yyU-PR-K03"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="mapview" destination="vsS-IE-eBR" id="vEk-Dm-VLL"/>
+            </connections>
             <point key="canvasLocation" x="269.5" y="422.5"/>
         </tableViewCell>
     </objects>
