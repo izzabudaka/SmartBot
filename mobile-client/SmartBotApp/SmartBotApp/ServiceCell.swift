@@ -31,11 +31,11 @@ class ServiceCell: UITableViewCell {
         
         img.layer.borderWidth = 1
         img.layer.cornerRadius = img.frame.width/2
-        img.layer.borderColor = UIColor.blackColor().CGColor
+        img.layer.borderColor = UIColor.grayColor().CGColor
 
         img2.layer.borderWidth = 1
         img2.layer.cornerRadius = img.frame.width/2
-        img2.layer.borderColor = UIColor.blackColor().CGColor
+        img2.layer.borderColor = UIColor.grayColor().CGColor
 
         img.layer.masksToBounds = true
         img2.layer.masksToBounds = true

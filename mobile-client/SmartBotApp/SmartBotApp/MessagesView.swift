@@ -54,6 +54,8 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
         super.viewDidLoad()
         self.tableView.registerNib(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "MessageCell")
         self.tableView.registerNib(UINib(nibName: "ImageMessageCell", bundle: nil), forCellReuseIdentifier: "ImageCell")
+        self.tableView.registerNib(UINib(nibName: "MapCell", bundle: nil), forCellReuseIdentifier: "MapCell")
+        self.tableView.registerNib(UINib(nibName: "AppleMapCell", bundle: nil), forCellReuseIdentifier: "AppleMapCell")
         //self.tableView.registerClass(MessageCell.self, forCellReuseIdentifier: "MessageCell")
         self.inverted=false
         self.tableView.rowHeight = UITableViewAutomaticDimension
@@ -86,13 +88,6 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
         
         
         imagePicker.delegate = self
-        
-        self.client = PTPusher(key: "061d40c84c49b423dd49" , delegate: self, encrypted: false)
-        self.client?.connect()
-        
-                
-        
-        
     }
     
     var searchResult : [String] = []
@@ -140,7 +135,20 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
                 cell.img.image = messages[indexPath.row].image
                 cell.selectionStyle = .None
                 return cell
-            }else{
+            }else if messages[indexPath.row].isChart{
+                
+                    let cell = tableView.dequeueReusableCellWithIdentifier("MapCell") as! MapCell
+                    cell.setCode(messages[indexPath.row])
+                    cell.selectionStyle = .None
+                    return cell
+            }else if messages[indexPath.row].isMap{
+                
+                let cell = tableView.dequeueReusableCellWithIdentifier("AppleMapCell") as! AppleMapCell
+                cell.selectionStyle = .None
+                return cell
+            }
+
+            else{
                 let cell = tableView.dequeueReusableCellWithIdentifier("MessageCell") as! MessageCell
                 cell.setData(messages[indexPath.row])
                 cell.selectionStyle = .None
@@ -171,23 +179,49 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
     override func didPressRightButton(sender: AnyObject!) {
         self.textView.refreshFirstResponder()
         self.messages.append(Message(body:self.textView.text,belongsToUser: true,sender: Core.currentService))
-        self.textView.text = ""
-        self.tableView.reloadData()
-        self.tableView.reloadData()
+
         
         
         if Core.currentService == "Blackrock"{
             print("blackrock")
-            Alamofire.request(.POST, self.blackrock_url , parameters: ["to": "blackrock" , "message":"get country for ticker GS"] , encoding: .JSON)
+            
+            
+            Alamofire.request(.POST, self.blackrock_url , parameters: ["to": "blackrock" , "message":self.textView.text] , encoding: .JSON)
                 .responseString { response in
-                    self.messages.append(Message(body: response.result.value!, belongsToUser: false,sender: Core.currentService))
-                    self.tableView.reloadData()
-                    print(response.result.value!)
+                    if response.result.value!.componentsSeparatedByString(",").count > 4{
+                        self.messages.append(Message(labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], values: response.result.value!.componentsSeparatedByString(",").map{Double(String($0)) ?? 0}))
+                        self.tableView.reloadData()
+                    }else{
+                        self.messages.append(Message(body: response.result.value!, belongsToUser: false,sender: Core.currentService))
+                        self.tableView.reloadData()
+                        print(response.result.value!)
+                    }
+                    
             }
 //                .response{
 //                    request, response, data, error in
 //                    messages.append(Message(body: response.result.value, belongsToUser: false))
             
+        }
+        else if Core.currentService == "Blackrock & Skyscanner"{
+            Alamofire.request(.POST, self.blackrock_url , parameters: ["to": "blackrock,skyscanner" , "message":self.textView.text] , encoding: .JSON)
+                .responseString { response in
+                    let parts = response.result.value?.componentsSeparatedByString("\n")
+                    self.messages.append(Message(body: parts![0], belongsToUser: false,sender: "Skyscanner"))
+                    self.messages.append(Message(body: parts![1], belongsToUser: false,sender: "Blackrock"))
+                    self.tableView.reloadData()
+                    print(response.result.value!)
+            }
+        }
+        else if Core.currentService == "Skyscanner"{
+            Alamofire.request(.POST, self.blackrock_url , parameters: ["to": "skyscanner" , "message":self.textView.text] , encoding: .JSON)
+                .responseString { response in
+                    self.messages.append(Message(body: response.result.value!, belongsToUser: false,sender: Core.currentService))
+                    self.messages.append(Message())
+//                    self.messages.append(Message(map: ["London":1 ,"Spain" : 1]))
+                    self.tableView.reloadData()
+                    print(response.result.value!)
+            }
         }
         else if Core.currentService  == "Clarifai"{
             if ((self.messages.last?.body.rangeOfString(">") ) != nil){
@@ -219,7 +253,7 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
                         
                         Core.messageStore["Clarifai & Facebook"] = [
                             Message(body: "Hello", belongsToUser: false,sender: Core.currentService),
-                            Message(body: "Please tweet this:", belongsToUser: false,sender: Core.currentService),
+                            Message(body: "Please post this to your timeline:", belongsToUser: false,sender: Core.currentService),
                             Message(image:image!, belongsToUser: false),
                             Message(body: parts.joinWithSeparator(" "), belongsToUser: false,sender: Core.currentService),
                             Message(body: "Okay , posted!", belongsToUser: false,sender: "Facebook")
@@ -239,6 +273,19 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
                 print("not found")
             }
         }
+        else if Core.currentService == "Macbook"{
+                Alamofire.request(.POST, self.blackrock_url , parameters: ["to": "pusher" , "message":self.textView.text] , encoding: .JSON)
+                    .responseString { response in
+                        self.messages.append(Message(body: response.result.value!, belongsToUser: false,sender: Core.currentService))
+                        self.tableView.reloadData()
+                        print(response.result.value!)
+                }
+            
+            
+        }
+        
+        self.textView.text = ""
+        self.tableView.reloadData()
     }
     
     override func didPressLeftButton(sender: AnyObject!) {

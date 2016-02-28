@@ -27,13 +27,13 @@ class MessageCell: UITableViewCell {
 
     func setData(message : Message){
         self.txtBody.text = message.body
-        self.txtSender.text = message.belongsToUser ? "" : message.sender
+        self.txtSender.text = message.belongsToUser ? "Leonardo" : message.sender
         self.txtBody.textAlignment = message.belongsToUser ? .Right : .Left;
         self.txtSender.textAlignment = message.belongsToUser ? .Right : .Left;
         self.txtSender.textColor = Core.colors[message.sender]
         
-        self.txtBody.mentionColor = Core.colors[message.sender]!
-        self.txtBody.hashtagColor = Core.colors[message.sender]!
+        self.txtBody.mentionColor = Core.colors[message.sender] ?? UIColor.darkGrayColor()
+        self.txtBody.hashtagColor = Core.colors[message.sender] ?? UIColor.darkGrayColor()
         
         setNeedsDisplay()
         layoutSubviews()

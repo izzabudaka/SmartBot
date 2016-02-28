@@ -27,6 +27,11 @@
 		B3E0998C1C822B230003657C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E0998B1C822B230003657C /* Assets.xcassets */; };
 		B3E0998F1C827C480003657C /* ImageMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E0998D1C827C480003657C /* ImageMessageCell.swift */; };
 		B3E099901C827C480003657C /* ImageMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E0998E1C827C480003657C /* ImageMessageCell.xib */; };
+		B3E099931C82F36C0003657C /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E099911C82F36C0003657C /* MapCell.swift */; };
+		B3E099941C82F36C0003657C /* MapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E099921C82F36C0003657C /* MapCell.xib */; };
+		B3E099971C830A670003657C /* AppleMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E099951C830A670003657C /* AppleMapCell.swift */; };
+		B3E099981C830A670003657C /* AppleMapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E099961C830A670003657C /* AppleMapCell.xib */; };
+		B3E0999A1C830AB40003657C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E099991C830AB40003657C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,11 @@
 		B3E0998B1C822B230003657C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3E0998D1C827C480003657C /* ImageMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMessageCell.swift; sourceTree = "<group>"; };
 		B3E0998E1C827C480003657C /* ImageMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageMessageCell.xib; sourceTree = "<group>"; };
+		B3E099911C82F36C0003657C /* MapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
+		B3E099921C82F36C0003657C /* MapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapCell.xib; sourceTree = "<group>"; };
+		B3E099951C830A670003657C /* AppleMapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleMapCell.swift; sourceTree = "<group>"; };
+		B3E099961C830A670003657C /* AppleMapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppleMapCell.xib; sourceTree = "<group>"; };
+		B3E099991C830AB40003657C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D46966F721DC2D249BE02E7C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E0999A1C830AB40003657C /* MapKit.framework in Frameworks */,
 				089C03BC3D5A47F28729FB8D /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +117,7 @@
 		918DDE1FD07679716FE8AC93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3E099991C830AB40003657C /* MapKit.framework */,
 				80905055AF4D2022740CB3D6 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -163,6 +175,10 @@
 				B3E0998B1C822B230003657C /* Assets.xcassets */,
 				B3E0998D1C827C480003657C /* ImageMessageCell.swift */,
 				B3E0998E1C827C480003657C /* ImageMessageCell.xib */,
+				B3E099911C82F36C0003657C /* MapCell.swift */,
+				B3E099921C82F36C0003657C /* MapCell.xib */,
+				B3E099951C830A670003657C /* AppleMapCell.swift */,
+				B3E099961C830A670003657C /* AppleMapCell.xib */,
 			);
 			path = SmartBotApp;
 			sourceTree = "<group>";
@@ -257,6 +273,11 @@
 					B3E0994B1C81EC6C0003657C = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 4FLSWMW6LR;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					B3E0995F1C81EC6D0003657C = {
 						CreatedOnToolsVersion = 7.2;
@@ -297,9 +318,11 @@
 			files = (
 				B3E099901C827C480003657C /* ImageMessageCell.xib in Resources */,
 				B3E099861C81F17A0003657C /* MessageCell.xib in Resources */,
+				B3E099941C82F36C0003657C /* MapCell.xib in Resources */,
 				B3E0995A1C81EC6D0003657C /* LaunchScreen.storyboard in Resources */,
 				B3E0997E1C81ED830003657C /* Podfile in Resources */,
 				B3E099551C81EC6D0003657C /* Main.storyboard in Resources */,
+				B3E099981C830A670003657C /* AppleMapCell.xib in Resources */,
 				B3E0998C1C822B230003657C /* Assets.xcassets in Resources */,
 				B3E0998A1C820D750003657C /* ServiceCell.xib in Resources */,
 			);
@@ -379,7 +402,9 @@
 				B3E099501C81EC6D0003657C /* AppDelegate.swift in Sources */,
 				1A216AEF7E56216504BF5E5B /* MessagesView.swift in Sources */,
 				1A2160F3A69C2BB82DEF4984 /* Bubble.swift in Sources */,
+				B3E099971C830A670003657C /* AppleMapCell.swift in Sources */,
 				B3E099891C820D750003657C /* ServiceCell.swift in Sources */,
+				B3E099931C82F36C0003657C /* MapCell.swift in Sources */,
 				1A216C6FE84CAD2AA7D1DF46 /* Message.swift in Sources */,
 				B3E0998F1C827C480003657C /* ImageMessageCell.swift in Sources */,
 				1A216DBAE89CD3D50427B293 /* ServicesView.swift in Sources */,

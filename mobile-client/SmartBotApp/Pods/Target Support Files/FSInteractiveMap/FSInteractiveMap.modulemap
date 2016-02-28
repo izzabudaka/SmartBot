@@ -1,0 +1,6 @@
+framework module FSInteractiveMap {
+  umbrella header "FSInteractiveMap-umbrella.h"
+
+  export *
+  module * { export * }
+}

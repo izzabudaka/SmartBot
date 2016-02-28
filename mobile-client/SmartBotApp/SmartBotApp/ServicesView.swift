@@ -60,7 +60,7 @@ class ServicesView : UIViewController , UITableViewDelegate , UITableViewDataSou
 
 
     @IBOutlet weak var tableView: UITableView!
-    static var services : [String] = ["Facebook" , "Amazon" , "Spotify" , "Blackrock & Skyscanner" , "Blackrock" , "Clarifai","Macbook"]
+    static var services : [String] = ["Facebook" , "Amazon" , "Spotify" , "Blackrock & Skyscanner" , "Blackrock" ,"Skyscanner" , "Clarifai","Macbook"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
