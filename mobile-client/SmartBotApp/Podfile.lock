@@ -1,12 +1,12 @@
 PODS:
+  - ActiveLabel (0.4.1)
   - Alamofire (3.2.0)
-  - KILabel (1.0.0)
   - SlackTextViewController (1.9.1)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - ActiveLabel
   - Alamofire (~> 3.0)
-  - KILabel (= 1.0.0)
   - SlackTextViewController
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
 
@@ -20,8 +20,8 @@ CHECKOUT OPTIONS:
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
+  ActiveLabel: 087705276e6e83c98deb3c22e6fef22b10317b16
   Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
-  KILabel: 84049969642d4ac1061ebe38ad4c0da37fed108b
   SlackTextViewController: 6b0d1030c53937226fc5358f217af2a34fc211cf
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
