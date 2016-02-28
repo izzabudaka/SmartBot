@@ -10,13 +10,14 @@ import UIKit
 
 class MessageCell: UITableViewCell {
 
+    @IBOutlet weak var txtSender: UILabel!
     @IBOutlet weak var bubble: Bubble!
     @IBOutlet weak var txtBody: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.setNeedsDisplay()
+        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -25,7 +26,11 @@ class MessageCell: UITableViewCell {
 
     func setData(message : Message){
         self.txtBody.text = message.body
+        self.txtSender.text = message.belongsToUser ? "" : message.sender
         self.txtBody.textAlignment = message.belongsToUser ? .Right : .Left;
+        self.txtSender.textAlignment = message.belongsToUser ? .Right : .Left;
+        self.txtSender.textColor = Core.colors[message.sender]
+        
         setNeedsDisplay()
         layoutSubviews()
     }

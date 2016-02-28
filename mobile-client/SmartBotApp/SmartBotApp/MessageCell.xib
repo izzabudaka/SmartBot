@@ -25,20 +25,29 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deE-Rw-Pkm">
+                        <rect key="frame" x="23" y="49" width="274" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
+                    <constraint firstItem="deE-Rw-Pkm" firstAttribute="top" secondItem="FeE-1A-olF" secondAttribute="bottom" constant="5" id="1gv-FR-gRV"/>
                     <constraint firstItem="AaH-Rb-URj" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="41F-Oz-Vze"/>
                     <constraint firstItem="FeE-1A-olF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="5po-9f-QJT"/>
                     <constraint firstItem="AaH-Rb-URj" firstAttribute="bottom" secondItem="FeE-1A-olF" secondAttribute="bottom" constant="15" id="74M-h2-AfU"/>
                     <constraint firstAttribute="trailingMargin" secondItem="FeE-1A-olF" secondAttribute="trailing" constant="15" id="7iO-0U-oeb"/>
                     <constraint firstAttribute="bottomMargin" secondItem="FeE-1A-olF" secondAttribute="bottom" constant="15" id="94B-Nz-BW6"/>
                     <constraint firstItem="AaH-Rb-URj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="BpF-7x-zUo"/>
+                    <constraint firstItem="deE-Rw-Pkm" firstAttribute="leading" secondItem="FeE-1A-olF" secondAttribute="leading" id="F7C-3i-Sm7"/>
                     <constraint firstItem="AaH-Rb-URj" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="GrW-PC-p27"/>
                     <constraint firstItem="AaH-Rb-URj" firstAttribute="trailing" secondItem="FeE-1A-olF" secondAttribute="trailing" constant="15" id="Lsn-UQ-Cse"/>
                     <constraint firstItem="AaH-Rb-URj" firstAttribute="width" secondItem="FeE-1A-olF" secondAttribute="width" id="OPG-t3-pju"/>
                     <constraint firstItem="AaH-Rb-URj" firstAttribute="leading" secondItem="FeE-1A-olF" secondAttribute="leading" constant="15" id="a96-Tm-F5O"/>
                     <constraint firstItem="AaH-Rb-URj" firstAttribute="height" secondItem="FeE-1A-olF" secondAttribute="height" id="rp2-Ps-1ie"/>
+                    <constraint firstItem="deE-Rw-Pkm" firstAttribute="trailing" secondItem="FeE-1A-olF" secondAttribute="trailing" id="vN6-cG-EAm"/>
                     <constraint firstItem="FeE-1A-olF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="wh9-lP-TNs"/>
                     <constraint firstItem="AaH-Rb-URj" firstAttribute="top" secondItem="FeE-1A-olF" secondAttribute="top" constant="15" id="xjf-DB-n9a"/>
                 </constraints>
@@ -59,6 +68,7 @@
             <connections>
                 <outlet property="bubble" destination="AaH-Rb-URj" id="Ylj-KU-NEt"/>
                 <outlet property="txtBody" destination="FeE-1A-olF" id="woM-l2-pvj"/>
+                <outlet property="txtSender" destination="deE-Rw-Pkm" id="dKC-sC-I9S"/>
             </connections>
         </tableViewCell>
     </objects>

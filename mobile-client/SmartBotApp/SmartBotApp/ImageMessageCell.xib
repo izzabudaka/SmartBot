@@ -15,42 +15,55 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W6x-OZ-A5b">
-                        <rect key="frame" x="72" y="8" width="240" height="184"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L7N-kU-u3p">
+                        <rect key="frame" x="72" y="7" width="240" height="185"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W6x-OZ-A5b">
+                                <rect key="frame" x="0.0" y="1" width="240" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="dSK-5H-6QY"/>
+                                    <constraint firstAttribute="height" constant="184" id="gY9-l8-70o"/>
+                                </constraints>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdH-T4-OBJ">
+                                <rect key="frame" x="0.0" y="136" width="240" height="49"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ura-Jp-aC7">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="49"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Some image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyT-fG-itt">
+                                            <rect key="frame" x="73" y="14" width="95" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="bYL-ie-Bhy"/>
+                                </constraints>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="240" id="dSK-5H-6QY"/>
-                            <constraint firstAttribute="height" constant="184" id="gY9-l8-70o"/>
+                            <constraint firstAttribute="trailing" secondItem="DdH-T4-OBJ" secondAttribute="trailing" id="Ft3-L7-0GI"/>
+                            <constraint firstItem="DdH-T4-OBJ" firstAttribute="leading" secondItem="L7N-kU-u3p" secondAttribute="leading" id="K5T-xT-FQs"/>
+                            <constraint firstAttribute="width" constant="240" id="d0D-8G-on0"/>
+                            <constraint firstAttribute="bottom" secondItem="DdH-T4-OBJ" secondAttribute="bottom" id="n7l-rS-W1Q"/>
+                            <constraint firstAttribute="height" constant="185" id="od1-cn-vRk"/>
                         </constraints>
-                    </imageView>
-                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdH-T4-OBJ">
-                        <rect key="frame" x="72" y="143" width="240" height="49"/>
-                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ura-Jp-aC7">
-                            <rect key="frame" x="0.0" y="0.0" width="240" height="49"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Some image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyT-fG-itt">
-                                    <rect key="frame" x="73" y="14" width="95" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                        </view>
-                        <blurEffect style="light"/>
-                    </visualEffectView>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="W6x-OZ-A5b" secondAttribute="bottom" id="9r3-xb-bYU"/>
-                    <constraint firstItem="DdH-T4-OBJ" firstAttribute="top" secondItem="W6x-OZ-A5b" secondAttribute="bottom" constant="-49" id="BiJ-p6-HIw"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="W6x-OZ-A5b" secondAttribute="trailing" id="FBn-Wq-tTW"/>
-                    <constraint firstItem="DdH-T4-OBJ" firstAttribute="bottom" secondItem="W6x-OZ-A5b" secondAttribute="bottom" id="Ha1-XW-0gl"/>
-                    <constraint firstItem="DdH-T4-OBJ" firstAttribute="trailing" secondItem="W6x-OZ-A5b" secondAttribute="trailing" id="Ori-kg-bI9"/>
-                    <constraint firstAttribute="topMargin" secondItem="W6x-OZ-A5b" secondAttribute="top" id="boF-er-weh"/>
-                    <constraint firstItem="DdH-T4-OBJ" firstAttribute="leading" secondItem="W6x-OZ-A5b" secondAttribute="leading" id="t5A-ej-jXp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="L7N-kU-u3p" secondAttribute="bottom" id="Sc6-fW-fBA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="L7N-kU-u3p" secondAttribute="trailing" id="pWA-b1-xqS"/>
+                    <constraint firstItem="L7N-kU-u3p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="vtP-aC-uNv"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="img" destination="W6x-OZ-A5b" id="Nt1-Q0-Zwq"/>
+                <outlet property="innerView" destination="L7N-kU-u3p" id="0pJ-e3-9xq"/>
             </connections>
             <point key="canvasLocation" x="324" y="659"/>
         </tableViewCell>

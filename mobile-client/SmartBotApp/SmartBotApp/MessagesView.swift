@@ -34,6 +34,12 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
             Core.messageStore[Core.currentService] = newVal
         }
     }
+    
+    var pipes : [String] {
+        get{
+            return Array(Core.messageStore.keys)
+        }
+    }
 
     override class func tableViewStyleForCoder(decoder: NSCoder) -> UITableViewStyle {
         return UITableViewStyle.Plain;
@@ -53,7 +59,7 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
         
         self.autoCompletionView.dataSource = self
         self.autoCompletionView.delegate = self
-        self.registerPrefixesForAutoCompletion(["#","@"])
+        self.registerPrefixesForAutoCompletion(["#","@" ,">"])
         
         self.textView.placeholder = "Write a message"
         self.textView.placeholderColor = UIColor.lightGrayColor()
@@ -80,7 +86,6 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
     var searchResult : [String] = []
 
     override func didChangeAutoCompletionPrefix(prefix: String!, andWord word: String!) {
-        print(self.searchResult)
         var array: NSArray = []
         var show = false
         
@@ -89,6 +94,9 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
         }
         else if prefix == "@" {
             array = self.suggestionsAt as [AnyObject]
+        }
+        else if prefix == ">" {
+            array = self.pipes as [AnyObject]
         }
         
         if array.count > 0 {
@@ -140,7 +148,6 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(String(section) + " >>> ")
         if self.tableView.isEqual(tableView) {
             return messages.count
         }
@@ -151,7 +158,7 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
 
     override func didPressRightButton(sender: AnyObject!) {
         self.textView.refreshFirstResponder()
-        self.messages.append(Message(body:self.textView.text,belongsToUser: true))
+        self.messages.append(Message(body:self.textView.text,belongsToUser: true,sender: Core.currentService))
         self.textView.text = ""
         self.tableView.reloadData()
         self.tableView.reloadData()
@@ -161,7 +168,7 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
             print("blackrock")
             Alamofire.request(.POST, self.blackrock_url , parameters: ["to": "blackrock" , "message":"get country for ticker GS"] , encoding: .JSON)
                 .responseString { response in
-                    self.messages.append(Message(body: response.result.value!, belongsToUser: false))
+                    self.messages.append(Message(body: response.result.value!, belongsToUser: false,sender: Core.currentService))
                     self.tableView.reloadData()
                     print(response.result.value!)
             }
@@ -169,6 +176,56 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
 //                    request, response, data, error in
 //                    messages.append(Message(body: response.result.value, belongsToUser: false))
             
+        }
+        else if Core.currentService  == "Clarifai"{
+            if ((self.messages.last?.body.rangeOfString(">") ) != nil){
+                print((self.messages.last?.body)! + "...£")
+                let st = self.messages[self.messages.count - 2].body
+                let parts = st.componentsSeparatedByString("\n").dropFirst()
+                
+                                let seconds = 2.0
+                let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
+                let dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+                
+                print(self.messages[self.messages.count - 3].body)
+                
+                var image : UIImage?
+                
+                for i in self.messages{
+                    if i.image != nil{
+                        image = i.image
+                    }
+                }
+                
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(Double(NSEC_PER_SEC))),dispatch_get_main_queue() , {
+                    self.messages.append(Message(body: "Alright", belongsToUser: false,sender: Core.currentService))
+                    self.tableView.reloadData()
+                    self.tableView.setContentOffset(CGPoint(x: 0, y: self.tableView.contentSize.height), animated: true)
+
+                    
+                    dispatch_after(dispatchTime, dispatch_get_main_queue(), {
+                        
+                        Core.messageStore["Clarifai & Facebook"] = [
+                            Message(body: "Hello", belongsToUser: false,sender: Core.currentService),
+                            Message(body: "Please tweet this:", belongsToUser: false,sender: Core.currentService),
+                            Message(image:image!, belongsToUser: false),
+                            Message(body: parts.joinWithSeparator(" "), belongsToUser: false,sender: Core.currentService),
+                            Message(body: "Okay , posted!", belongsToUser: false,sender: "Facebook")
+                        ]
+                        
+                        ServicesView.services.append("Clarifai & Facebook")
+                        
+                        self.navigationController?.popViewControllerAnimated(true)
+                    })
+                    
+                    })
+                
+                
+                
+            }
+            else{
+                print("not found")
+            }
         }
     }
     
@@ -184,7 +241,7 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
     
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if tableView.isEqual(tableView) {
+        if !self.tableView.isEqual(tableView) {
             var item = self.searchResult[indexPath.row]
             item += " "
             
@@ -201,50 +258,56 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
         
         self.messages.append(Message(image: image, belongsToUser: true))
         self.tableView.reloadData()
-        
+        print(Core.currentService)
         if(Core.currentService == "Clarifai"){
         
-//        let parameters : [String:String]
-//            Alamofire.upload(.POST, clarifai_url,headers:["Authorization":"Bearer 9YPrXNoaU5oS3jZYPrIbO1oDW3pyS5"], multipartFormData: {
-//                multipartFormData in
-//                
-//                if let imageData = UIImageJPEGRepresentation(image, 0.5) {
-//                    multipartFormData.appendBodyPart(data: imageData, name: "encoded_image", fileName: "file.png", mimeType: "image/png")
-//                }
-//                
-//                
-//                //            for (key, value) in parameters {
-//                //                multipartFormData.appendBodyPart(data: value.dataUsingEncoding(NSUTF8StringEncoding)!, name: key)
-//                //            }
-//                
-//                }
-//                , encodingCompletion: {
-//                    encodingResult in
-//                    
-//                    switch encodingResult {
-//                    case .Success(let upload, _, _):
-//                        upload.responseJSON{
-//                            response in
-//                            
-//                            let json = JSON(response.result.value!)
-//                            let answers = json["results"].array![0]["result"]["tag"]["classes"].array![0..<5]
-//                            
-//                            var _answers : [String] = []
-//                            for i in answers{
-//                                _answers.append(i.stringValue)
-//                            }
-//                            
-//                            
-//                            
-//                            self.messages.append(Message(body: "Just a sec", belongsToUser: false))
-//                            self.messages.append(Message(body: "Your image contains : \n#" + _answers.joinWithSeparator("\n#"), belongsToUser: false))
-//                            self.tableView.reloadData()
-//                            
-//                        }
-//                    case .Failure(let encodingError):
-//                        print(encodingError)
-//                    }
-//            })
+            self.typingIndicatorView.insertUsername(Core.currentService)
+        let parameters : [String:String]
+            Alamofire.upload(.POST, clarifai_url,headers:["Authorization":"Bearer 9YPrXNoaU5oS3jZYPrIbO1oDW3pyS5"], multipartFormData: {
+                multipartFormData in
+                
+                if let imageData = UIImageJPEGRepresentation(image, 0.5) {
+                    multipartFormData.appendBodyPart(data: imageData, name: "encoded_image", fileName: "file.png", mimeType: "image/png")
+                }
+                
+                
+                //            for (key, value) in parameters {
+                //                multipartFormData.appendBodyPart(data: value.dataUsingEncoding(NSUTF8StringEncoding)!, name: key)
+                //            }
+                
+                }
+                , encodingCompletion: {
+                    encodingResult in
+                    
+                    switch encodingResult {
+                    case .Success(let upload, _, _):
+                        upload.responseJSON{
+                            response in
+                            
+                            let json = JSON(response.result.value!)
+                            let answers = json["results"].array![0]["result"]["tag"]["classes"].array![0..<5]
+                            
+                            var _answers : [String] = []
+                            for i in answers{
+                                _answers.append(i.stringValue)
+                            }
+                            
+                            
+                            
+                            self.messages.append(Message(body: "Your image contains : \n#" + _answers.joinWithSeparator("\n#"), belongsToUser: false,sender: Core.currentService))
+                            self.tableView.reloadData()
+                            
+                            self.typingIndicatorView.removeUsername(Core.currentService)
+                            
+                        }
+                    case .Failure(let encodingError):
+                        print(encodingError)
+                    }
+            })
+            
+            
+            
+            
         }
         dismissViewControllerAnimated(true, completion: nil)
     }

@@ -12,25 +12,25 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F12-gZ-iqx">
-                        <rect key="frame" x="8" y="8" width="52" height="48.5"/>
+                        <rect key="frame" x="8" y="8" width="52" height="49"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="48.5" id="0nj-Tq-hpH"/>
                             <constraint firstAttribute="width" constant="52" id="VZW-bE-Ty9"/>
                         </constraints>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ijh-bl-dCk">
-                        <rect key="frame" x="30" y="8.5" width="52" height="48.5"/>
+                        <rect key="frame" x="30" y="9" width="52" height="48"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="48.5" id="rhb-ms-dej"/>
                             <constraint firstAttribute="width" constant="52" id="tr7-2I-NTr"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSk-Ul-FZX">
-                        <rect key="frame" x="88" y="8" width="224" height="20.5"/>
+                        <rect key="frame" x="88" y="8" width="224" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
