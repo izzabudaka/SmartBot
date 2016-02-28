@@ -90,7 +90,7 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
         self.client = PTPusher(key: "061d40c84c49b423dd49" , delegate: self, encrypted: false)
         self.client?.connect()
         
-                
+        
         
         
     }
@@ -238,6 +238,17 @@ class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , 
             else{
                 print("not found")
             }
+        }
+        else if Core.currentService == "Macbook"{
+            if(self.textView.text.lowercaseString == "play" || self.textView.text.lowercaseString == "pause" ){
+                Alamofire.request(.POST, "http://127.0.0.1:3000/music" , parameters:["command" : self.textView.text.lowercaseString] , encoding: .JSON)
+                    .response{
+                        response in
+                        print(response)
+                }
+            }
+            else if(self.textView.text
+            
         }
     }
     
