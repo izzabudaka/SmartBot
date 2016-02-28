@@ -15,6 +15,8 @@ class MessageCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        self.setNeedsDisplay()
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -24,6 +26,8 @@ class MessageCell: UITableViewCell {
     func setData(message : Message){
         self.txtBody.text = message.body
         self.txtBody.textAlignment = message.belongsToUser ? .Right : .Left;
+        setNeedsDisplay()
+        layoutSubviews()
     }
 
 

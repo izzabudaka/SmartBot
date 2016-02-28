@@ -60,7 +60,7 @@ class ServicesView : UIViewController , UITableViewDelegate , UITableViewDataSou
 
 
     @IBOutlet weak var tableView: UITableView!
-    var services : [String] = ["Facebook" , "Amazon" , "Spotify" , "Blackrock & Skyscanner" , "Blackrock"]
+    var services : [String] = ["Facebook" , "Amazon" , "Spotify" , "Blackrock & Skyscanner" , "Blackrock" , "Clarifai"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +71,8 @@ class ServicesView : UIViewController , UITableViewDelegate , UITableViewDataSou
         self.tableView.contentInset = UIEdgeInsets(top:15,left:10,bottom:0,right:0)
 //        self.tableView.selectionStyle = .None
         self.tableView.tableFooterView = UIView()
+        self.tableView.contentSize = CGSizeMake(self.tableView.frame.size.width, self.tableView.contentSize.height);
+
     }
 
      func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

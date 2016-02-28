@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>KILabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>697EFCF8FC2B286B1097B310F7EE2F95</key>
+		<key>162B59B96FF1F5B6B21CF89AC9E41170</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C1ADB7321BBE5027A50FC5E109B2AB6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C6A214A341C8673150BA0C2821BF2C01</key>
+		<key>918726558344750F945C70AA427484E5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

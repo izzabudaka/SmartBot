@@ -20,7 +20,9 @@ class Core {
         "Amazon" : [
             Message(body: "The item \"50 gallons of jelly\" on your wishlist has gone down in price by £20.Buy now?", belongsToUser: false)
         ],
-        "Skyscanner":[]
+        "Skyscanner":[],
+        "Clarifai" : [
+        ]
     ]
 
     static var currentService : String = ""
@@ -30,7 +32,8 @@ class Core {
         "Blackrock" : UIColor.blackColor(),
         "Amazon" : UIColor.orangeColor(),
         "Spotify" : UIColor.greenColor(),
-        "Skyscanner" : UIColor.blueColor()
+        "Skyscanner" : UIColor.blueColor(),
+        "Clarifai" : UIColor(hue: 0.5917, saturation: 1, brightness: 0.9, alpha: 1.0)
     ]
     
     

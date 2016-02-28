@@ -7,9 +7,22 @@ import Foundation
 import SlackTextViewController
 import Alamofire
 
-class MessagesView : SLKTextViewController  {
+class MessagesView : SLKTextViewController  , UIImagePickerControllerDelegate , UINavigationControllerDelegate{
 
     let blackrock_url = "http://3c9be5e7.ngrok.io/command"
+    let imagePicker = UIImagePickerController()
+    
+    var suggestions : [String] {
+        get {
+            return Core.hashtags[Core.currentService] ?? []
+        }
+    }
+    
+    var suggestionsAt : [String] {
+        get {
+            return Core.mentions[Core.currentService] ?? []
+        }
+    }
 
     var messages : [Message] {
         get {
@@ -45,24 +58,24 @@ class MessagesView : SLKTextViewController  {
         
         self.autoCompletionView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "HashCell")
         
-        
 
         self.searchResult = self.suggestions
+        
+//        
+//        self.textInputbar.leftButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 100))
+//        
+//        self.leftButton.setTitle("Attach", forState: .Normal)
 
+        self.leftButton.setImage(UIImage(named: "Attach"), forState: UIControlState.Normal)
+        self.leftButton.imageView?.contentMode = .ScaleAspectFit
+        self.leftButton.imageEdgeInsets = UIEdgeInsets(top: 10, left: 0, bottom: 15, right: 0)
+        self.leftButton.tintColor = Core.colors[Core.currentService]
+        
+        
+        imagePicker.delegate = self
     }
     
     
-    var suggestions : [String] {
-        get {
-            return Core.hashtags[Core.currentService]!
-        }
-    }
-    
-    var suggestionsAt : [String] {
-        get {
-            return Core.mentions[Core.currentService]!
-        }
-    }
     
     var searchResult : [String] = []
 
@@ -126,6 +139,7 @@ class MessagesView : SLKTextViewController  {
         self.messages.append(Message(body:self.textView.text,belongsToUser: true))
         self.textView.text = ""
         self.tableView.reloadData()
+        self.tableView.reloadData()
         
         
         if Core.currentService == "Blackrock"{
@@ -143,6 +157,17 @@ class MessagesView : SLKTextViewController  {
         }
     }
     
+    override func didPressLeftButton(sender: AnyObject!) {
+        self.textView.refreshFirstResponder()
+        
+       
+        presentViewController(imagePicker, animated: true, completion: nil)
+
+
+    }
+    
+    
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if tableView.isEqual(tableView) {
             var item = self.searchResult[indexPath.row]
@@ -155,5 +180,16 @@ class MessagesView : SLKTextViewController  {
 
     func showData(){
         self.title = Core.currentService;
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        
+        
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }

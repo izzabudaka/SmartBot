@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5F1CE0324EC2C723F762E809'
-               BlueprintName = 'Alamofire'
+               BlueprintIdentifier = 'BC819F794EB680B171CA8EC3'
+               BlueprintName = 'KILabel'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Alamofire.framework'>
+               BuildableName = 'KILabel.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
