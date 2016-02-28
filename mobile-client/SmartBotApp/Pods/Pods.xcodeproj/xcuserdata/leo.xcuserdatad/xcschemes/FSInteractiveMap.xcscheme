@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C2140DB96B0C79F45687992E'
+               BlueprintIdentifier = '4A945758C8A768430A017E51'
                BlueprintName = 'FSInteractiveMap'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'FSInteractiveMap.framework'>

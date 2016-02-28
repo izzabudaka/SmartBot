@@ -5,3 +5,4 @@ pod 'ActiveLabel'
 pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
 pod 'libPusher', '~> 1.6.1'
 pod "FSInteractiveMap"
+pod 'Charts'

@@ -11,6 +11,9 @@ class Message {
     var belongsToUser : Bool
     var sender : String
     var image : UIImage?
+    var isChart : Bool = false
+    var labels : [String]?
+    var values : [Double]?
 
     init(body:String,belongsToUser:Bool , sender : String){
         self.body = body
@@ -21,6 +24,15 @@ class Message {
     init(image: UIImage , belongsToUser:Bool){
         self.image = image
         self.belongsToUser = belongsToUser
+        self.body = ""
+        self.sender = ""
+    }
+    
+    init(labels : [String] , values : [Double]){
+        self.labels = labels
+        self.values = values
+        self.isChart = true
+        self.belongsToUser = false
         self.body = ""
         self.sender = ""
     }

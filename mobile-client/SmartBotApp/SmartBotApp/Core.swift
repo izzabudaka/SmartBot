@@ -8,7 +8,9 @@ import UIKit
 
 class Core {
     static var messageStore : [String : [Message]] = [
-        "Blackrock" : [],
+        "Blackrock" : [
+            Message(labels:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], values:[20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0])
+        ],
         "Facebook" : [
             Message(body: "Obama tagged you in a picture", belongsToUser: false,sender: "Facebook"),
             Message(body: "Like that", belongsToUser: true,sender: "Facebook"),
@@ -20,7 +22,8 @@ class Core {
         "Amazon" : [
             Message(body: "The item \"50 gallons of jelly\" on your wishlist has gone down in price by £20.Buy now?", belongsToUser: false,sender: "Amazon")
         ],
-        "Skyscanner":[],
+        "Skyscanner":[
+        ],
         "Clarifai" : [
             Message(body: "Here they are\n#cake\npineapple\npie", belongsToUser: false,sender: "Clarifai")
         ],
@@ -28,8 +31,7 @@ class Core {
             Message(body: "Someone tried to acces your protected folder /home/Videos/MathsVideos/Olympics/PDF/2009/PleaseDontReadThis", belongsToUser: false, sender: "Macbook"),
             Message(body: "Restart needed for updates. Postpone this?", belongsToUser: false, sender: "Macbook"),
             Message(body: "Yes", belongsToUser: true, sender: "Macbook"),
-            Message(body: "I'm afriad I can't do that , Leonardo", belongsToUser: false, sender: "Macbook"),
-            
+            Message(body: "I'm afriad I can't do that , Leonardo", belongsToUser: false, sender: "Macbook")
         ]
     ]
 

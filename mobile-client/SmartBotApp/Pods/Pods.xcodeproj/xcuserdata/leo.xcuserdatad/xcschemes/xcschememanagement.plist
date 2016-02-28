@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Charts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FSInteractiveMap.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,12 +52,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1C790DBA7785D50D967D4CD216CC691A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2EF96360CA370B96BD5EFF50E31A3C4A</key>
+		<key>2833F7B0A3A91FD968ECF9CCB085D630</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +62,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>382228C03AB2DC004560E8EEC54BF2D2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>68C2CC34B364F239C5FA621E4B017473</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>70CF23E39D67229E82DEF32EFF1257A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74EED513921F788F7020333D12393963</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -78,11 +93,6 @@
 			<true/>
 		</dict>
 		<key>9B35E3887980AEBD5C96BE6BBA10E1BD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B16CB663434BA26049C18D61F330C08A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
