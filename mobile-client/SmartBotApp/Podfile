@@ -2,3 +2,4 @@ use_frameworks!
 pod "SlackTextViewController"
 pod 'Alamofire', '~> 3.0'
 pod 'KILabel', '1.0.0'
+pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
